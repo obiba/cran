@@ -9,10 +9,10 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : DataSHIELD CRAN
+title : DataSHIELD
 tagline: Site Tagline
 author :
-  name : DataSHIELD CRAN
+  name : DataSHIELD
   email : datashield@obiba.org
   github : datashield
   twitter : datashield
