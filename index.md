@@ -26,20 +26,13 @@ Server side install:
 
 ## Full Documentation
 
-<div class="row-fluid">
-  <div class="span6"><a href="http://datashield.github.io/documentation/users.html" class="btn btn-primary">DataSHIELD Users Documentation</a></div>
-</div>
-<br/>
-<div class="row-fluid">
-  <div class="span6"><a href="http://datashield.github.io/documentation/administrators.html" class="btn btn-primary">DataSHIELD Administrators Documentation</a></div>
-</div>
+See detailed documentation for users, administrators and developers:
+
+<a href="http://datashield.github.io/documentation" class="btn btn-primary">DataSHIELD Documentation</a>
 
 ## Packages
 
-<div class="row-fluid">
-  <div class="span6"><a href="https://github.com/datashield/cran/tree/gh-pages/src/contrib" class="btn btn-inverse">DataSHIELD Packages Listing</a></div>
-</div>
-<br/>
-<div class="row-fluid">
-  <div class="span6"><a href="web/packages" class="btn btn-inverse">DataSHIELD Packages Documentation</a></div>
-</div>
+List of the packages available:
+
+<a href="https://github.com/datashield/cran/tree/gh-pages/src/contrib" class="btn btn-inverse">DataSHIELD Packages Listing</a>
+
