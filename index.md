@@ -10,12 +10,12 @@ tagline: The Comprehensive R Archive Network of DataSHIELD
 Client side install:
 
 	# Install all DataSHIELD packages
-	install.packages('datashieldclient', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
+	install.packages('datashieldclient', repos=c(getOption('repos'), 'http://datashield.github.io/cran'), dependencies=TRUE)
 
 Server side install:
 	
 	# Install opaladmin package
-	install.packages('opaladmin', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
+	install.packages('opaladmin', repos=c(getOption('repos'), 'http://datashield.github.io/cran'), dependencies=TRUE)
 
 	# Login in Opal
 	library(opaladmin)
