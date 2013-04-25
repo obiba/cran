@@ -37,7 +37,7 @@ Server side install:
 ## Packages
 
 <div class="row-fluid">
-  <div class="span6"><a href="src/contrib" class="btn btn-inverse">DataSHIELD Packages Listing</a></div>
+  <div class="span6"><a href="https://github.com/datashield/cran/tree/gh-pages/src/contrib" class="btn btn-inverse">DataSHIELD Packages Listing</a></div>
 </div>
 <br/>
 <div class="row-fluid">
