@@ -9,4 +9,4 @@ Description: This package contains functions to carry out statistical
 Depends: opal
 Collate: 'datashield.chisq.test.r' 'datashield.t.test.r'
 Packaged: 2013-04-25 15:33:56 UTC; root
-Built: R 2.15.3; ; 2013-05-01 17:02:20 UTC; unix
+Built: R 2.15.3; ; 2013-05-01 18:42:59 UTC; unix
