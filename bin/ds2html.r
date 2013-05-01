@@ -44,7 +44,7 @@ tagline: @pkg@ Package Documentation
     message('** ds2html of ', pkg, '::', p, ' in ', tmp)
     rd <- pkgRdDB[[p]]
     title <- tools:::.Rd_get_title(rd)
-    tools::Rd2HTML(Rd=rd, tmp, package=pkg, stylesheet='/assets/R.css')
+    tools::Rd2HTML(Rd=rd, tmp, package=pkg, stylesheet='../../assets/R.css')
     cat(paste0('\n* [', p, '](', p,'.html) ', title), file=pkg.indexfile, append=TRUE)
     cat(paste0('\n* [', p, '](', pkg, '/', p,'.html) ', title), file=indexfile, append=TRUE)
   }

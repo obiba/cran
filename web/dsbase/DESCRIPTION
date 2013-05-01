@@ -16,4 +16,4 @@ AssignMethods: log=base::log, exp=base::exp, sum, product,
 Collate: 'contour.plot.1.r' 'histogram.1.r' 'mean.r' 'product.r'
         'summary.r' 'sum.r' 'var.r' 'table.2d.r' 'order.frame.r'
 Packaged: 2013-04-25 15:33:50 UTC; root
-Built: R 2.15.3; ; 2013-05-01 18:43:00 UTC; unix
+Built: R 2.15.3; ; 2013-05-01 18:46:35 UTC; unix

@@ -9,4 +9,4 @@ Depends: opal, fields, spam
 Collate: 'datashield.contour.plot.r' 'datashield.heatmap.plot.r'
         'datashield.histogram.r' 'datashield.table.2d.r'
 Packaged: 2013-04-25 15:33:48 UTC; root
-Built: R 2.15.3; ; 2013-05-01 18:42:55 UTC; unix
+Built: R 2.15.3; ; 2013-05-01 18:46:30 UTC; unix
