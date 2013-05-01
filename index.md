@@ -24,11 +24,16 @@ Server side install:
 	# Install all DataSHIELD packages and dependencies on R server
 	dsadmin.install_package(o, 'datashield')
 
-## Full Documentation
+## Documentation
 
-See detailed documentation for users, administrators and developers:
+See detailed usage documentation for users, administrators and developers:
 
-<a href="http://datashield.github.io/documentation" class="btn btn-primary">DataSHIELD Documentation</a>
+<a href="http://datashield.github.io/documentation" class="btn btn-primary">DataSHIELD Usage Documentation</a>
+<br/>
+<br/>
+See also packages detailed documentation:
+
+<a href="web" class="btn btn-primary">DataSHIELD Packages Documentation</a>
 
 ## Packages
 
