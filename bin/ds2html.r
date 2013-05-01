@@ -59,6 +59,11 @@ title: Packages Documentation
 tagline: DataSHIELD Packages Documentation
 ---
 
+## Overview
+
+* [Client Packages](#client)
+* [Server Packages](#server)
+
 ', file=indexfile, append=FALSE)
 
 # Client packages
