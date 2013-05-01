@@ -14,10 +14,12 @@ Installation command:
 	o<-opal.login(...)
 	dsadmin.install_package(o, 'dsteststats')
 
-Description:
-
-[DESCRIPTION](dsteststats/DESCRIPTION)
-
 Functions:
 
+
 * [t.test](t.test.html) Performs one and two sample t-tests
+
+Sources:
+
+* [DESCRIPTION](https://raw.github.com/datashield/dsteststats/1.0/DESCRIPTION)
+* [dsteststats 1.0](https://github.com/datashield/dsteststats/tree/1.0)
