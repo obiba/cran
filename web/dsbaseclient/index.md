@@ -22,5 +22,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/1.0/DESCRIPTION)
-* [dsbaseclient 1.0](https://github.com/datashield/dsbaseclient/tree/1.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/1.1/DESCRIPTION)
+* [dsbaseclient 1.1](https://github.com/datashield/dsbaseclient/tree/1.1)
