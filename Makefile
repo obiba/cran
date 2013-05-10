@@ -6,7 +6,10 @@ base_dir=/tmp
 cran_repo=cran.datashield.org
 
 # Update CRAN repo and documentation, will fail if CRAN repo has not changed
-all: clone src web push
+all: clone cran-src cran-web push
+
+clean:
+	rm -rf ${base_dir}/${cran_repo}
 
 # Clone DataSHIELD's CRAN
 clone:
@@ -17,7 +20,7 @@ clone:
 	git checkout gh-pages
 
 # Mirror OBiBa's CRAN, will fail if nothing has changed
-src:
+cran-src:
 	cd ${base_dir} && \
 	rm -rf cran.obiba.org && \
 	wget -R *html -np -m http://cran.obiba.org/src/contrib/ && \
@@ -30,7 +33,7 @@ src:
 	git commit -m "mirror from cran.obiba.org"
 
 # Generate packages documentation in web directory
-web:
+cran-web:
 	cd ${base_dir}/${cran_repo} && \
 	git rm -rf web && \
 	./bin/ds2html.r && \
