@@ -1,14 +1,3 @@
-Package: datashield
-Version: 1.0
-Depends: dsbase, dsmodelling, dsteststats
-License: GPL-3
-Title: Datashield meta-package (server side)
-Description: This package installs as dependencies all other DataSHIELD
-        packages for server side.
-Author: <datashield@obiba.org>
-NeedsCompilation: no
-MD5sum: e822e06dc354a65eaef5e7ad08f537e3
-
 Package: datashieldclient
 Version: 1.0
 Depends: opal, fields, spam, dsbaseclient, dsmodellingclient,
@@ -19,15 +8,15 @@ Description: This package installs as dependencies all other DataSHIELD
         packages for client side.
 Author: <datashield@obiba.org>
 NeedsCompilation: no
-MD5sum: e991c4b0aa2274401dbb749b4415c69b
+MD5sum: b6703a1d3c4555b6dab99a96c12b8b93
 
 Package: dsbase
-Version: 1.0
+Version: 1.1
 License: GPL-3
 Title: Base DataSHIELD methods (server)
 Description: Base DataSHIELD methods (server)
 Author: <datashield@obiba.org>
-AggregateMethods: length=base::length, matrix=base::matrix, summary
+AggregateMethods: length=base::length, matrix=base::matrix, summary,
         colnames=base::colnames, mean, var, histogram.1,
         contour.plot.1, table.2d
 AssignMethods: log=base::log, exp=base::exp, sum, product,
@@ -36,16 +25,16 @@ AssignMethods: log=base::log, exp=base::exp, sum, product,
         complete.cases=stats::complete.cases, cbind=base::cbind,
         data.frame=base::data.frame, as.list=base::as.list
 NeedsCompilation: no
-MD5sum: b286d61157712e258305fe228f0448c1
+MD5sum: 323b0623a21b174aae6884f7ee8a941e
 
 Package: dsbaseclient
-Version: 1.0
+Version: 1.1
 Depends: opal, fields, spam
 License: GPL-3
 Title: Base DataSHIELD methods (client)
 Author: <datashield@obiba.org>
 NeedsCompilation: no
-MD5sum: 9de68cb10ec5a93f8e474a0d6b9fd664
+MD5sum: 48aab9ea358f7e5f73530660afe5ec16
 
 Package: dsmodelling
 Version: 1.0
@@ -58,18 +47,7 @@ Author: <datashield@obiba.org>
 AggregateMethods: glm.ds
 AssignMethods: c=base::c
 NeedsCompilation: no
-MD5sum: a8eb46950ad9adacb62afe93d32454eb
-
-Package: dsmodellingclient
-Version: 1.0
-Depends: opal
-License: GPL-3
-Title: Datashield package for regression analyses (Client side)
-Description: This package contains functions to carry out statistical
-        various type of regression analyses.
-Author: <datashield@obiba.org>
-NeedsCompilation: no
-MD5sum: 3e7c333910307cdf8d5b87d0e56d1ff3
+MD5sum: 6178fa981cd308ada27fc4b3bae8c7f7
 
 Package: dsteststats
 Version: 1.0
@@ -80,7 +58,7 @@ Description: This package contains functions to carry out statistical
 Author: <datashield@obiba.org>
 AggregateMethods: t.test
 NeedsCompilation: no
-MD5sum: ec6c6d022cc7f76eef66dc79aa243923
+MD5sum: 28000e910a38eaef310d310e300ea5f9
 
 Package: dsteststatsclient
 Version: 1.0
@@ -91,7 +69,7 @@ Description: This package contains functions to carry out statistical
         various statistical tests.
 Author: <datashield@obiba.org>
 NeedsCompilation: no
-MD5sum: 3dd12e4ec8442ba3a19802c14f432981
+MD5sum: 13063c4678922986cd305a81d247cfc1
 
 Package: opal
 Version: 1.14
@@ -110,7 +88,7 @@ Description: Data integration Web application for biobanks by OBiBa.
 Author: OBiBa <info@obiba.org>
 URL: http://www.obiba.org
 NeedsCompilation: no
-MD5sum: 6b99a661236fc68037a3dfa5a359b993
+MD5sum: 91a9898ba1a89517f3a32694d492edcf
 
 Package: opaladmin
 Version: 1.14
@@ -122,5 +100,5 @@ Description: R toolbox to configure the R server behind Opal.
 Author: OBiBa <info@obiba.org>
 URL: http://www.obiba.org
 NeedsCompilation: no
-MD5sum: c512d9ca471289fdae8716aa96da0d0d
+MD5sum: b271eb911d7576ac9a815cd9505e540e
 
