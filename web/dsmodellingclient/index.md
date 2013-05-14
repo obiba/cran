@@ -19,5 +19,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsmodellingclient/1.0/DESCRIPTION)
-* [dsmodellingclient 1.0](https://github.com/datashield/dsmodellingclient/tree/1.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsmodellingclient/1.1/DESCRIPTION)
+* [dsmodellingclient 1.1](https://github.com/datashield/dsmodellingclient/tree/1.1)
