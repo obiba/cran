@@ -1,3 +1,14 @@
+Package: datashield
+Version: 1.0
+Depends: dsbase, dsmodelling, dsteststats
+License: GPL-3
+Title: Datashield meta-package (server side)
+Description: This package installs as dependencies all other DataSHIELD
+        packages for server side.
+Author: <datashield@obiba.org>
+NeedsCompilation: no
+MD5sum: e822e06dc354a65eaef5e7ad08f537e3
+
 Package: datashieldclient
 Version: 1.0
 Depends: opal, fields, spam, dsbaseclient, dsmodellingclient,
@@ -48,6 +59,17 @@ AggregateMethods: glm.ds
 AssignMethods: c=base::c
 NeedsCompilation: no
 MD5sum: 6178fa981cd308ada27fc4b3bae8c7f7
+
+Package: dsmodellingclient
+Version: 1.0
+Depends: opal
+License: GPL-3
+Title: Datashield package for regression analyses (Client side)
+Description: This package contains functions to carry out statistical
+        various type of regression analyses.
+Author: <datashield@obiba.org>
+NeedsCompilation: no
+MD5sum: 3e7c333910307cdf8d5b87d0e56d1ff3
 
 Package: dsteststats
 Version: 1.0
