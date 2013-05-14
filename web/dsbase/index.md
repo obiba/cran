@@ -29,5 +29,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbase/1.1/DESCRIPTION)
-* [dsbase 1.1](https://github.com/datashield/dsbase/tree/1.1)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbase/1.2/DESCRIPTION)
+* [dsbase 1.2](https://github.com/datashield/dsbase/tree/1.2)

@@ -31,8 +31,8 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/1.1/DESCRIPTION)
-* [dsbaseclient 1.1](https://github.com/datashield/dsbaseclient/tree/1.1)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/1.2/DESCRIPTION)
+* [dsbaseclient 1.2](https://github.com/datashield/dsbaseclient/tree/1.2)
 
 
 ### dsmodellingclient
@@ -49,8 +49,8 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsmodellingclient/1.0/DESCRIPTION)
-* [dsmodellingclient 1.0](https://github.com/datashield/dsmodellingclient/tree/1.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsmodellingclient/1.1/DESCRIPTION)
+* [dsmodellingclient 1.1](https://github.com/datashield/dsmodellingclient/tree/1.1)
 
 
 ### dsteststatsclient
@@ -99,8 +99,8 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbase/1.1/DESCRIPTION)
-* [dsbase 1.1](https://github.com/datashield/dsbase/tree/1.1)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbase/1.2/DESCRIPTION)
+* [dsbase 1.2](https://github.com/datashield/dsbase/tree/1.2)
 
 
 ### dsmodelling
@@ -119,8 +119,8 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsmodelling/1.0/DESCRIPTION)
-* [dsmodelling 1.0](https://github.com/datashield/dsmodelling/tree/1.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsmodelling/1.1/DESCRIPTION)
+* [dsmodelling 1.1](https://github.com/datashield/dsmodelling/tree/1.1)
 
 
 ### dsteststats
