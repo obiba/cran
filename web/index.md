@@ -19,7 +19,7 @@ tagline: DataSHIELD Packages Documentation
 Installation command:
 
 	# Install dsbaseclient package (client side)
-	install.packages('dsbaseclient', repos=c(getOption('repos'), 'http://datashield.github.io/cran'), dependencies=TRUE)
+	install.packages('dsbaseclient', repos=c(getOption('repos'), 'http://cran.datashield.org'), dependencies=TRUE)
 
 Functions:
 
@@ -40,7 +40,7 @@ Sources:
 Installation command:
 
 	# Install dsmodellingclient package (client side)
-	install.packages('dsmodellingclient', repos=c(getOption('repos'), 'http://datashield.github.io/cran'), dependencies=TRUE)
+	install.packages('dsmodellingclient', repos=c(getOption('repos'), 'http://cran.datashield.org'), dependencies=TRUE)
 
 Functions:
 
@@ -58,7 +58,7 @@ Sources:
 Installation command:
 
 	# Install dsteststatsclient package (client side)
-	install.packages('dsteststatsclient', repos=c(getOption('repos'), 'http://datashield.github.io/cran'), dependencies=TRUE)
+	install.packages('dsteststatsclient', repos=c(getOption('repos'), 'http://cran.datashield.org'), dependencies=TRUE)
 
 Functions:
 
