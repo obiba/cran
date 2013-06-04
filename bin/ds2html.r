@@ -99,7 +99,7 @@ tagline: DataSHIELD Packages Documentation
 # Client packages
 cat('\n\n<a name="client"> </a>\n## Client Packages', file=indexfile, append=TRUE)
 pkg.cmd <- '\t# Install @pkg@ package (client side)
-\tinstall.packages(\'@pkg@\', repos=c(getOption(\'repos\'), \'http://datashield.github.io/cran\'), dependencies=TRUE)'
+\tinstall.packages(\'@pkg@\', repos=c(getOption(\'repos\'), \'http://cran.datashield.org\'), dependencies=TRUE)'
 pkgs2html(list('dsbaseclient','dsmodellingclient','dsteststatsclient'), pkg.cmd, out)
 
 # Server packages
