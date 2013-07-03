@@ -10,7 +10,7 @@ tagline: dsbaseclient Package Documentation
 Installation command:
 
 	# Install dsbaseclient package (client side)
-	install.packages('dsbaseclient', repos=c(getOption('repos'), 'http://datashield.github.io/cran'), dependencies=TRUE)
+	install.packages('dsbaseclient', repos=c(getOption('repos'), 'http://cran.datashield.org'), dependencies=TRUE)
 
 Functions:
 
