@@ -100,7 +100,7 @@ tagline: DataSHIELD Packages Documentation
 cat('\n\n<a name="client"> </a>\n## Client Packages', file=indexfile, append=TRUE)
 pkg.cmd <- '\t# Install @pkg@ package (client side)
 \tinstall.packages(\'@pkg@\', repos=c(getOption(\'repos\'), \'http://cran.datashield.org\'), dependencies=TRUE)'
-pkgs2html(list('dsbaseclient','dsmodellingclient','dsteststatsclient'), pkg.cmd, out)
+pkgs2html(list('dsbaseclient','dsmodellingclient'), pkg.cmd, out)
 
 # Server packages
 cat('\n\n<a name="server"> </a>\n## Server Packages', file=indexfile, append=TRUE)
@@ -108,4 +108,4 @@ pkg.cmd <- '\t# Install @pkg@ package (server side)
 \tlibrary(opaladmin)
 \to<-opal.login(...)
 \tdsadmin.install_package(o, \'@pkg@\')'
-pkgs2html(list('dsbase','dsmodelling','dsteststats'), pkg.cmd, out)
+pkgs2html(list('dsbase','dsmodelling'), pkg.cmd, out)
