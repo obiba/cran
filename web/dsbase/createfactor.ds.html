@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Generates a factor variable</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../../assets/R.css">
+</head><body>
+
+<table width="100%" summary="page for createfactor.ds {dsbase}"><tr><td>createfactor.ds {dsbase}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>Generates a factor variable</h2>
+
+<h3>Description</h3>
+
+<p>The functions uses the input factor and generates a new
+factor with additional levels.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+  createfactor.ds(xvect = NULL, addLevels = NULL)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>xvect</code></td>
+<td>
+<p>a numerical or character vector</p>
+</td></tr>
+<tr valign="top"><td><code>addLevels</code></td>
+<td>
+<p>the additional levels to add to the
+input factor</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a factor vector that has its original levels plus the
+added levels
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Gaye, A.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Not run: 
+# load the login data
+data(logindata)
+
+# login and assign specific variable(s)
+library(opal)
+myvar &lt;- list("GENDER")
+opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
+
+# generate a factor vector using the variable 'GENDER'
+datashield.assign(opals, "sex", quote(createfactor.ds(D$GENDER)))
+
+# display the number of observation in each vector
+datashield.aggregate(opals, quote(length(sex)))
+ 
+## End(Not run)
+</pre>
+
+<hr><div align="center">[Package <em>dsbase</em> version 2.0 ]</div>
+</body></html>

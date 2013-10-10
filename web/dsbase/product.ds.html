@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Computes a product</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../../assets/R.css">
+</head><body>
+
+<table width="100%" summary="page for product.ds {dsbase}"><tr><td>product.ds {dsbase}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>Computes a product</h2>
+
+<h3>Description</h3>
+
+<p>Computes a product
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+  product.ds(a = 1, b = 1, c = 1, d = 1, e = 1)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>a</code></td>
+<td>
+<p>a numerical</p>
+</td></tr>
+<tr valign="top"><td><code>b</code></td>
+<td>
+<p>a numerical</p>
+</td></tr>
+<tr valign="top"><td><code>c</code></td>
+<td>
+<p>a numerical</p>
+</td></tr>
+<tr valign="top"><td><code>d</code></td>
+<td>
+<p>a numerical</p>
+</td></tr>
+<tr valign="top"><td><code>e</code></td>
+<td>
+<p>a numerical</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a numerical
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Burton, P.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Not run: 
+# load the file that contains the login details
+data(logindata)
+
+# login and assign the required variables to R
+library(opal)
+myvar &lt;- list("LAB_TSC","LAB_HDL")
+opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
+
+# compute the of 'LAB_TSC' by 'LAB_HDL' and assign it to 'P'
+datashield.assign(opals, "P", quote(product.ds(D$LAB_TSC, D$LAB_HDL)))
+
+## End(Not run)
+</pre>
+
+<hr><div align="center">[Package <em>dsbase</em> version 2.0 ]</div>
+</body></html>

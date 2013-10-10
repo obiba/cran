@@ -15,9 +15,11 @@ Installation command:
 Functions:
 
 
-* [datashield.glm](datashield.glm.html) Runs a combined GLM analysis of non-pooled data
+* [ds.glm](ds.glm.html) Runs a combined GLM analysis of non-pooled data
+* [glmhelper1](glmhelper1.html) Extracts the elements of an expression of type call
+* [glmhelper2](glmhelper2.html) Extracts object variables from a regression formula
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsmodellingclient/1.1/DESCRIPTION)
-* [dsmodellingclient 1.1](https://github.com/datashield/dsmodellingclient/tree/1.1)
+* [DESCRIPTION](https://raw.github.com/datashield/dsmodellingclient/2.0/DESCRIPTION)
+* [dsmodellingclient 2.0](https://github.com/datashield/dsmodellingclient/tree/2.0)

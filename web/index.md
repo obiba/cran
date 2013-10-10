@@ -24,15 +24,31 @@ Installation command:
 Functions:
 
 
-* [datashield.contour.plot](dsbaseclient/datashield.contour.plot.html) Creates a contour plot
-* [datashield.heatmap.plot](dsbaseclient/datashield.heatmap.plot.html) Plots a heatmap
-* [datashield.histogram](dsbaseclient/datashield.histogram.html) Plots a histogram
-* [datashield.table.2d](dsbaseclient/datashield.table.2d.html) Creates a 2D table
+* [ds.checkvar](dsbaseclient/ds.checkvar.html) Checks if all variables do exist and are not empty
+* [ds.contourplot](dsbaseclient/ds.contourplot.html) Creates a contour plot
+* [ds.createfactor](dsbaseclient/ds.createfactor.html) create and combines factor vectors.
+* [ds.heatmapplot](dsbaseclient/ds.heatmapplot.html) Generates a heatmap plot for merged datasets
+* [ds.histogram](dsbaseclient/ds.histogram.html) Plots a histogram
+* [ds.isNA](dsbaseclient/ds.isNA.html) Checks if a vector is empty
+* [ds.isPresent](dsbaseclient/ds.isPresent.html) Checks if a vector is in a table assigned to R
+* [ds.mean](dsbaseclient/ds.mean.html) Calculates a mean of a given vector (for several studies separately or combined)
+* [ds.quantilemean](dsbaseclient/ds.quantilemean.html) Plots a histogram
+* [ds.t.test](dsbaseclient/ds.t.test.html) Runs a student's t-test on horizontally partitioned data
+* [ds.table1d](dsbaseclient/ds.table1d.html) Creates 1-dimensional contingency tables - potentially disclosive data are suppressed
+* [ds.table2d](dsbaseclient/ds.table2d.html) Creates 2-dimensional contingency tables - potentially disclosive data are suppressed
+* [table1dhelper1](dsbaseclient/table1dhelper1.html) Checks validity of tabulated factor variable
+* [table1dhelper2](dsbaseclient/table1dhelper2.html) Combines output of server side function 'table1d.ds'
+* [table1dhelper3](dsbaseclient/table1dhelper3.html) Generates percents from counts returned by the function 'table1d.ds'
+* [table1dhelper4](dsbaseclient/table1dhelper4.html) Finalizes the output of the function 'table1d.ds'
+* [table2dhelper1](dsbaseclient/table2dhelper1.html) Checks validity of 2D-tables
+* [table2dhelper2](dsbaseclient/table2dhelper2.html) Generates a valid array
+* [table2dhelper3](dsbaseclient/table2dhelper3.html) Generates percents from counts returned by the function 'table2d.ds'
+* [table2dhelper4](dsbaseclient/table2dhelper4.html) Finalizes the output of the function 'table2d.ds'
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/1.3/DESCRIPTION)
-* [dsbaseclient 1.3](https://github.com/datashield/dsbaseclient/tree/1.3)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/2.0/DESCRIPTION)
+* [dsbaseclient 2.0](https://github.com/datashield/dsbaseclient/tree/2.0)
 
 
 ### dsmodellingclient
@@ -45,31 +61,14 @@ Installation command:
 Functions:
 
 
-* [datashield.glm](dsmodellingclient/datashield.glm.html) Runs a combined GLM analysis of non-pooled data
+* [ds.glm](dsmodellingclient/ds.glm.html) Runs a combined GLM analysis of non-pooled data
+* [glmhelper1](dsmodellingclient/glmhelper1.html) Extracts the elements of an expression of type call
+* [glmhelper2](dsmodellingclient/glmhelper2.html) Extracts object variables from a regression formula
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsmodellingclient/1.1/DESCRIPTION)
-* [dsmodellingclient 1.1](https://github.com/datashield/dsmodellingclient/tree/1.1)
-
-
-### dsteststatsclient
-
-Installation command:
-
-	# Install dsteststatsclient package (client side)
-	install.packages('dsteststatsclient', repos=c(getOption('repos'), 'http://cran.datashield.org'), dependencies=TRUE)
-
-Functions:
-
-
-* [datashield.chisq.test](dsteststatsclient/datashield.chisq.test.html) Runs Pearson's Chi-squared Test on non-pooled data
-* [datashield.t.test](dsteststatsclient/datashield.t.test.html) Runs a student's t-test on non-pooled data
-
-Sources:
-
-* [DESCRIPTION](https://raw.github.com/datashield/dsteststatsclient/1.0/DESCRIPTION)
-* [dsteststatsclient 1.0](https://github.com/datashield/dsteststatsclient/tree/1.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsmodellingclient/2.0/DESCRIPTION)
+* [dsmodellingclient 2.0](https://github.com/datashield/dsmodellingclient/tree/2.0)
 
 
 <a name="server"> </a>
@@ -87,35 +86,23 @@ Installation command:
 Functions:
 
 
-* [N.a.by.b](dsbase/N.a.by.b.html) Counts number of observations by category
-* [contour.plot.1](dsbase/contour.plot.1.html) Computes a grid-density object required to generate a contour plot.
-* [density.grid.ag](dsbase/density.grid.ag.html) Generate a density grid
-* [factor.create.3](dsbase/factor.create.3.html) Generates a factor variable
-* [histogram.1](dsbase/histogram.1.html) Computes a histogram of the given data values without plotting.
-* [mean](dsbase/mean.html) Computes the mean statistic for vectors with more than 4 entries
-* [mean.a.by.b](dsbase/mean.a.by.b.html) Computes the mean of a variable by another variable
-* [odds.ratio](dsbase/odds.ratio.html) Calculates odds ratio and its 95 percent confidence interval
-* [order.frame](dsbase/order.frame.html) Orders a dataframme by a specific column
-* [product](dsbase/product.html) Computes the product.
-* [quantile.mean.ds](dsbase/quantile.mean.ds.html) Provides quantiles and mean information without maximum and minimum
-* [replace.9.na](dsbase/replace.9.na.html) Replaces entries with value '9' by missing data
-* [replace.99.na](dsbase/replace.99.na.html) Replaces entries with value '99' by missing data
-* [replace.999.na](dsbase/replace.999.na.html) Replaces entries with value '999' by missing data
-* [replace.9999.na](dsbase/replace.9999.na.html) Replaces entries with value '9999' by missing data
-* [replace.na.999](dsbase/replace.na.999.html) Replaces missing values by '999'
-* [replace.not.obese.na](dsbase/replace.not.obese.na.html) Replaces missing values by '999'
-* [rm.col.dataframe](dsbase/rm.col.dataframe.html) Deletes a column from a dataframe
-* [sum](dsbase/sum.html) Computes the sum.
-* [summary](dsbase/summary.html) Summary with length constraint.
-* [table.1d](dsbase/table.1d.html) Generates 'valid' 1-dimensional table for all sources
-* [table.2d](dsbase/table.2d.html) Generates a 2D table
-* [var](dsbase/var.html) Variance of a vector or a matrix with NA values stripped before computation proceeds.
-* [var.a.by.b](dsbase/var.a.by.b.html) Computes the variance of a variable by another variable
+* [checkfactor.ds](dsbase/checkfactor.ds.html) Verifies that a factor vector is valid
+* [createfactor.ds](dsbase/createfactor.ds.html) Generates a factor variable
+* [densitygrid.ds](dsbase/densitygrid.ds.html) Generates a density grid with or without a priori defined limits
+* [histogram.ds](dsbase/histogram.ds.html) Computes a histogram of the given data values without plotting.
+* [isNA.ds](dsbase/isNA.ds.html) Checks if a vector is empty
+* [isValid.ds](dsbase/isValid.ds.html) Checks if an input is valid
+* [mean.ds](dsbase/mean.ds.html) Calculates statistical mean of vector with more than 4 entries
+* [product.ds](dsbase/product.ds.html) Computes a product
+* [quantilemean.ds](dsbase/quantilemean.ds.html) Generates quantiles and mean information without maximum and minimum
+* [range.ds](dsbase/range.ds.html) returns the minimum and maximum of a numeric vector
+* [table1d.ds](dsbase/table1d.ds.html) Creates 1-dimensional contingency tables - potentially disclosive data are suppressed
+* [table2d.ds](dsbase/table2d.ds.html) Creates 2-dimensional contingency tables - potentially disclosive data are suppressed
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbase/1.3/DESCRIPTION)
-* [dsbase 1.3](https://github.com/datashield/dsbase/tree/1.3)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbase/2.0/DESCRIPTION)
+* [dsbase 2.0](https://github.com/datashield/dsbase/tree/2.0)
 
 
 ### dsmodelling
@@ -134,25 +121,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsmodelling/1.1/DESCRIPTION)
-* [dsmodelling 1.1](https://github.com/datashield/dsmodelling/tree/1.1)
-
-
-### dsteststats
-
-Installation command:
-
-	# Install dsteststats package (server side)
-	library(opaladmin)
-	o<-opal.login(...)
-	dsadmin.install_package(o, 'dsteststats')
-
-Functions:
-
-
-* [t.test](dsteststats/t.test.html) Performs one and two sample t-tests
-
-Sources:
-
-* [DESCRIPTION](https://raw.github.com/datashield/dsteststats/1.0/DESCRIPTION)
-* [dsteststats 1.0](https://github.com/datashield/dsteststats/tree/1.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsmodelling/2.0/DESCRIPTION)
+* [dsmodelling 2.0](https://github.com/datashield/dsmodelling/tree/2.0)

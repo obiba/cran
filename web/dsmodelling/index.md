@@ -21,5 +21,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsmodelling/1.1/DESCRIPTION)
-* [dsmodelling 1.1](https://github.com/datashield/dsmodelling/tree/1.1)
+* [DESCRIPTION](https://raw.github.com/datashield/dsmodelling/2.0/DESCRIPTION)
+* [dsmodelling 2.0](https://github.com/datashield/dsmodelling/tree/2.0)

@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: create and combines factor vectors.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../../assets/R.css">
+</head><body>
+
+<table width="100%" summary="page for ds.createfactor {dsbaseclient}"><tr><td>ds.createfactor {dsbaseclient}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>create and combines factor vectors.</h2>
+
+<h3>Description</h3>
+
+<p>This function calls a server function that generates
+<code>factor</code> vectors. If the generated factor is not
+valid (i.e. if any of the categories has a count &gt; 0 and
+&lt; 5) its values are replaced by missing values.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+  ds.createfactor(datasources = NULL, xvect = NULL,
+    newvarname = NULL)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>datasources</code></td>
+<td>
+<p>a list of opal object(s) obtained
+after login in to opal servers; these objects hold also
+the data assign to R, as <code>dataframe</code>, from opal
+datasources.</p>
+</td></tr>
+<tr valign="top"><td><code>xvect</code></td>
+<td>
+<p>a numeric of character vector.</p>
+</td></tr>
+<tr valign="top"><td><code>newvarname</code></td>
+<td>
+<p>name of the variable to assigned the
+created factor to.</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a list of <code>factor</code> vectors or one factor vector.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Gaye, A.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+{
+
+# load the login data
+data(logindata)
+
+# login and assign specific variable(s)
+myvar &lt;- list("GENDER")
+opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
+
+# create a factor vector of the variable 'GENDER', one for each study
+ds.createfactor(datasources=opals, "sex", xvect=quote(D$GENDER))
+}
+</pre>
+
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.0 ]</div>
+</body></html>
