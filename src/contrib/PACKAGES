@@ -7,7 +7,7 @@ Description: This package installs as dependencies all other DataSHIELD
         packages for server side.
 Author: <datashield@obiba.org>
 NeedsCompilation: no
-MD5sum: 91fb8590e3737bd3f51805c744ff45b3
+MD5sum: 798cfac79e5bc4f1240d3f93a04360ac
 
 Package: datashieldclient
 Version: 2.0
@@ -18,33 +18,36 @@ Description: This package installs as dependencies all other DataSHIELD
         packages for client side.
 Author: <datashield@obiba.org>
 NeedsCompilation: no
-MD5sum: 896d798bc8455f245c83fe1ac44928ad
+MD5sum: bf4f8e4b6d526a26985274a74a0c5ebe
 
 Package: dsbase
-Version: 2.0
+Version: 2.1
 License: GPL-3
 Title: Base DataSHIELD methods (server)
 Description: Base DataSHIELD methods (server)
 Author: <datashield@obiba.org>
 AggregateMethods: length=base::length, colnames=base::colnames,
         histogram.ds, dim=base::dim, quantilemean.ds, mean.ds,
-        checkfactor.ds, isNA.ds, range.ds, c=base::c,
-        t.test=stats::t.test, var=stats::var, is.null=base::is.null,
-        NROW=base::NROW, densitygrid.ds, summary.ds, table1d.ds,
-        table2d.ds, mean.ds, isValid.ds, class=base::class,
-        levels=base::levels, is.factor=base::is.factor
+        checkfactor.ds, isNA.ds, range.ds, as.numeric=base::as.numeric,
+        as.character=base::as.character, t.test=stats::t.test,
+        var=stats::var, is.null=base::is.null, NROW=base::NROW,
+        densitygrid.ds, summary.ds, table1d.ds, table2d.ds, mean.ds,
+        isValid.ds, class=base::class, levels=base::levels,
+        is.factor=base::is.factor, var.ds, names.ds
 AssignMethods: log=base::log, cbind=base::cbind, exp=base::exp,
         as.list=base::as.list, as.numeric=base::as.numeric,
-        as.matrix=base::as.matrix,
+        as.character=base::as.character, as.matrix=base::as.matrix,
         complete.cases=stats::complete.cases,
         data.frame=base::data.frame, createfactor.ds,
         subset=base::subset, product.ds, sum=base::sum,
-        as.null=base::as.null
+        as.null=base::as.null, subsetdata.ds, subsetvar.ds,
+        list=base::list, append2df.ds, rowcolCalc.ds, nais1.ds,
+        is.na=base::is.na, rowcolDel.ds
 NeedsCompilation: no
-MD5sum: 8575ec22f0d573e09c0dd2bb534315d5
+MD5sum: 48eaf7b6dea34ea73e73d8b039622064
 
 Package: dsbaseclient
-Version: 2.0
+Version: 2.1
 Depends: opal, opaladmin, fields
 License: GPL-3
 Title: Base DataSHIELD methods (client)
@@ -52,7 +55,7 @@ Description: Package contains function called by client to carry out
         basic statistical analyses
 Author: <datashield@obiba.org>
 NeedsCompilation: no
-MD5sum: c538aa9aed80fe53e46c474713e3351a
+MD5sum: 728ff35fda121abf99bfe1385169737e
 
 Package: dsmodelling
 Version: 2.0
@@ -62,7 +65,7 @@ Description: This package contains functions for statistical modelling.
 Author: <datashield@obiba.org>
 AggregateMethods: glm.ds
 NeedsCompilation: no
-MD5sum: 34695fc9064b8e472a4246ca9492c57d
+MD5sum: 1d51342552d24698d809a5d4244fd91d
 
 Package: dsmodellingclient
 Version: 2.0
@@ -72,7 +75,7 @@ Title: Datashield package for statistical modelling (Client side)
 Description: This package contains functions for statistical modelling
 Author: <datashield@obiba.org>
 NeedsCompilation: no
-MD5sum: 6147e54d6eca92e8ed8f1cb83d7487af
+MD5sum: e1ca847d03acf0f65251e9ebf9dccc4f
 
 Package: opal
 Version: 1.16
@@ -91,7 +94,7 @@ Description: Data integration Web application for biobanks by OBiBa.
 Author: OBiBa <info@obiba.org>
 URL: http://www.obiba.org
 NeedsCompilation: no
-MD5sum: 68564c60d9c36b2c2dee65aa86d608b8
+MD5sum: 5a7ef7f022a2bdde63fd541384d5f234
 
 Package: opaladmin
 Version: 1.16
@@ -103,5 +106,5 @@ Description: R toolbox to configure the R server behind Opal.
 Author: OBiBa <info@obiba.org>
 URL: http://www.obiba.org
 NeedsCompilation: no
-MD5sum: aa26c2386b4636b5d9c286dbd93a39d2
+MD5sum: a6a2926e9925e7bdbe113c4c105296d4
 
