@@ -1,24 +1,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><title>R: Computes statistical mean of vector with more than 4 entries</title>
+<html><head><title>R: Computes the variance of a numeric vector</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="../../assets/R.css">
 </head><body>
 
-<table width="100%" summary="page for mean.ds {dsbase}"><tr><td>mean.ds {dsbase}</td><td align="right">R Documentation</td></tr></table>
+<table width="100%" summary="page for var.ds {dsbase}"><tr><td>var.ds {dsbase}</td><td align="right">R Documentation</td></tr></table>
 
-<h2>Computes statistical mean of vector with more than 4 entries</h2>
+<h2>Computes the variance of a numeric vector</h2>
 
 <h3>Description</h3>
 
-<p>Computes statistical mean of vector with more than 4
-entries
+<p>Computes the variance of a numeric vector
 </p>
 
 
 <h3>Usage</h3>
 
 <pre>
-  mean.ds(xvect)
+  var.ds(xvect)
 </pre>
 
 
@@ -27,14 +26,14 @@ entries
 <table summary="R argblock">
 <tr valign="top"><td><code>xvect</code></td>
 <td>
-<p>a vector</p>
+<p>a numeric vector</p>
 </td></tr>
 </table>
 
 
 <h3>Value</h3>
 
-<p>a numeric, the statistical mean
+<p>a numeric, the variance
 </p>
 
 
@@ -54,7 +53,7 @@ data(logindata)
 library(opal)
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
-# compute the statistical mean
+# compute the variance
 stat.mean &lt;- datashield.aggregate(opals, quote(mean.ds(D$LAB_TSC)))
 
 ## End(Not run)

@@ -11,14 +11,14 @@
 <h3>Description</h3>
 
 <p>The functions uses the input factor and generates a new
-factor with additional levels.
+factor with new levels.
 </p>
 
 
 <h3>Usage</h3>
 
 <pre>
-  createfactor.ds(xvect = NULL, addLevels = NULL)
+  createfactor.ds(xvect = NULL, categories = NULL)
 </pre>
 
 
@@ -27,20 +27,19 @@ factor with additional levels.
 <table summary="R argblock">
 <tr valign="top"><td><code>xvect</code></td>
 <td>
-<p>a numerical or character vector</p>
+<p>a factor vector</p>
 </td></tr>
-<tr valign="top"><td><code>addLevels</code></td>
+<tr valign="top"><td><code>categories</code></td>
 <td>
-<p>the additional levels to add to the
-input factor</p>
+<p>the levels of the factor to generate</p>
 </td></tr>
 </table>
 
 
 <h3>Value</h3>
 
-<p>a factor vector that has its original levels plus the
-added levels
+<p>a factor vector that has the levels of the original
+vector and some additional levels
 </p>
 
 
@@ -59,17 +58,19 @@ data(logindata)
 
 # login and assign specific variable(s)
 library(opal)
-myvar &lt;- list("GENDER")
+myvar &lt;- list("PM_BMI_CATEGORICAL")
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
-# generate a factor vector using the variable 'GENDER'
-datashield.assign(opals, "sex", quote(createfactor.ds(D$GENDER)))
+# get the levels of variable PM_BMI_CATEGORICAL in study1
+current.levels &lt;- datashield.aggregate(opals[1], quote(levels(D$PM_BMI_CATEGORICAL)))
 
-# display the number of observation in each vector
-datashield.aggregate(opals, quote(length(sex)))
+#' generate a new factor vector which has an additonal level '4'
+call.object &lt;- call("createfactor.ds", quote(D$PM_BMI_CATEGORICAL), as.list(current.levels[[1]], "4"))
+datashield.assign(opals, "bmi_f", call.object)
+
  
 ## End(Not run)
 </pre>
 
-<hr><div align="center">[Package <em>dsbase</em> version 2.0 ]</div>
+<hr><div align="center">[Package <em>dsbase</em> version 2.1 ]</div>
 </body></html>

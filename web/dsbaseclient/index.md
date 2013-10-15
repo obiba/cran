@@ -17,13 +17,14 @@ Functions:
 
 * [ds.checkvar](ds.checkvar.html) Checks if all variables do exist and are not empty
 * [ds.contourplot](ds.contourplot.html) Creates a contour plot
-* [ds.createfactor](ds.createfactor.html) create and combines factor vectors.
+* [ds.createfactor](ds.createfactor.html) Ensures factors have same classes across studies
 * [ds.heatmapplot](ds.heatmapplot.html) Generates a heatmap plot for merged datasets
 * [ds.histogram](ds.histogram.html) Plots a histogram
 * [ds.isNA](ds.isNA.html) Checks if a vector is empty
 * [ds.isPresent](ds.isPresent.html) Checks if a vector is in a table assigned to R
 * [ds.mean](ds.mean.html) Calculates a mean of a given vector (for several studies separately or combined)
 * [ds.quantilemean](ds.quantilemean.html) Plots a histogram
+* [ds.summary](ds.summary.html) Generates the summary of a numeric or factor vector
 * [ds.t.test](ds.t.test.html) Runs a student's t-test on horizontally partitioned data
 * [ds.table1d](ds.table1d.html) Creates 1-dimensional contingency tables - potentially disclosive data are suppressed
 * [ds.table2d](ds.table2d.html) Creates 2-dimensional contingency tables - potentially disclosive data are suppressed
@@ -38,5 +39,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/2.0/DESCRIPTION)
-* [dsbaseclient 2.0](https://github.com/datashield/dsbaseclient/tree/2.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/2.1/DESCRIPTION)
+* [dsbaseclient 2.1](https://github.com/datashield/dsbaseclient/tree/2.1)

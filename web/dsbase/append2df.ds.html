@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Appends a column(s) to a dataframe</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../../assets/R.css">
+</head><body>
+
+<table width="100%" summary="page for append2df.ds {dsbase}"><tr><td>append2df.ds {dsbase}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>Appends a column(s) to a dataframe</h2>
+
+<h3>Description</h3>
+
+<p>Appends a column(s) to a dataframe
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+  append2df.ds(dataset, column, colname)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>dataset</code></td>
+<td>
+<p>a dataframe</p>
+</td></tr>
+<tr valign="top"><td><code>column</code></td>
+<td>
+<p>a list which contains the column/vector to
+append to the dataframe</p>
+</td></tr>
+<tr valign="top"><td><code>colname</code></td>
+<td>
+<p>a character, the name of the appended
+column</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a new dataframe is assigned to the datasources
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Gaye, A.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Not run: 
+# load the file that contains the login details
+library(opal)
+data(logindata)
+
+opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar, symbol="D")
+
+# generate a new variable (e.g. a mean centered LAB_HDL)
+# get the mean of LAB_HDL
+mean.lab_hdl &lt;- datashield.aggregate(opals, quote(mean.ds(D$LAB_HDL)))
+# center LAB_HDL for each study
+for(i in 1:length(opals)){
+  call.object &lt;- call("-", quote(D$LAB_HDL), mean.lab_hdl[[i]])
+  datashield.assign(opals[i], "lab_hdl.c", call.object)
+}
+
+# now append 'lab_hdl.c' to the initially assigned dataframe 'D'
+# and replace the initial dataframe 'D' by the new dataframe
+call.object &lt;- call("append2df.ds", quote(D), quote(lab_hdl.c), quote(as.character("lab_hdl.c")))
+datashield.assign(opals, "Dnew", call.object)
+datashield.assign(opals, "D", quote(Dnew))
+
+## End(Not run)
+</pre>
+
+<hr><div align="center">[Package <em>dsbase</em> version 2.1 ]</div>
+</body></html>
