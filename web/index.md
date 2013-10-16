@@ -101,7 +101,6 @@ Functions:
 * [quantilemean.ds](dsbase/quantilemean.ds.html) Generates quantiles and mean information without maximum and minimum
 * [range.ds](dsbase/range.ds.html) returns the minimum and maximum of a numeric vector
 * [rowcolCalc.ds](dsbase/rowcolCalc.ds.html) Computes sums and means of rows or columns of numeric arrays
-* [rowcolDel.ds](dsbase/rowcolDel.ds.html) Deletes rows or columns from a dataframe
 * [subsetdata.ds](dsbase/subsetdata.ds.html) Generates a valid subset of a dataset
 * [subsetvar.ds](dsbase/subsetvar.ds.html) Derives a valid binary variable from a continuous variable
 * [table1d.ds](dsbase/table1d.ds.html) Creates 1-dimensional contingency tables - potentially disclosive data are suppressed

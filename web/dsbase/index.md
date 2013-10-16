@@ -31,7 +31,6 @@ Functions:
 * [quantilemean.ds](quantilemean.ds.html) Generates quantiles and mean information without maximum and minimum
 * [range.ds](range.ds.html) returns the minimum and maximum of a numeric vector
 * [rowcolCalc.ds](rowcolCalc.ds.html) Computes sums and means of rows or columns of numeric arrays
-* [rowcolDel.ds](rowcolDel.ds.html) Deletes rows or columns from a dataframe
 * [subsetdata.ds](subsetdata.ds.html) Generates a valid subset of a dataset
 * [subsetvar.ds](subsetvar.ds.html) Derives a valid binary variable from a continuous variable
 * [table1d.ds](table1d.ds.html) Creates 1-dimensional contingency tables - potentially disclosive data are suppressed

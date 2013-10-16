@@ -17,7 +17,7 @@
 <h3>Usage</h3>
 
 <pre>
-  subsetdata.ds(dataset = NULL)
+  subsetdata.ds(dataset = NULL, columns = NULL)
 </pre>
 
 
@@ -28,14 +28,23 @@
 <td>
 <p>a dataframe</p>
 </td></tr>
+<tr valign="top"><td><code>columns</code></td>
+<td>
+<p>a a numeric vector that gives the subsets
+of the variables for which subsets are sougth.</p>
+</td></tr>
 </table>
 
 
 <h3>Details</h3>
 
-<p>the function takes a dataframe and generates a subsets
+<p>The function takes a dataframe and generates a subset
 dataframes for all the factor variables if that subset is
-valid. with new levels. This is done for each study.
+valid. By default a subset of the dataframe is created
+for each categorie of each factor. It is possible to
+indicate the variable for which a subset is sought by
+indicating their columns indices. The variable at the
+given indices are not factors no subsets are generated.
 </p>
 
 
@@ -62,8 +71,11 @@ data(logindata)
 myvar &lt;- list("DIS_DIAB","PM_BMI_CONTINUOUS","LAB_HDL", "GENDER")
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
-# get the subsets from the table assigned above (by default is 'D')
+# Example 1: get the subsets from the table assigned above (by default is 'D')
 datashield.assign(opals, "Subsets", quote(subsetdata.ds(D)))
+
+#' # Example 2: get the subsets from the table assigned above (by default is 'D')
+datashield.assign(opals, "Subsets", quote(subsetdata.ds(D, list(4))))
 
 ## End(Not run)
 </pre>
