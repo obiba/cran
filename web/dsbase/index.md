@@ -39,5 +39,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbase/2.1/DESCRIPTION)
-* [dsbase 2.1](https://github.com/datashield/dsbase/tree/2.1)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbase/2.2/DESCRIPTION)
+* [dsbase 2.2](https://github.com/datashield/dsbase/tree/2.2)

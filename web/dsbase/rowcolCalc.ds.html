@@ -31,9 +31,9 @@ arrays
 </td></tr>
 <tr valign="top"><td><code>operation</code></td>
 <td>
-<p>a string character that indicates the
-operation to carry out: 'rowSums', 'colSums', 'rowMeans'
-or 'colMeans'</p>
+<p>an integer that indicates the operation
+to carry out: 1 for 'rowSums', 2 for 'colSums', 3 for
+'rowMeans' or 4 for 'colMeans'</p>
 </td></tr>
 </table>
 
@@ -70,11 +70,11 @@ data(logindata)
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # generate a histogram object without plotting
-call.object &lt;-  call("rowcolCalc.ds", quote(D), as.character("rowSums"))
+call.object &lt;-  call("rowcolCalc.ds", quote(D), as.numeric(1))
 datashield.assign(opals, "rowsums", call.object)
 
 ## End(Not run)
 </pre>
 
-<hr><div align="center">[Package <em>dsbase</em> version 2.1 ]</div>
+<hr><div align="center">[Package <em>dsbase</em> version 2.2 ]</div>
 </body></html>
