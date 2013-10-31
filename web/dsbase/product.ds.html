@@ -17,32 +17,17 @@
 <h3>Usage</h3>
 
 <pre>
-  product.ds(a = 1, b = 1, c = 1, d = 1, e = 1)
+  product.ds(xlist)
 </pre>
 
 
 <h3>Arguments</h3>
 
 <table summary="R argblock">
-<tr valign="top"><td><code>a</code></td>
+<tr valign="top"><td><code>xlist</code></td>
 <td>
-<p>a numerical</p>
-</td></tr>
-<tr valign="top"><td><code>b</code></td>
-<td>
-<p>a numerical</p>
-</td></tr>
-<tr valign="top"><td><code>c</code></td>
-<td>
-<p>a numerical</p>
-</td></tr>
-<tr valign="top"><td><code>d</code></td>
-<td>
-<p>a numerical</p>
-</td></tr>
-<tr valign="top"><td><code>e</code></td>
-<td>
-<p>a numerical</p>
+<p>a list of numerical to compute a product
+for.</p>
 </td></tr>
 </table>
 
@@ -55,7 +40,7 @@
 
 <h3>Author(s)</h3>
 
-<p>Burton, P.
+<p>Gaye, A.
 </p>
 
 
@@ -64,18 +49,20 @@
 <pre>
 ## Not run: 
 # load the file that contains the login details
+library(opal)
 data(logindata)
 
 # login and assign the required variables to R
-library(opal)
 myvar &lt;- list("LAB_TSC","LAB_HDL")
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # compute the of 'LAB_TSC' by 'LAB_HDL' and assign it to 'P'
-datashield.assign(opals, "P", quote(product.ds(D$LAB_TSC, D$LAB_HDL)))
+prodinput &lt;- list(D$LAB_TSC, D$LAB_HDL)
+cally &lt;- call("product.ds", prodinput)
+datashield.assign(opals, "P", cally)
 
 ## End(Not run)
 </pre>
 
-<hr><div align="center">[Package <em>dsbase</em> version 2.2 ]</div>
+<hr><div align="center">[Package <em>dsbase</em> version 2.3 ]</div>
 </body></html>

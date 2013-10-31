@@ -26,7 +26,8 @@
 <table summary="R argblock">
 <tr valign="top"><td><code>dataset</code></td>
 <td>
-<p>a dataframe</p>
+<p>a string character, the name of the
+dataset.</p>
 </td></tr>
 <tr valign="top"><td><code>columns</code></td>
 <td>
@@ -65,6 +66,7 @@ given indices are not factors no subsets are generated.
 <pre>
 ## Not run: 
 # load the login data
+library(opal)
 data(logindata)
 
 # login and assign some variables to R
@@ -72,13 +74,13 @@ myvar &lt;- list("DIS_DIAB","PM_BMI_CONTINUOUS","LAB_HDL", "GENDER")
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # Example 1: get the subsets from the table assigned above (by default is 'D')
-datashield.assign(opals, "Subsets", quote(subsetdata.ds(D)))
+datashield.assign(opals, "Subsets", quote(subsetdata.ds("D")))
 
 #' # Example 2: get the subsets from the table assigned above (by default is 'D')
-datashield.assign(opals, "Subsets", quote(subsetdata.ds(D, list(4))))
+datashield.assign(opals, "Subsets", quote(subsetdata.ds("D", list(4))))
 
 ## End(Not run)
 </pre>
 
-<hr><div align="center">[Package <em>dsbase</em> version 2.2 ]</div>
+<hr><div align="center">[Package <em>dsbase</em> version 2.3 ]</div>
 </body></html>

@@ -18,7 +18,7 @@
 
 <pre>
   ds.glm(datasources = NULL, formula = NULL, family = NULL,
-    maxit = 10)
+    maxit = 15)
 </pre>
 
 
@@ -28,8 +28,8 @@
 <tr valign="top"><td><code>datasources</code></td>
 <td>
 <p>a list of opal object(s) obtained
-after login in to opal servers; these objects hold also
-the data assign to R, as <code>dataframe</code>, from opal
+after login to opal servers; these objects also hold the
+data assigned to R, as a <code>dataframe</code>, from opal
 datasources.</p>
 </td></tr>
 <tr valign="top"><td><code>formula</code></td>
@@ -54,7 +54,7 @@ function to use in the model</p>
 <p>It enables a parallelized analysis of individual-level
 data sitting on distinct servers by sending instructions
 to each computer requesting non-disclosing summary
-statistics. The sumaries are then combined to estimate
+statistics. The summaries are then combined to estimate
 the parameters of the model; these parameters are the
 same as those obtained if the data were 'physically'
 pooled.
@@ -83,16 +83,11 @@ tells how well the model fits
 </p>
 
 
-<h3>Author(s)</h3>
-
-<p>Burton, P.; Gaye, A.; Laflamme, P.
-</p>
-
-
 <h3>Examples</h3>
 
 <pre>
 {
+
 # load the file that contains the login details
 data(logindata)
 
@@ -114,5 +109,5 @@ mod &lt;- ds.glm(datasources=opals,formula=D$DIS_DIAB~D$PM_BMI_CONTINUOUS+D$LAB_
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsmodellingclient</em> version 2.0 ]</div>
+<hr><div align="center">[Package <em>dsmodellingclient</em> version 2.1 ]</div>
 </body></html>

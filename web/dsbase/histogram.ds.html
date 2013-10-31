@@ -10,7 +10,7 @@
 
 <h3>Description</h3>
 
-<p>this functions produces the information required to plot
+<p>This functions produces the information required to plot
 a histogram. This is done without allowing for bins
 (cells) with a count of less than 5. If a bin has a count
 &lt; 5 it is collapsed with the nearing bin; this process
@@ -21,7 +21,7 @@ iterates until all bins have count &gt;=5.
 <h3>Usage</h3>
 
 <pre>
-  histogram.ds(xvect, brks)
+  histogram.ds(xvect, min, max, seed)
 </pre>
 
 
@@ -33,10 +33,20 @@ iterates until all bins have count &gt;=5.
 <p>the numeric vector for which the histogram
 is desired.</p>
 </td></tr>
-<tr valign="top"><td><code>brks</code></td>
+<tr valign="top"><td><code>min</code></td>
 <td>
-<p>a numerical vector giving the breakpoints
-between histogram cells</p>
+<p>a numeric, the lower limit of the
+distribution.</p>
+</td></tr>
+<tr valign="top"><td><code>max</code></td>
+<td>
+<p>a numeric, the upper limit of the
+distribution.</p>
+</td></tr>
+<tr valign="top"><td><code>seed</code></td>
+<td>
+<p>an integer, the value to set the seed at when
+generating the break points.</p>
 </td></tr>
 </table>
 
@@ -59,16 +69,28 @@ number of invalid cells
 <pre>
 ## Not run: 
 # load the file that contains the login details
+library(opal)
 data(logindata)
 
-library(opal)
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
-# generate a histogram object without plotting
-hist.object &lt;- datashield.aggregate(opals, quote(histogram.ds(D$LAB_TSC)))
+# get the range of the input vector
+cally &lt;- call("range.ds", quote(D$LAB_TSC))
+ranges &lt;- datashield.aggregate(opals, cally)
+minrs &lt;- c()
+maxrs &lt;- c()
+for(i in 1:length(ranges)){
+  minrs &lt;- append(minrs, ranges[[i]][1])
+ maxrs &lt;- append(maxrs, ranges[[i]][2])
+}
+range.arg &lt;- c(min(minrs), max(maxrs))
+seedval &lt;- 333
+generate a histogram object
+cally &lt;- call("histogram.ds", quote(D$LAB_TSC), range.arg[1], range.arg[2], seedval)
+hist.object &lt;- datashield.aggregate(opals, cally)
 
 ## End(Not run)
 </pre>
 
-<hr><div align="center">[Package <em>dsbase</em> version 2.2 ]</div>
+<hr><div align="center">[Package <em>dsbase</em> version 2.3 ]</div>
 </body></html>

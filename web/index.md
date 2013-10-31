@@ -24,19 +24,33 @@ Installation command:
 Functions:
 
 
+* [ds.append2df](dsbaseclient/ds.append2df.html) Append a vector/column to a dataframe
+* [ds.asCharacter](dsbaseclient/ds.asCharacter.html) Turns a vector into character type
+* [ds.asNumeric](dsbaseclient/ds.asNumeric.html) Turns a vector into numerical type
+* [ds.c](dsbaseclient/ds.c.html) Combines values into a vector or list
 * [ds.checkvar](dsbaseclient/ds.checkvar.html) Checks if all variables do exist and are not empty
 * [ds.contourplot](dsbaseclient/ds.contourplot.html) Creates a contour plot
 * [ds.createfactor](dsbaseclient/ds.createfactor.html) Ensures factors have same classes across studies
+* [ds.densitygrid](dsbaseclient/ds.densitygrid.html) Generates a density grid with or without a priori defined limits
+* [ds.exists](dsbaseclient/ds.exists.html) Checks if an object is defined on the server side
 * [ds.heatmapplot](dsbaseclient/ds.heatmapplot.html) Generates a heatmap plot for merged datasets
 * [ds.histogram](dsbaseclient/ds.histogram.html) Plots a histogram
 * [ds.isNA](dsbaseclient/ds.isNA.html) Checks if a vector is empty
 * [ds.isPresent](dsbaseclient/ds.isPresent.html) Checks if a vector is in a table assigned to R
-* [ds.mean](dsbaseclient/ds.mean.html) Calculates a mean of a given vector (for several studies separately or combined)
+* [ds.isValid](dsbaseclient/ds.isValid.html) Checks if an variable is valid
+* [ds.length](dsbaseclient/ds.length.html) Gets the length of a vector
+* [ds.mean](dsbaseclient/ds.mean.html) Computes the statistical mean of a given vector (for several studies separately or combined)
+* [ds.names](dsbaseclient/ds.names.html) Gets the names of items in a list
+* [ds.product](dsbaseclient/ds.product.html) Computes a product
 * [ds.quantilemean](dsbaseclient/ds.quantilemean.html) Plots a histogram
+* [ds.rowcolCalc](dsbaseclient/ds.rowcolCalc.html) Computes sums and means of rows or columns of numeric arrays
+* [ds.subsetdata](dsbaseclient/ds.subsetdata.html) Generates a valid subsets of a dataset
+* [ds.subsetvar](dsbaseclient/ds.subsetvar.html) Generates a valid binary variable from a continuous variable
 * [ds.summary](dsbaseclient/ds.summary.html) Generates the summary of a numeric or factor vector
 * [ds.t.test](dsbaseclient/ds.t.test.html) Runs a student's t-test on horizontally partitioned data
 * [ds.table1d](dsbaseclient/ds.table1d.html) Creates 1-dimensional contingency tables - potentially disclosive data are suppressed
 * [ds.table2d](dsbaseclient/ds.table2d.html) Creates 2-dimensional contingency tables - potentially disclosive data are suppressed
+* [ds.var](dsbaseclient/ds.var.html) Computes the variance of a given vector (for several studies separately or combined)
 * [table1dhelper1](dsbaseclient/table1dhelper1.html) Checks validity of tabulated factor variable
 * [table1dhelper2](dsbaseclient/table1dhelper2.html) Combines output of server side function 'table1d.ds'
 * [table1dhelper3](dsbaseclient/table1dhelper3.html) Generates percents from counts returned by the function 'table1d.ds'
@@ -48,8 +62,8 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/2.2/DESCRIPTION)
-* [dsbaseclient 2.2](https://github.com/datashield/dsbaseclient/tree/2.2)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/2.3/DESCRIPTION)
+* [dsbaseclient 2.3](https://github.com/datashield/dsbaseclient/tree/2.3)
 
 
 ### dsmodellingclient
@@ -68,8 +82,8 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsmodellingclient/2.0/DESCRIPTION)
-* [dsmodellingclient 2.0](https://github.com/datashield/dsmodellingclient/tree/2.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsmodellingclient/2.1/DESCRIPTION)
+* [dsmodellingclient 2.1](https://github.com/datashield/dsmodellingclient/tree/2.1)
 
 
 <a name="server"> </a>
@@ -95,7 +109,6 @@ Functions:
 * [isNA.ds](dsbase/isNA.ds.html) Checks if a vector is empty
 * [isValid.ds](dsbase/isValid.ds.html) Checks if an input is valid
 * [mean.ds](dsbase/mean.ds.html) Computes statistical mean of vector with more than 4 entries
-* [nais1.ds](dsbase/nais1.ds.html) checks for NAs in a vector
 * [names.ds](dsbase/names.ds.html) Returns the names of a list
 * [product.ds](dsbase/product.ds.html) Computes a product
 * [quantilemean.ds](dsbase/quantilemean.ds.html) Generates quantiles and mean information without maximum and minimum
@@ -109,8 +122,8 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbase/2.2/DESCRIPTION)
-* [dsbase 2.2](https://github.com/datashield/dsbase/tree/2.2)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbase/2.3/DESCRIPTION)
+* [dsbase 2.3](https://github.com/datashield/dsbase/tree/2.3)
 
 
 ### dsmodelling
@@ -129,5 +142,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsmodelling/2.0/DESCRIPTION)
-* [dsmodelling 2.0](https://github.com/datashield/dsmodelling/tree/2.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsmodelling/2.1/DESCRIPTION)
+* [dsmodelling 2.1](https://github.com/datashield/dsmodelling/tree/2.1)

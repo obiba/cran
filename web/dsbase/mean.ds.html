@@ -49,9 +49,9 @@ entries
 <pre>
 ## Not run: 
 # load the file that contains the login details
+library(opal)
 data(logindata)
 
-library(opal)
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # compute the statistical mean
@@ -60,5 +60,5 @@ stat.mean &lt;- datashield.aggregate(opals, quote(mean.ds(D$LAB_TSC)))
 ## End(Not run)
 </pre>
 
-<hr><div align="center">[Package <em>dsbase</em> version 2.2 ]</div>
+<hr><div align="center">[Package <em>dsbase</em> version 2.3 ]</div>
 </body></html>

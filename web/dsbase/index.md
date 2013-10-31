@@ -25,7 +25,6 @@ Functions:
 * [isNA.ds](isNA.ds.html) Checks if a vector is empty
 * [isValid.ds](isValid.ds.html) Checks if an input is valid
 * [mean.ds](mean.ds.html) Computes statistical mean of vector with more than 4 entries
-* [nais1.ds](nais1.ds.html) checks for NAs in a vector
 * [names.ds](names.ds.html) Returns the names of a list
 * [product.ds](product.ds.html) Computes a product
 * [quantilemean.ds](quantilemean.ds.html) Generates quantiles and mean information without maximum and minimum
@@ -39,5 +38,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbase/2.2/DESCRIPTION)
-* [dsbase 2.2](https://github.com/datashield/dsbase/tree/2.2)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbase/2.3/DESCRIPTION)
+* [dsbase 2.3](https://github.com/datashield/dsbase/tree/2.3)

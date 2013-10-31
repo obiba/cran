@@ -1,24 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><title>R: Computes the statistical mean of a given vector (for several...</title>
+<html><head><title>R: Gets the length of a vector</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="../../assets/R.css">
 </head><body>
 
-<table width="100%" summary="page for ds.mean {dsbaseclient}"><tr><td>ds.mean {dsbaseclient}</td><td align="right">R Documentation</td></tr></table>
+<table width="100%" summary="page for ds.length {dsbaseclient}"><tr><td>ds.length {dsbaseclient}</td><td align="right">R Documentation</td></tr></table>
 
-<h2>Computes the statistical mean of a given vector (for several studies separately or combined)</h2>
+<h2>Gets the length of a vector</h2>
 
 <h3>Description</h3>
 
-<p>Computes the statistical mean of a given vector (for
-several studies separately or combined)
+<p>this function is similar to R function <code>length</code> with
+the addition that it also generates a global length (i.e.
+of the lengths of a vector across several datasets)
 </p>
 
 
 <h3>Usage</h3>
 
 <pre>
-  ds.mean(datasources = NULL, xvect = NULL,
+  ds.length(datasources = NULL, xvect = NULL,
     type = "combine")
 </pre>
 
@@ -35,28 +36,29 @@ datasources.</p>
 </td></tr>
 <tr valign="top"><td><code>xvect</code></td>
 <td>
-<p>a numerical vector</p>
+<p>a vector</p>
 </td></tr>
 <tr valign="top"><td><code>type</code></td>
 <td>
 <p>a character which represents the type of
 analysis to carry out. If <code>type</code> is set to
-'combine', a global mean is calculated if <code>type</code> is
-set to 'split', the mean is calculated separately for
-each study.</p>
+'combine', a global variance is calculated if <code>type</code>
+is set to 'split', the variance is calculated separately
+for each study.</p>
 </td></tr>
 </table>
 
 
 <h3>Value</h3>
 
-<p>a mean value
+<p>a numerical value, the number of elements of the input
+vector
 </p>
 
 
 <h3>Author(s)</h3>
 
-<p>Isaeva, J.
+<p>Gaye, A. (amadou.gaye
 </p>
 
 
@@ -72,11 +74,11 @@ data(logindata)
 myvar &lt;- list("LAB_TSC")
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
-# Example 1: compute the pooled statistical mean of the variable 'LAB_TSC' - default behaviour
-ds.mean(datasources=opals, xvect=quote(D$LAB_TSC))
+# Example 1: Get the total number of observations across all the studies for the variable 'LAB_TSC' - default behaviour
+ds.length(datasources=opals, xvect=quote(D$LAB_TSC))
 
-# Example 2: compute the statistical mean of each study separately
-ds.mean(datasources=opals, xvect=quote(D$LAB_TSC), type="split")
+# Example 2: Get the number of observations on each study, for the variable 'LAB_TSC'
+ds.length(datasources=opals, xvect=quote(D$LAB_TSC), type="split")
 }
 </pre>
 
