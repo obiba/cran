@@ -86,6 +86,96 @@ Sources:
 * [dsmodellingclient 2.1](https://github.com/datashield/dsmodellingclient/tree/2.1)
 
 
+### opal
+
+Installation command:
+
+	# Install opal package (client side)
+	install.packages('opal', repos=c(getOption('repos'), 'http://cran.datashield.org'), dependencies=TRUE)
+
+Functions:
+
+
+* [datashield.aggregate](opal/datashield.aggregate.html) Data aggregation
+* [datashield.assign](opal/datashield.assign.html) Data assignment
+* [datashield.has_method](opal/datashield.has_method.html) Check existence of a Datashield method by its name
+* [datashield.login](opal/datashield.login.html) Logs in and assigns variables to R
+* [datashield.logout](opal/datashield.logout.html) Logout from Opal(s)
+* [datashield.method](opal/datashield.method.html) Get Datashield method by its name
+* [datashield.methods](opal/datashield.methods.html) List Datashield methods
+* [datashield.newSession](opal/datashield.newSession.html) New Datashield session
+* [datashield.rm](opal/datashield.rm.html) Remove a R symbol
+* [datashield.rmSessions](opal/datashield.rmSessions.html) Remove Datashield sessions
+* [datashield.setSession](opal/datashield.setSession.html) Set Datashield session
+* [datashield.symbols](opal/datashield.symbols.html) List R symbols
+* [logindata](opal/logindata.html) Information required to login to opal servers
+* [opal](opal/opal.html) Opal Client for R
+* [opal.assign](opal/opal.assign.html) Data assignment
+* [opal.attribute_values](opal/opal.attribute_values.html) Get a vector of values (for each locale) matching the given attribute namespace and name. Vector is null if no such attribute is found.
+* [opal.datasource](opal/opal.datasource.html) Get a datasource from a opal.
+* [opal.datasources](opal/opal.datasources.html) Get datasources from a opal.
+* [opal.execute](opal/opal.execute.html) Execute a R script
+* [opal.getSessions](opal/opal.getSessions.html) Get R sessions
+* [opal.login](opal/opal.login.html) Opal login
+* [opal.logout](opal/opal.logout.html) Logout from Opal(s)
+* [opal.newSession](opal/opal.newSession.html) New R session
+* [opal.report](opal/opal.report.html) Opal report
+* [opal.report_md](opal/opal.report_md.html) Turn a R markdown file to html.
+* [opal.rm](opal/opal.rm.html) Remove a R symbol
+* [opal.rmSession](opal/opal.rmSession.html) Remove R session
+* [opal.rmSessions](opal/opal.rmSessions.html) Remove all R sessions
+* [opal.setSession](opal/opal.setSession.html) Set R session
+* [opal.symbols](opal/opal.symbols.html) List R symbols
+* [opal.table](opal/opal.table.html) Get a table of a datasource from a opal.
+* [opal.tables](opal/opal.tables.html) Get tables of a datasource from a opal.
+* [opal.variable](opal/opal.variable.html) Get a variable of a table from a opal.
+* [opal.variables](opal/opal.variables.html) Get variables of a table from a opal.
+
+Sources:
+
+* [DESCRIPTION](https://raw.github.com/datashield/opal/2.0.1/DESCRIPTION)
+* [opal 2.0.1](https://github.com/datashield/opal/tree/2.0.1)
+
+
+### opaladmin
+
+Installation command:
+
+	# Install opaladmin package (client side)
+	install.packages('opaladmin', repos=c(getOption('repos'), 'http://cran.datashield.org'), dependencies=TRUE)
+
+Functions:
+
+
+* [dsadmin.get_method](opaladmin/dsadmin.get_method.html) Get Datashield Method
+* [dsadmin.get_methods](opaladmin/dsadmin.get_methods.html) Get Datashield Methods
+* [dsadmin.install_package](opaladmin/dsadmin.install_package.html) Install Datashield Package
+* [dsadmin.installed_package](opaladmin/dsadmin.installed_package.html) Check if a Datashield package is installed in Opal(s).
+* [dsadmin.package_description](opaladmin/dsadmin.package_description.html) Get Datashield Package Description
+* [dsadmin.package_descriptions](opaladmin/dsadmin.package_descriptions.html) Get Datashield Package Descriptions
+* [dsadmin.remove_package](opaladmin/dsadmin.remove_package.html) Remove Datashield Package
+* [dsadmin.rm_method](opaladmin/dsadmin.rm_method.html) Remove Datashield Method
+* [dsadmin.rm_methods](opaladmin/dsadmin.rm_methods.html) Remove Datashield Methods
+* [dsadmin.rm_package_methods](opaladmin/dsadmin.rm_package_methods.html) Remove Package Datashield Methods
+* [dsadmin.set_method](opaladmin/dsadmin.set_method.html) Set Datashield Method
+* [dsadmin.set_package_methods](opaladmin/dsadmin.set_package_methods.html) Set Package Datashield Methods
+* [oadmin.install_devtools](opaladmin/oadmin.install_devtools.html) Install devtools package if not already available.
+* [oadmin.install_github](opaladmin/oadmin.install_github.html) Install a package from a source repository on GitHub. Makes sure devtools package is available.
+* [oadmin.install_package](opaladmin/oadmin.install_package.html) Install Package
+* [oadmin.installed_devtools](opaladmin/oadmin.installed_devtools.html) Check if devtools package is installed.
+* [oadmin.installed_package](opaladmin/oadmin.installed_package.html) Check if a package is installed in Opal(s).
+* [oadmin.package_description](opaladmin/oadmin.package_description.html) Get Package Descriptions
+* [oadmin.remove_package](opaladmin/oadmin.remove_package.html) Remove Package
+* [opal.load_package](opaladmin/opal.load_package.html) Load package in the current session.
+* [opal.unload_package](opaladmin/opal.unload_package.html) Unload package from the current session.
+* [opaladmin](opaladmin/opaladmin.html) Opal R and Datashield Administration tools
+
+Sources:
+
+* [DESCRIPTION](https://raw.github.com/datashield/opaladmin/1.17/DESCRIPTION)
+* [opaladmin 1.17](https://github.com/datashield/opaladmin/tree/1.17)
+
+
 <a name="server"> </a>
 ## Server Packages
 
