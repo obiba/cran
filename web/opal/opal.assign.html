@@ -18,7 +18,7 @@
 
 <pre>
 opal.assign(opal, symbol, value, variables = NULL, missings = FALSE,
-  identifiers = NULL)
+  identifiers = NULL, async = FALSE)
 </pre>
 
 
@@ -55,7 +55,14 @@ R expression.</p>
 <tr valign="top"><td><code>identifiers</code></td>
 <td>
 <p>Name of the identifiers mapping to use
-when assigning entities to R (from Opal 2.0) #'</p>
+when assigning entities to R (from Opal 2.0)</p>
+</td></tr>
+<tr valign="top"><td><code>async</code></td>
+<td>
+<p>R script is executed asynchronously within
+the session (default is FALSE). If TRUE, the value
+returned is the ID of the command to look for (from Opal
+2.1). #'</p>
 </td></tr>
 </table>
 
@@ -72,5 +79,5 @@ opal.assign(o, symbol="D", value"demo.HOP", variables="name().matches('LAB_')")
 }
 </pre>
 
-<hr><div align="center">[Package <em>opal</em> version 2.0.1 ]</div>
+<hr><div align="center">[Package <em>opal</em> version 2.1.2 ]</div>
 </body></html>

@@ -98,6 +98,11 @@ Functions:
 
 * [datashield.aggregate](opal/datashield.aggregate.html) Data aggregation
 * [datashield.assign](opal/datashield.assign.html) Data assignment
+* [datashield.command](opal/datashield.command.html) Get an asynchronous command
+* [datashield.command_result](opal/datashield.command_result.html) Get result of an asynchronous command
+* [datashield.command_rm](opal/datashield.command_rm.html) Remove an asynchronous command
+* [datashield.commands](opal/datashield.commands.html) List the asynchronous commands
+* [datashield.commands_rm](opal/datashield.commands_rm.html) Remove all asynchronous commands
 * [datashield.has_method](opal/datashield.has_method.html) Check existence of a Datashield method by its name
 * [datashield.login](opal/datashield.login.html) Logs in and assigns variables to R
 * [datashield.logout](opal/datashield.logout.html) Logout from Opal(s)
@@ -112,6 +117,11 @@ Functions:
 * [opal](opal/opal.html) Opal Client for R
 * [opal.assign](opal/opal.assign.html) Data assignment
 * [opal.attribute_values](opal/opal.attribute_values.html) Get a vector of values (for each locale) matching the given attribute namespace and name. Vector is null if no such attribute is found.
+* [opal.command](opal/opal.command.html) Get an asynchronous command
+* [opal.command_result](opal/opal.command_result.html) Get result of an asynchronous command
+* [opal.command_rm](opal/opal.command_rm.html) Remove an asynchronous command
+* [opal.commands](opal/opal.commands.html) List the asynchronous commands
+* [opal.commands_rm](opal/opal.commands_rm.html) Remove all asynchronous commands
 * [opal.datasource](opal/opal.datasource.html) Get a datasource from a opal.
 * [opal.datasources](opal/opal.datasources.html) Get datasources from a opal.
 * [opal.execute](opal/opal.execute.html) Execute a R script
@@ -121,20 +131,24 @@ Functions:
 * [opal.newSession](opal/opal.newSession.html) New R session
 * [opal.report](opal/opal.report.html) Opal report
 * [opal.report_md](opal/opal.report_md.html) Turn a R markdown file to html.
-* [opal.rm](opal/opal.rm.html) Remove a R symbol
+* [opal.rm](opal/opal.rm.html) Remove a R symbol (deprecated)
 * [opal.rmSession](opal/opal.rmSession.html) Remove R session
 * [opal.rmSessions](opal/opal.rmSessions.html) Remove all R sessions
+* [opal.rm_command](opal/opal.rm_command.html) Remove an asynchronous command
+* [opal.rm_commands](opal/opal.rm_commands.html) Remove all asynchronous commands
 * [opal.setSession](opal/opal.setSession.html) Set R session
+* [opal.symbol_rm](opal/opal.symbol_rm.html) Remove a R symbol
 * [opal.symbols](opal/opal.symbols.html) List R symbols
 * [opal.table](opal/opal.table.html) Get a table of a datasource from a opal.
 * [opal.tables](opal/opal.tables.html) Get tables of a datasource from a opal.
 * [opal.variable](opal/opal.variable.html) Get a variable of a table from a opal.
 * [opal.variables](opal/opal.variables.html) Get variables of a table from a opal.
+* [opal.version_compare](opal/opal.version_compare.html) Compare
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/opal/2.0.1/DESCRIPTION)
-* [opal 2.0.1](https://github.com/datashield/opal/tree/2.0.1)
+* [DESCRIPTION](https://raw.github.com/datashield/opal/2.1.2/DESCRIPTION)
+* [opal 2.1.2](https://github.com/datashield/opal/tree/2.1.2)
 
 
 ### opaladmin

@@ -1,29 +1,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><title>R: Remove all R sessions</title>
+<html><head><title>R: Remove an asynchronous command</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="../../assets/R.css">
 </head><body>
 
-<table width="100%" summary="page for opal.rmSessions {opal}"><tr><td>opal.rmSessions {opal}</td><td align="right">R Documentation</td></tr></table>
+<table width="100%" summary="page for opal.rm_command {opal}"><tr><td>opal.rm_command {opal}</td><td align="right">R Documentation</td></tr></table>
 
-<h2>Remove all R sessions</h2>
+<h2>Remove an asynchronous command</h2>
 
 <h3>Description</h3>
 
-<p>Remove all R sessions from Opal.
+<p>Remove an asynchronous R commands in the remote R session.
 </p>
 
 
 <h3>Usage</h3>
 
 <pre>
-opal.rmSessions(opal)
+opal.rm_command(opal, id)
 </pre>
 
 
 <h3>Arguments</h3>
 
 <table summary="R argblock">
+<tr valign="top"><td><code>id</code></td>
+<td>
+<p>R command ID</p>
+</td></tr>
 <tr valign="top"><td><code>opal</code></td>
 <td>
 <p>Opal object.</p>

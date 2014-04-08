@@ -17,7 +17,7 @@
 <h3>Usage</h3>
 
 <pre>
-opal.execute(opal, script, session = TRUE)
+opal.execute(opal, script, async = FALSE, session = TRUE)
 </pre>
 
 
@@ -32,6 +32,13 @@ opal.execute(opal, script, session = TRUE)
 <td>
 <p>R script to execute.</p>
 </td></tr>
+<tr valign="top"><td><code>async</code></td>
+<td>
+<p>R script is executed asynchronously within
+the session (default is FALSE). If TRUE, the value
+returned is the ID of the command to look for (from Opal
+2.1).</p>
+</td></tr>
 <tr valign="top"><td><code>session</code></td>
 <td>
 <p>Execute in current R session (default is
@@ -39,5 +46,5 @@ TRUE).</p>
 </td></tr>
 </table>
 
-<hr><div align="center">[Package <em>opal</em> version 2.0.1 ]</div>
+<hr><div align="center">[Package <em>opal</em> version 2.1.2 ]</div>
 </body></html>
