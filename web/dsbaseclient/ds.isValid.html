@@ -8,16 +8,10 @@
 
 <h2>Checks if an variable is valid</h2>
 
-<h3>Description</h3>
-
-<p>Checks if an variable is valid
-</p>
-
-
 <h3>Usage</h3>
 
 <pre>
-  ds.isValid(datasources = NULL, xvect = NULL)
+ds.isValid(datasources = NULL, xvect = NULL)
 </pre>
 
 
@@ -42,10 +36,10 @@ datasources.</p>
 
 <p>This function checks if an input variable is valid. In
 DataSHIELD, a numeric variable is not valid if it has &gt; 0
-and &lt; 5 observations and a factor variable is not valid
-if any of its levels (categories) has a count of between
-1 and 4. The process is stopped if the input variable is
-not valid to prevent further processing that might be
+and &lt; 5 observations and a factor variable is not valid if
+any of its levels (categories) has a count of between 1 and
+4. The process is stopped if the input variable is not
+valid to prevent further processing that might be
 revealing.
 </p>
 
@@ -59,7 +53,7 @@ vector is valid and FALSE otherwise.
 
 <h3>Author(s)</h3>
 
-<p>Gaye, A. (amadou.gaye
+<p>Gaye, A.
 </p>
 
 
@@ -84,5 +78,5 @@ ds.isValid(datasources=opals, xvect=quote(D$GENDER))
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
 </body></html>

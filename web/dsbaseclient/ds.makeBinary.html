@@ -4,22 +4,24 @@
 <link rel="stylesheet" type="text/css" href="../../assets/R.css">
 </head><body>
 
-<table width="100%" summary="page for ds.subsetvar {dsbaseclient}"><tr><td>ds.subsetvar {dsbaseclient}</td><td align="right">R Documentation</td></tr></table>
+<table width="100%" summary="page for ds.makeBinary {dsbaseclient}"><tr><td>ds.makeBinary {dsbaseclient}</td><td align="right">R Documentation</td></tr></table>
 
 <h2>Generates a valid binary variable from a continuous variable</h2>
 
 <h3>Description</h3>
 
-<p>Generates a valid binary variable from a continuous
-variable
+<p>The functions takes as inpout a continuous variable and
+based on a criterion assigns the value 1 to observation
+that met the criterion and the value 0 otherwise. Hence
+generating a binary variable.
 </p>
 
 
 <h3>Usage</h3>
 
 <pre>
-  ds.subsetvar(datasources = NULL, xvect = NULL,
-    threshold = NULL, operator = NULL, newobj = NULL)
+ds.makeBinary(datasources = NULL, xvect = NULL, threshold = NULL,
+  operator = NULL, newobj = NULL)
 </pre>
 
 
@@ -73,7 +75,7 @@ observation that met the criterion as assigned the value
 
 <h3>Author(s)</h3>
 
-<p>Gaye, A. (amadou.gaye
+<p>Gaye, A.
 </p>
 
 
@@ -90,10 +92,10 @@ myvar &lt;- list("PM_BMI_CONTINUOUS", "LAB_HDL")
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # generate a binary variable variable using the threshold bmi &gt;= 25
-ds.subsetvar(datasources=opals, xvect=quote(D$PM_BMI_CONTINUOUS), operator="&gt;=", threshold=25)
+ds.makeBinary(datasources=opals, xvect=quote(D$PM_BMI_CONTINUOUS), operator="&gt;=", threshold=25)
 
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
 </body></html>

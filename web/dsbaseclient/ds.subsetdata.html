@@ -8,17 +8,11 @@
 
 <h2>Generates a valid subsets of a dataset</h2>
 
-<h3>Description</h3>
-
-<p>Generates a valid subsets of a dataset
-</p>
-
-
 <h3>Usage</h3>
 
 <pre>
-  ds.subsetdata(datasources = NULL, dataset = NULL,
-    columns = NULL, newobj = NULL)
+ds.subsetdata(datasources = NULL, dataset = NULL, columns = NULL,
+  newobj = NULL)
 </pre>
 
 
@@ -39,8 +33,8 @@ dataset.</p>
 </td></tr>
 <tr valign="top"><td><code>columns</code></td>
 <td>
-<p>a numeric list vector that gives the
-indices of the variables for which subsets are sougth.</p>
+<p>a character list vector that gives the
+names of the variables for which subsets are sougth.</p>
 </td></tr>
 <tr valign="top"><td><code>newobj</code></td>
 <td>
@@ -71,7 +65,7 @@ factors no subsets are generated.
 
 <h3>Author(s)</h3>
 
-<p>Gaye, A. (amadou.gaye
+<p>Gaye, A.
 </p>
 
 
@@ -88,12 +82,12 @@ myvar &lt;- list("DIS_DIAB","PM_BMI_CONTINUOUS","LAB_HDL", "GENDER")
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # Example 1: get all subsets from the table assigned above (by default the table name is 'D')
-ds.subsetdata(datasources=opals, dataset=quote(D))
+ds.subsetdata(datasources=opals, dataset="D")
 
 #' # Example 2: get specific subsets from the table assigned above (by default the table name is 'D')
-ds.subsetdata(datasources=opals, dataset=quote(D), columns=list(4))
+ds.subsetdata(datasources=opals, dataset="D", columns=list("GENDER"))
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
 </body></html>

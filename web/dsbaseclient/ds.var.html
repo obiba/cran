@@ -8,18 +8,10 @@
 
 <h2>Computes the variance of a given vector (for several studies separately or combined)</h2>
 
-<h3>Description</h3>
-
-<p>Computes the variance of a given vector (for several
-studies separately or combined)
-</p>
-
-
 <h3>Usage</h3>
 
 <pre>
-  ds.var(datasources = NULL, xvect = NULL,
-    type = "combine")
+ds.var(datasources = NULL, xvect = NULL, type = "combine")
 </pre>
 
 
@@ -35,7 +27,8 @@ datasources.</p>
 </td></tr>
 <tr valign="top"><td><code>xvect</code></td>
 <td>
-<p>a numerical vector</p>
+<p>a string character, the name of a numerical
+vector</p>
 </td></tr>
 <tr valign="top"><td><code>type</code></td>
 <td>
@@ -50,13 +43,13 @@ for each study.</p>
 
 <h3>Value</h3>
 
-<p>a mean value
+<p>a a global variance or one variance for each study.
 </p>
 
 
 <h3>Author(s)</h3>
 
-<p>Gaye, A. (amadou.gaye
+<p>Gaye, A.
 </p>
 
 
@@ -69,16 +62,23 @@ for each study.</p>
 data(logindata)
 
 # login and assign specific variable(s)
-myvar &lt;- list("LAB_TSC")
+myvar &lt;- list('LAB_TSC')
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # Example 1: compute the pooled variance of the variable 'LAB_TSC' - default behaviour
-ds.var(datasources=opals, xvect=quote(D$LAB_TSC))
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+ds.var(datasources=opals, xvect="D$LAB_TSC")
 
 # Example 2: compute the variance of each study separately
-ds.var(datasources=opals, xvect=quote(D$LAB_TSC), type="split")
+ds.var(datasources=opals, xvect="D$LAB_TSC", type="split")
+=======
+ds.var(datasources=opals, xvect='D$LAB_TSC')
+
+# Example 2: compute the variance of each study separately
+ds.var(datasources=opals, xvect='D$LAB_TSC', type='split')
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; agaye
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
 </body></html>

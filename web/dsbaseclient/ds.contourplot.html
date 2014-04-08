@@ -17,8 +17,8 @@
 <h3>Usage</h3>
 
 <pre>
-  ds.contourplot(datasources = NULL, xvect = NULL,
-    yvect = NULL, type = "combine", numints = 20)
+ds.contourplot(datasources = NULL, xvect = NULL, yvect = NULL,
+  type = "combine", show = "all", numints = 20)
 </pre>
 
 
@@ -47,6 +47,14 @@ graph to display. If <code>type</code> is set to 'combine', a
 combined contour plot displayed and if <code>type</code> is set
 to 'split', each conntour is plotted separately.</p>
 </td></tr>
+<tr valign="top"><td><code>show</code></td>
+<td>
+<p>a character which represents where the plot
+should focus If <code>show</code> is set to 'all', the ranges
+of the variables are used as plot limits If <code>show</code>
+is set to 'zoomed', the plot is zoomed to the region
+where the actual data are</p>
+</td></tr>
 <tr valign="top"><td><code>numints</code></td>
 <td>
 <p>a number of intervals for a density grid
@@ -63,7 +71,7 @@ object</p>
 
 <h3>Author(s)</h3>
 
-<p>Burton, P., Isaeva, J. and Gaye, A.
+<p>Burton, P.; Isaeva, J.; Gaye, A.
 </p>
 
 
@@ -80,14 +88,16 @@ opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # Example1: generate a combined contourplot
 ds.contourplot(datasources=opals, quote(D$LAB_TSC), quote(D$LAB_HDL), type="combine")
+ds.contourplot(datasources=opals, quote(D$LAB_TSC), quote(D$LAB_HDL), type="combine", show="zoomed")
 
 # Example2: generate a contourplot where each study is plotted seaparately
 ds.contourplot(datasources=opals, quote(D$LAB_TSC), quote(D$LAB_HDL), type="split")
+ds.contourplot(datasources=opals, quote(D$LAB_TSC), quote(D$LAB_HDL), type="split", show="zoomed")
 
 # Example3: generate a contourplot with a less dense drid
 ds.contourplot(datasources=opals, quote(D$LAB_TSC), quote(D$LAB_HDL), type="split", numints=15)
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
 </body></html>

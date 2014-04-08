@@ -1,24 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><title>R: Append a vector/column to a dataframe</title>
+<html><head><title>R: Appends a vector/column to a dataframe</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="../../assets/R.css">
 </head><body>
 
 <table width="100%" summary="page for ds.append2df {dsbaseclient}"><tr><td>ds.append2df {dsbaseclient}</td><td align="right">R Documentation</td></tr></table>
 
-<h2>Append a vector/column to a dataframe</h2>
-
-<h3>Description</h3>
-
-<p>Append a vector/column to a dataframe
-</p>
-
+<h2>Appends a vector/column to a dataframe</h2>
 
 <h3>Usage</h3>
 
 <pre>
-  ds.append2df(datasources = NULL, dataset = NULL,
-    xvect = NULL, replace = FALSE)
+ds.append2df(datasources = NULL, dataset = NULL, xvect = NULL,
+  replace = FALSE)
 </pre>
 
 
@@ -61,10 +55,10 @@ takes the name of the initial one)</p>
 <p>The function appends a numeric or factor vector to a
 dataframe. The initial dataframe is replaced by the new
 dataframe if the argument 'replace' is set to 'TRUE';
-otherwise a new dataframe is generated and named after
-the intitial dataframe with the addition of a suffixe
-'new'; for example if the initial dataframe is 'D' the
-new dataframe will be 'Dnew'.
+otherwise a new dataframe is generated and named after the
+intitial dataframe with the addition of a suffixe 'new';
+for example if the initial dataframe is 'D' the new
+dataframe will be 'Dnew'.
 </p>
 
 
@@ -76,7 +70,7 @@ new dataframe will be 'Dnew'.
 
 <h3>Author(s)</h3>
 
-<p>Gaye, A. (amadou.gaye
+<p>Gaye, A.
 </p>
 
 
@@ -94,7 +88,11 @@ opals &lt;- datashield.login(logins=logindata, assign=TRUE, variables=myvar, sym
 
 # generate a new variable (e.g. a mean centered LAB_HDL)
 # get the mean of LAB_HDL
-mean.lab_hdl &lt;- ds.mean(opals, quote(D$LAB_HDL), type='split')
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+mean.lab_hdl &lt;- ds.mean(opals, "D$LAB_HDL", type='split')
+=======
+mean.lab_hdl &lt;- ds.mean(opals, 'D$LAB_HDL', type='split')
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; agaye
 # center LAB_HDL for each study
 for(i in 1:length(opals)){
   call.object &lt;- call("-", quote(D$LAB_HDL), mean.lab_hdl[[i]])
@@ -109,5 +107,5 @@ ds.append2df(datasources=opals, dataset=quote(D), xvect=quote(lab_hdl.c), replac
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
 </body></html>

@@ -10,14 +10,17 @@
 
 <h3>Description</h3>
 
-<p>Checks if an input is valid
+<p>This function checks if an input variable is valid. A
+numeric variable is not valid if it has &gt; 0 and &lt; 5
+observations and a factor variable is not valid if any of
+its levels (classes) has a count of between 1 and 4.
 </p>
 
 
 <h3>Usage</h3>
 
 <pre>
-  isValid.ds(xvect)
+isValid.ds(xvect)
 </pre>
 
 
@@ -29,15 +32,6 @@
 <p>a numeric or factor vector.</p>
 </td></tr>
 </table>
-
-
-<h3>Details</h3>
-
-<p>This function checks if an input variable is valid. A
-numeric variable is not valid if it has &gt; 0 and &lt; 5
-observations and a factor variable is not valid if any of
-its levels (classes) has a count of between 1 and 4.
-</p>
 
 
 <h3>Value</h3>
@@ -70,5 +64,5 @@ datashield.aggregate(opals, quote(isValid.ds(D$LAB_HDL)))
 ## End(Not run)
 </pre>
 
-<hr><div align="center">[Package <em>dsbase</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbase</em> version 2.4.0 ]</div>
 </body></html>

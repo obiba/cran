@@ -17,14 +17,13 @@ defined as data from sources where no table cells have
 counts between 1 and 4 (the upper value [4] can in
 principle be changed but only by rewriting the underlying
 function - it cannot be changed by a standard DataSHIELD
-user). If the count in any cell in the table produced by
-a given data source IS invalid, that cell count is
-changed to &quot;-1&quot; and the name of the category that
-corresponds to it is changed to &quot;-9&quot;. Each source is
-flagged as having only valid data, or at least some
-invalid data. Missing data are treated as
-na.action=na.omit (default for table function), if
-missing data are to be treated as a separate and visible
+user). If the count in any cell in the table produced by a
+given data source IS invalid, that cell count is changed to
+&quot;-1&quot; and the name of the category that corresponds to it is
+changed to &quot;-9&quot;. Each source is flagged as having only
+valid data, or at least some invalid data. Missing data are
+treated as na.action=na.omit (default for table function),
+if missing data are to be treated as a separate and visible
 category, the variable should first be transformed to
 convert NAs to the a new value.
 </p>
@@ -33,7 +32,7 @@ convert NAs to the a new value.
 <h3>Usage</h3>
 
 <pre>
-  table1d.ds(xvect)
+table1d.ds(xvect)
 </pre>
 
 
@@ -56,16 +55,16 @@ each separate study which contains the following items:
 <table summary="R valueblock">
 <tr valign="top"><td><code>is.table.valid</code></td>
 <td>
-<p>eg. out.obj[[2]]$is.table.valid is
-a logical (Boolean) indicator of whether the data in
-study 2 is entirely valid (TRUE) for the stated variable
-or at least one category is invalid (FALSE)</p>
+<p>eg. out.obj[[2]]$is.table.valid is a
+logical (Boolean) indicator of whether the data in study 2
+is entirely valid (TRUE) for the stated variable or at
+least one category is invalid (FALSE)</p>
 </td></tr>
 <tr valign="top"><td><code>safe.table</code></td>
 <td>
-<p>eg. out.obj[[1]]$safe.table contains
-the safe (non-disclosive) one dimensional table that can
-be released from study 1 - unsafe data are concealed by
+<p>eg. out.obj[[1]]$safe.table contains the
+safe (non-disclosive) one dimensional table that can be
+released from study 1 - unsafe data are concealed by
 converting invalid counts to &quot;-1&quot; and their corresponding
 catregory identifier to &quot;-9&quot;</p>
 </td></tr>
@@ -103,5 +102,5 @@ datashield.aggregate(opals, quote(table1d.ds(D$LAB_HDL)))
 ## End(Not run)
 </pre>
 
-<hr><div align="center">[Package <em>dsbase</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbase</em> version 2.4.0 ]</div>
 </body></html>

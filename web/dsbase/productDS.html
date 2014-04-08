@@ -4,20 +4,20 @@
 <link rel="stylesheet" type="text/css" href="../../assets/R.css">
 </head><body>
 
-<table width="100%" summary="page for product.ds {dsbase}"><tr><td>product.ds {dsbase}</td><td align="right">R Documentation</td></tr></table>
+<table width="100%" summary="page for productDS {dsbase}"><tr><td>productDS {dsbase}</td><td align="right">R Documentation</td></tr></table>
 
 <h2>Computes a product</h2>
 
 <h3>Description</h3>
 
-<p>Computes a product
+<p>calculates the product of two or more objects.
 </p>
 
 
 <h3>Usage</h3>
 
 <pre>
-  product.ds(xlist)
+productDS(xlist)
 </pre>
 
 
@@ -58,11 +58,11 @@ opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # compute the of 'LAB_TSC' by 'LAB_HDL' and assign it to 'P'
 prodinput &lt;- list(D$LAB_TSC, D$LAB_HDL)
-cally &lt;- call("product.ds", prodinput)
+cally &lt;- call("productDS", prodinput)
 datashield.assign(opals, "P", cally)
 
 ## End(Not run)
 </pre>
 
-<hr><div align="center">[Package <em>dsbase</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbase</em> version 2.4.0 ]</div>
 </body></html>

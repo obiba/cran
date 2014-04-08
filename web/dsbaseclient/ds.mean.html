@@ -8,18 +8,10 @@
 
 <h2>Computes the statistical mean of a given vector (for several studies separately or combined)</h2>
 
-<h3>Description</h3>
-
-<p>Computes the statistical mean of a given vector (for
-several studies separately or combined)
-</p>
-
-
 <h3>Usage</h3>
 
 <pre>
-  ds.mean(datasources = NULL, xvect = NULL,
-    type = "combine")
+ds.mean(datasources = NULL, xvect = NULL, type = "combine")
 </pre>
 
 
@@ -33,10 +25,27 @@ after login in to opal servers; these objects hold also
 the data assign to R, as <code>dataframe</code>, from opal
 datasources.</p>
 </td></tr>
+</table>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+</p>
+<table summary="R argblock">
 <tr valign="top"><td><code>xvect</code></td>
 <td>
-<p>a numerical vector</p>
+<p>a string character, the name of a numerical
+vector</p>
 </td></tr>
+</table>
+<p>=======
+</p>
+<table summary="R argblock">
+<tr valign="top"><td><code>xvect</code></td>
+<td>
+<p>a character, the name of a numerical vector</p>
+</td></tr>
+</table>
+<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; agaye
+</p>
+<table summary="R argblock">
 <tr valign="top"><td><code>type</code></td>
 <td>
 <p>a character which represents the type of
@@ -69,16 +78,23 @@ each study.</p>
 data(logindata)
 
 # login and assign specific variable(s)
-myvar &lt;- list("LAB_TSC")
+myvar &lt;- list('LAB_TSC')
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # Example 1: compute the pooled statistical mean of the variable 'LAB_TSC' - default behaviour
-ds.mean(datasources=opals, xvect=quote(D$LAB_TSC))
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+ds.mean(datasources=opals, xvect="D$LAB_TSC")
 
 # Example 2: compute the statistical mean of each study separately
-ds.mean(datasources=opals, xvect=quote(D$LAB_TSC), type="split")
+ds.mean(datasources=opals, xvect="D$LAB_TSC", type="split")
+=======
+ds.mean(datasources=opals, xvect='D$LAB_TSC')
+
+# Example 2: compute the statistical mean of each study separately
+ds.mean(datasources=opals, xvect='D$LAB_TSC', type='split')
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; agaye
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
 </body></html>

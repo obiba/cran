@@ -19,8 +19,7 @@ of the lengths of a vector across several datasets)
 <h3>Usage</h3>
 
 <pre>
-  ds.length(datasources = NULL, xvect = NULL,
-    type = "combine")
+ds.length(datasources = NULL, xvect = NULL, type = "combine")
 </pre>
 
 
@@ -36,7 +35,7 @@ datasources.</p>
 </td></tr>
 <tr valign="top"><td><code>xvect</code></td>
 <td>
-<p>a vector</p>
+<p>a string character, the name of a vector</p>
 </td></tr>
 <tr valign="top"><td><code>type</code></td>
 <td>
@@ -58,7 +57,7 @@ vector
 
 <h3>Author(s)</h3>
 
-<p>Gaye, A. (amadou.gaye
+<p>Gaye, A.
 </p>
 
 
@@ -75,12 +74,19 @@ myvar &lt;- list("LAB_TSC")
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # Example 1: Get the total number of observations across all the studies for the variable 'LAB_TSC' - default behaviour
-ds.length(datasources=opals, xvect=quote(D$LAB_TSC))
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+ds.length(datasources=opals, xvect="D$LAB_TSC")
 
 # Example 2: Get the number of observations on each study, for the variable 'LAB_TSC'
-ds.length(datasources=opals, xvect=quote(D$LAB_TSC), type="split")
+ds.length(datasources=opals, xvect="D$LAB_TSC", type="split")
+=======
+ds.length(datasources=opals, xvect='D$LAB_TSC')
+
+# Example 2: Get the number of observations on each study, for the variable 'LAB_TSC'
+ds.length(datasources=opals, xvect='D$LAB_TSC', type='split')
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; agaye
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
 </body></html>

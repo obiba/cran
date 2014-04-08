@@ -17,9 +17,9 @@
 <h3>Usage</h3>
 
 <pre>
-  ds.t.test(datasources, x, y = NULL, type = "combine",
-    alternative = "two.sided", mu = 0, paired = FALSE,
-    var.equal = FALSE, conf.level = 0.95)
+ds.t.test(datasources, x, y = NULL, type = "combine",
+  alternative = "two.sided", mu = 0, paired = FALSE, var.equal = FALSE,
+  conf.level = 0.95)
 </pre>
 
 
@@ -85,30 +85,28 @@ the degrees of freedom is used.</p>
 
 <h3>Details</h3>
 
-<p>Summary statistics are obtained from each of the data
-sets that are located on the distinct computers/servers.
-And then grand means and variances are calculated. Those
-are used for performing t-test.
+<p>Summary statistics are obtained from each of the data sets
+that are located on the distinct computers/servers. And
+then grand means and variances are calculated. Those are
+used for performing t-test.
 </p>
 
 
 <h3>Value</h3>
 
-<p>a list containing the following elements:
-<code>statistic</code> the value of the t-statistic
-<code>parameter</code> the degrees of freedom for the
-t-statistic <code>p.value</code> p.value the p-value for the
-test <code>conf.int</code> a confidence interval for the mean
-appropriate to the specified alternative hypothesis
-<code>estimate</code> the estimated mean or difference in means
-depending on whether it was a one-sample test or a
+<p>a list containing the following elements: <code>statistic</code>
+the value of the t-statistic <code>parameter</code> the degrees
+of freedom for the t-statistic <code>p.value</code> p.value the
+p-value for the test <code>conf.int</code> a confidence interval
+for the mean appropriate to the specified alternative
+hypothesis <code>estimate</code> the estimated mean or difference
+in means depending on whether it was a one-sample test or a
 two-sample test <code>null.value</code> the specified
-hypothesized value of the mean or mean difference
-depending on whether it was a one-sample test or a
-two-sample test <code>alternative</code> a character string
-describing the alternative hypothesis <code>method</code> a
-character string indicating what type of t-test was
-performed
+hypothesized value of the mean or mean difference depending
+on whether it was a one-sample test or a two-sample test
+<code>alternative</code> a character string describing the
+alternative hypothesis <code>method</code> a character string
+indicating what type of t-test was performed
 </p>
 
 
@@ -161,5 +159,5 @@ ds.t.test(datasources=opals, x=quote(D$LAB_HDL))
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
 </body></html>

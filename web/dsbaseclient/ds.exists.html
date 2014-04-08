@@ -10,22 +10,21 @@
 
 <h3>Description</h3>
 
-<p>In DataSHIELD it is not possible to see the data sitting
-on the servers of the collaborating studies. It is only
+<p>In DataSHIELD it is not possible to see the data sitting on
+the servers of the collaborating studies. It is only
 possible to get summaries of objects stored on the server
-side. It is however important to know if an object
-created on the server is really there. This function
-checks if an object do really exist on the server side.
-Further information about the object can also be obtain
-using function such as <code>ds.class</code>, <code>length</code>
-etc...
+side. It is however important to know if an object created
+on the server is really there. This function checks if an
+object do really exist on the server side. Further
+information about the object can also be obtain using
+function such as <code>ds.class</code>, <code>length</code> etc...
 </p>
 
 
 <h3>Usage</h3>
 
 <pre>
-  ds.exists(datasources = NULL, xname = NULL)
+ds.exists(datasources = NULL, xname = NULL)
 </pre>
 
 
@@ -41,7 +40,8 @@ datasources.</p>
 </td></tr>
 <tr valign="top"><td><code>xname</code></td>
 <td>
-<p>the name of the object to look for.</p>
+<p>a character, the name of the object to look
+for.</p>
 </td></tr>
 </table>
 
@@ -55,7 +55,7 @@ FALSE otherwise
 
 <h3>Author(s)</h3>
 
-<p>Gaye, A. (amadou.gaye
+<p>Gaye, A.
 </p>
 
 
@@ -72,12 +72,12 @@ myvar &lt;- list("LAB_TSC")
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # assign 'LAB_TSC' in the dataframe D to a new variable 'labtsc'
-datashield.assign(opals, "labtsc", quote(D$LAB_TSC))
+ds.assign(opals, 'labtsc', 'D$LAB_TSC')
 
 # now let us check if the variable 'labtsc' do now 'exist' on the server side
-ds.exists(datasources=opals, xname="labtsc")
+ds.exists(datasources=opals, xname='labtsc')
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
 </body></html>

@@ -8,16 +8,10 @@
 
 <h2>Gets the names of items in a list</h2>
 
-<h3>Description</h3>
-
-<p>Gets the names of items in a list
-</p>
-
-
 <h3>Usage</h3>
 
 <pre>
-  ds.names(datasources = NULL, xlist = NULL)
+ds.names(datasources = NULL, xlist = NULL)
 </pre>
 
 
@@ -33,16 +27,17 @@ datasources.</p>
 </td></tr>
 <tr valign="top"><td><code>xlist</code></td>
 <td>
-<p>an object of type list</p>
+<p>a string character, the name of an object of
+type list</p>
 </td></tr>
 </table>
 
 
 <h3>Details</h3>
 
-<p>This function is similar to the R function <code>names</code>
-but in DataSHIELD its use is restricted to objects of
-type list.
+<p>This function is similar to the R function <code>names</code> but
+in DataSHIELD its use is restricted to objects of type
+list.
 </p>
 
 
@@ -54,7 +49,7 @@ type list.
 
 <h3>Author(s)</h3>
 
-<p>Gaye, A. (amadou.gaye
+<p>Gaye, A.
 </p>
 
 
@@ -71,13 +66,13 @@ myvar &lt;- list("DIS_DIAB","PM_BMI_CONTINUOUS","LAB_HDL", "GENDER")
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # generates subset tables from the table assigned above (by default the table name is 'D')
-datashield.assign(opals, "Subsets", quote(subsetdata.ds(D)))
+ds.subclass(datasources=opals, subsets='subclasses', data='D')
 
-# the above object 'Subsets' is a list, let us display the names of elements in 'Subsets'
-ds.names(opals, quote(Subsets))
+# the above object 'subsets' is a list, let us display the names of elements in 'subsets'
+ds.names(opals, 'subsets')
 
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.3 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
 </body></html>

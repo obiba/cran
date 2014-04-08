@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Gets the range of a vector</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../../assets/R.css">
+</head><body>
+
+<table width="100%" summary="page for ds.range {dsbaseclient}"><tr><td>ds.range {dsbaseclient}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>Gets the range of a vector</h2>
+
+<h3>Description</h3>
+
+<p>this function is similar to R function <code>range</code> but
+instead to not return the real minimum and maximum, the
+computed values are multiplied by a very small random
+number. In addition it also generates a global range (i.e.
+the range of a vector across several datasets)
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ds.range(datasources = NULL, xvect = NULL, type = "combine")
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>datasources</code></td>
+<td>
+<p>a list of opal object(s) obtained
+after login in to opal servers; these objects hold also
+the data assign to R, as <code>dataframe</code>, from opal
+datasources.</p>
+</td></tr>
+<tr valign="top"><td><code>xvect</code></td>
+<td>
+<p>a vector</p>
+</td></tr>
+<tr valign="top"><td><code>type</code></td>
+<td>
+<p>a character which represents the type of
+analysis to carry out. If <code>type</code> is set to
+'combine', a global range is calculated if <code>type</code> is
+set to 'split', the range is calculated separately for
+each study.</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a numeric vector which contains the minimum and the maximum
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Gaye, A.; Isaeva, J.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+{
+
+# load that contains the login details
+data(logindata)
+
+# login and assign specific variable(s)
+myvar &lt;- list("LAB_TSC")
+opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
+
+# Example 1: Get the global range of the variable 'LAB_TSC' - default behaviour
+ds.range(datasources=opals, xvect=quote(D$LAB_TSC))
+
+# Example 2: Get the range of the variable 'LAB_TSC' for each study
+ds.range(datasources=opals, xvect=quote(D$LAB_TSC), type="split")
+}
+</pre>
+
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
+</body></html>

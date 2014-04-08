@@ -24,33 +24,63 @@ Installation command:
 Functions:
 
 
-* [ds.append2df](dsbaseclient/ds.append2df.html) Append a vector/column to a dataframe
+* [ds.NROW](dsbaseclient/ds.NROW.html) Returns the number of rows present in x
+* [ds.append2df](dsbaseclient/ds.append2df.html) Appends a vector/column to a dataframe
 * [ds.asCharacter](dsbaseclient/ds.asCharacter.html) Turns a vector into character type
+* [ds.asList](dsbaseclient/ds.asList.html) Constructs an object of type list
+* [ds.asMatrix](dsbaseclient/ds.asMatrix.html) Attempts to turn its argument into a matrix
+* [ds.asNull](dsbaseclient/ds.asNull.html) Ignores its argument and returns the value 'NULL'.
 * [ds.asNumeric](dsbaseclient/ds.asNumeric.html) Turns a vector into numerical type
+* [ds.assign](dsbaseclient/ds.assign.html) Assigns an object to a name in the server side
 * [ds.c](dsbaseclient/ds.c.html) Combines values into a vector or list
+* [ds.cbind](dsbaseclient/ds.cbind.html) Combines objects by columns
+* [ds.changerefgroup](dsbaseclient/ds.changerefgroup.html) changes a reference level of a factor
 * [ds.checkvar](dsbaseclient/ds.checkvar.html) Checks if all variables do exist and are not empty
+* [ds.class](dsbaseclient/ds.class.html) Retrieves the class of an object
+* [ds.colnames](dsbaseclient/ds.colnames.html) Retrieves column names of a matrix-like object
+* [ds.complete.cases](dsbaseclient/ds.complete.cases.html) Returns a logical vector indicating which cases are complete, i.e., have no missing values.
 * [ds.contourplot](dsbaseclient/ds.contourplot.html) Creates a contour plot
 * [ds.createfactor](dsbaseclient/ds.createfactor.html) Ensures factors have same classes across studies
+* [ds.data.frame](dsbaseclient/ds.data.frame.html) Creates data frames
 * [ds.densitygrid](dsbaseclient/ds.densitygrid.html) Generates a density grid with or without a priori defined limits
+* [ds.dim](dsbaseclient/ds.dim.html) Retrieves the dimension of an object
 * [ds.exists](dsbaseclient/ds.exists.html) Checks if an object is defined on the server side
+* [ds.exp](dsbaseclient/ds.exp.html) Computes the exponential function
+* [ds.fac2num](dsbaseclient/ds.fac2num.html) Turns a factor into numerical type
 * [ds.heatmapplot](dsbaseclient/ds.heatmapplot.html) Generates a heatmap plot for merged datasets
 * [ds.histogram](dsbaseclient/ds.histogram.html) Plots a histogram
+* [ds.inform](dsbaseclient/ds.inform.html) Tells user if an object is defined on the server side.
+* [ds.is.character](dsbaseclient/ds.is.character.html) a test of an object being of type 'character'
+* [ds.is.factor](dsbaseclient/ds.is.factor.html) a test of an object being of type "factor"
+* [ds.is.null](dsbaseclient/ds.is.null.html) tests whether an object is NULL
+* [ds.is.numeric](dsbaseclient/ds.is.numeric.html) a test of an object being interpretable as numbers
 * [ds.isNA](dsbaseclient/ds.isNA.html) Checks if a vector is empty
 * [ds.isPresent](dsbaseclient/ds.isPresent.html) Checks if a vector is in a table assigned to R
 * [ds.isValid](dsbaseclient/ds.isValid.html) Checks if an variable is valid
 * [ds.length](dsbaseclient/ds.length.html) Gets the length of a vector
+* [ds.levels](dsbaseclient/ds.levels.html) Provides access to the levels attribute of a factor variable
+* [ds.list](dsbaseclient/ds.list.html) Function to construct a list object
+* [ds.log](dsbaseclient/ds.log.html) Computes logarithms, by default natural logarithms
+* [ds.makeBinary](dsbaseclient/ds.makeBinary.html) Generates a valid binary variable from a continuous variable
 * [ds.mean](dsbaseclient/ds.mean.html) Computes the statistical mean of a given vector (for several studies separately or combined)
+* [ds.meanByClass](dsbaseclient/ds.meanByClass.html) Computes the mean and standard deviation across categories
 * [ds.names](dsbaseclient/ds.names.html) Gets the names of items in a list
 * [ds.product](dsbaseclient/ds.product.html) Computes a product
+* [ds.propMean](dsbaseclient/ds.propMean.html) Computes the mean proportion across categories
 * [ds.quantilemean](dsbaseclient/ds.quantilemean.html) Plots a histogram
+* [ds.range](dsbaseclient/ds.range.html) Gets the range of a vector
+* [ds.recodelevels](dsbaseclient/ds.recodelevels.html) recodes a categorical variable
 * [ds.rowcolCalc](dsbaseclient/ds.rowcolCalc.html) Computes sums and means of rows or columns of numeric arrays
+* [ds.subclass](dsbaseclient/ds.subclass.html) Generates valid subset(s) of a dataframe or a factor
+* [ds.subset](dsbaseclient/ds.subset.html) Generates a valid subset of a table or a vector
 * [ds.subsetdata](dsbaseclient/ds.subsetdata.html) Generates a valid subsets of a dataset
-* [ds.subsetvar](dsbaseclient/ds.subsetvar.html) Generates a valid binary variable from a continuous variable
+* [ds.sum](dsbaseclient/ds.sum.html) Returns the sum of all the values present in its arguments
 * [ds.summary](dsbaseclient/ds.summary.html) Generates the summary of a numeric or factor vector
 * [ds.t.test](dsbaseclient/ds.t.test.html) Runs a student's t-test on horizontally partitioned data
 * [ds.table1d](dsbaseclient/ds.table1d.html) Creates 1-dimensional contingency tables - potentially disclosive data are suppressed
 * [ds.table2d](dsbaseclient/ds.table2d.html) Creates 2-dimensional contingency tables - potentially disclosive data are suppressed
 * [ds.var](dsbaseclient/ds.var.html) Computes the variance of a given vector (for several studies separately or combined)
+* [propMeanHelper](dsbaseclient/propMeanHelper.html) Runs a combined GLM analysis of non-pooled data
 * [table1dhelper1](dsbaseclient/table1dhelper1.html) Checks validity of tabulated factor variable
 * [table1dhelper2](dsbaseclient/table1dhelper2.html) Combines output of server side function 'table1d.ds'
 * [table1dhelper3](dsbaseclient/table1dhelper3.html) Generates percents from counts returned by the function 'table1d.ds'
@@ -62,8 +92,8 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/2.3/DESCRIPTION)
-* [dsbaseclient 2.3](https://github.com/datashield/dsbaseclient/tree/2.3)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/2.4.0/DESCRIPTION)
+* [dsbaseclient 2.4.0](https://github.com/datashield/dsbaseclient/tree/2.4.0)
 
 
 ### dsmodellingclient
@@ -82,8 +112,8 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsmodellingclient/2.1/DESCRIPTION)
-* [dsmodellingclient 2.1](https://github.com/datashield/dsmodellingclient/tree/2.1)
+* [DESCRIPTION](https://raw.github.com/datashield/dsmodellingclient/2.2.0/DESCRIPTION)
+* [dsmodellingclient 2.2.0](https://github.com/datashield/dsmodellingclient/tree/2.2.0)
 
 
 ### opal
@@ -206,28 +236,32 @@ Functions:
 
 
 * [append2df.ds](dsbase/append2df.ds.html) Appends a column(s) to a dataframe
+* [changerefgroup.ds](dsbase/changerefgroup.ds.html) changes a reference level of a factor
 * [checkfactor.ds](dsbase/checkfactor.ds.html) Verifies that a factor vector is valid
 * [createfactor.ds](dsbase/createfactor.ds.html) Generates a factor variable
 * [densitygrid.ds](dsbase/densitygrid.ds.html) Generates a density grid with or without a priori defined limits
+* [dimDS](dsbase/dimDS.html) Returns the dimensions of a table structure
 * [histogram.ds](dsbase/histogram.ds.html) Computes a histogram of the given data values without plotting.
 * [isNA.ds](dsbase/isNA.ds.html) Checks if a vector is empty
 * [isValid.ds](dsbase/isValid.ds.html) Checks if an input is valid
-* [mean.ds](dsbase/mean.ds.html) Computes statistical mean of vector with more than 4 entries
-* [names.ds](dsbase/names.ds.html) Returns the names of a list
-* [product.ds](dsbase/product.ds.html) Computes a product
+* [meanDS](dsbase/meanDS.html) Computes statistical mean of vector with more than 4 entries
+* [namesDS](dsbase/namesDS.html) Returns the names of a list
+* [productDS](dsbase/productDS.html) Computes a product
 * [quantilemean.ds](dsbase/quantilemean.ds.html) Generates quantiles and mean information without maximum and minimum
-* [range.ds](dsbase/range.ds.html) returns the minimum and maximum of a numeric vector
+* [rangeDS](dsbase/rangeDS.html) returns the minimum and maximum of a numeric vector
+* [recodelevels.ds](dsbase/recodelevels.ds.html) recodes a categorical variable
 * [rowcolCalc.ds](dsbase/rowcolCalc.ds.html) Computes sums and means of rows or columns of numeric arrays
-* [subsetdata.ds](dsbase/subsetdata.ds.html) Generates a valid subset of a dataset
+* [subclassDS](dsbase/subclassDS.html) Breaks down a dataframe or a factor into its sub-classes
+* [subsetDS](dsbase/subsetDS.html) Generates a valid subset of a table or a vector
 * [subsetvar.ds](dsbase/subsetvar.ds.html) Derives a valid binary variable from a continuous variable
 * [table1d.ds](dsbase/table1d.ds.html) Creates 1-dimensional contingency tables - potentially disclosive data are suppressed
 * [table2d.ds](dsbase/table2d.ds.html) Creates 2-dimensional contingency tables - potentially disclosive data are suppressed
-* [var.ds](dsbase/var.ds.html) Computes the variance of a numeric vector
+* [varDS](dsbase/varDS.html) Computes the variance of vector with more than 4 entries
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbase/2.3/DESCRIPTION)
-* [dsbase 2.3](https://github.com/datashield/dsbase/tree/2.3)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbase/2.4.0/DESCRIPTION)
+* [dsbase 2.4.0](https://github.com/datashield/dsbase/tree/2.4.0)
 
 
 ### dsmodelling
