@@ -25,27 +25,10 @@ after login in to opal servers; these objects hold also
 the data assign to R, as <code>dataframe</code>, from opal
 datasources.</p>
 </td></tr>
-</table>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-</p>
-<table summary="R argblock">
-<tr valign="top"><td><code>xvect</code></td>
-<td>
-<p>a string character, the name of a numerical
-vector</p>
-</td></tr>
-</table>
-<p>=======
-</p>
-<table summary="R argblock">
 <tr valign="top"><td><code>xvect</code></td>
 <td>
 <p>a character, the name of a numerical vector</p>
 </td></tr>
-</table>
-<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; agaye
-</p>
-<table summary="R argblock">
 <tr valign="top"><td><code>type</code></td>
 <td>
 <p>a character which represents the type of
@@ -82,19 +65,12 @@ myvar &lt;- list('LAB_TSC')
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # Example 1: compute the pooled statistical mean of the variable 'LAB_TSC' - default behaviour
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-ds.mean(datasources=opals, xvect="D$LAB_TSC")
-
-# Example 2: compute the statistical mean of each study separately
-ds.mean(datasources=opals, xvect="D$LAB_TSC", type="split")
-=======
 ds.mean(datasources=opals, xvect='D$LAB_TSC')
 
 # Example 2: compute the statistical mean of each study separately
 ds.mean(datasources=opals, xvect='D$LAB_TSC', type='split')
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; agaye
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.1 ]</div>
 </body></html>

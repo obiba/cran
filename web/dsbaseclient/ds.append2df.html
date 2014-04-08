@@ -88,11 +88,7 @@ opals &lt;- datashield.login(logins=logindata, assign=TRUE, variables=myvar, sym
 
 # generate a new variable (e.g. a mean centered LAB_HDL)
 # get the mean of LAB_HDL
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-mean.lab_hdl &lt;- ds.mean(opals, "D$LAB_HDL", type='split')
-=======
 mean.lab_hdl &lt;- ds.mean(opals, 'D$LAB_HDL', type='split')
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; agaye
 # center LAB_HDL for each study
 for(i in 1:length(opals)){
   call.object &lt;- call("-", quote(D$LAB_HDL), mean.lab_hdl[[i]])
@@ -107,5 +103,5 @@ ds.append2df(datasources=opals, dataset=quote(D), xvect=quote(lab_hdl.c), replac
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.1 ]</div>
 </body></html>

@@ -57,21 +57,18 @@ Functions:
 * [ds.meanByClass](ds.meanByClass.html) Computes the mean and standard deviation across categories
 * [ds.names](ds.names.html) Gets the names of items in a list
 * [ds.product](ds.product.html) Computes a product
-* [ds.propMean](ds.propMean.html) Computes the mean proportion across categories
 * [ds.quantilemean](ds.quantilemean.html) Plots a histogram
 * [ds.range](ds.range.html) Gets the range of a vector
 * [ds.recodelevels](ds.recodelevels.html) recodes a categorical variable
 * [ds.rowcolCalc](ds.rowcolCalc.html) Computes sums and means of rows or columns of numeric arrays
 * [ds.subclass](ds.subclass.html) Generates valid subset(s) of a dataframe or a factor
 * [ds.subset](ds.subset.html) Generates a valid subset of a table or a vector
-* [ds.subsetdata](ds.subsetdata.html) Generates a valid subsets of a dataset
 * [ds.sum](ds.sum.html) Returns the sum of all the values present in its arguments
 * [ds.summary](ds.summary.html) Generates the summary of a numeric or factor vector
 * [ds.t.test](ds.t.test.html) Runs a student's t-test on horizontally partitioned data
 * [ds.table1d](ds.table1d.html) Creates 1-dimensional contingency tables - potentially disclosive data are suppressed
 * [ds.table2d](ds.table2d.html) Creates 2-dimensional contingency tables - potentially disclosive data are suppressed
 * [ds.var](ds.var.html) Computes the variance of a given vector (for several studies separately or combined)
-* [propMeanHelper](propMeanHelper.html) Runs a combined GLM analysis of non-pooled data
 * [table1dhelper1](table1dhelper1.html) Checks validity of tabulated factor variable
 * [table1dhelper2](table1dhelper2.html) Combines output of server side function 'table1d.ds'
 * [table1dhelper3](table1dhelper3.html) Generates percents from counts returned by the function 'table1d.ds'
@@ -83,5 +80,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/2.4.0/DESCRIPTION)
-* [dsbaseclient 2.4.0](https://github.com/datashield/dsbaseclient/tree/2.4.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbaseclient/2.4.1/DESCRIPTION)
+* [dsbaseclient 2.4.1](https://github.com/datashield/dsbaseclient/tree/2.4.1)

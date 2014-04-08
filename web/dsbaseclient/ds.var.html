@@ -66,19 +66,12 @@ myvar &lt;- list('LAB_TSC')
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # Example 1: compute the pooled variance of the variable 'LAB_TSC' - default behaviour
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-ds.var(datasources=opals, xvect="D$LAB_TSC")
-
-# Example 2: compute the variance of each study separately
-ds.var(datasources=opals, xvect="D$LAB_TSC", type="split")
-=======
 ds.var(datasources=opals, xvect='D$LAB_TSC')
 
 # Example 2: compute the variance of each study separately
 ds.var(datasources=opals, xvect='D$LAB_TSC', type='split')
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; agaye
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.0 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.1 ]</div>
 </body></html>
