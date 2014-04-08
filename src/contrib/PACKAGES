@@ -7,7 +7,7 @@ Description: This package installs as dependencies all other DataSHIELD
         packages for server side.
 Author: <datashield@obiba.org>
 NeedsCompilation: no
-MD5sum: df7d99aa9c7d8baa130583c77871d895
+MD5sum: 6648dc91b83e4bac5d283f7b14fbda4a
 
 Package: datashieldclient
 Version: 2.0
@@ -18,7 +18,7 @@ Description: This package installs as dependencies all other DataSHIELD
         packages for client side.
 Author: <datashield@obiba.org>
 NeedsCompilation: no
-MD5sum: 9b3bbe4fc1ea9eaca49e032bba610745
+MD5sum: 72d15c2d56599b430cc5443dafbb53b6
 
 Package: dsbase
 Version: 2.3
@@ -45,7 +45,7 @@ AssignMethods: log=base::log, c=base::c, unlist=base::unlist,
         subsetdata.ds, subsetvar.ds, list=base::list, append2df.ds,
         rowcolCalc.ds, is.na=base::is.na
 NeedsCompilation: no
-MD5sum: 66d4b8f4740449d9b074d3c8ffe2f7e7
+MD5sum: 7eb5f5d1d4fff065d77a1cd421e3b625
 
 Package: dsbaseclient
 Version: 2.3
@@ -56,7 +56,7 @@ Description: Package contains function called by client to carry out
         basic statistical analyses
 Author: <datashield@obiba.org>
 NeedsCompilation: no
-MD5sum: 86294484d4590c9cbd87c55b79f1af45
+MD5sum: 3b981511a66a52ae284aeba74a5085ea
 
 Package: dsmodelling
 Version: 2.1
@@ -66,7 +66,7 @@ Description: This package contains functions for statistical modelling.
 Author: <datashield@obiba.org>
 AggregateMethods: glm.ds
 NeedsCompilation: no
-MD5sum: dd1854cd909d36ca6a87e230cd9815d3
+MD5sum: a102f9c951e0d9de213927300a184429
 
 Package: dsmodellingclient
 Version: 2.1
@@ -76,12 +76,12 @@ Title: Datashield package for statistical modelling (Client side)
 Description: This package contains functions for statistical modelling
 Author: <datashield@obiba.org>
 NeedsCompilation: no
-MD5sum: 00f94475f6beb2f069fe5e4e0f4b4baf
+MD5sum: 228916563208dc453c3b268d296defa0
 
 Package: opal
-Version: 2.0.1
+Version: 2.1.2
 Depends: R (>= 2.15.0), RCurl (>= 1.6-6), rjson
-Suggests: e1071, knitr, knitrBootstrap
+Suggests: e1071, knitr
 License: GPL-3
 Title: Opal R and Datashield utils
 Description: Data integration Web application for biobanks by OBiBa.
@@ -96,7 +96,19 @@ Description: Data integration Web application for biobanks by OBiBa.
 Author: OBiBa <info@obiba.org>
 URL: http://www.obiba.org
 NeedsCompilation: no
-MD5sum: b7d07db1de41c390c85fc014f59885fa
+MD5sum: ceef0c31f757ad31088bb21c1775af6d
+
+Package: opaladdons
+Version: 1.0.0
+Depends: R (>= 3.0.0), opal (>= 2.1.0)
+Suggests: knitrBootstrap
+License: GPL-3
+Title: Opal R utils for R 3.x
+Description: Provides some additional packages to opal R client.
+Author: OBiBa <info@obiba.org>
+URL: http://www.obiba.org
+NeedsCompilation: no
+MD5sum: 103d65c389c9227ff822d83d4637aa25
 
 Package: opaladmin
 Version: 1.17
@@ -108,5 +120,5 @@ Description: R toolbox to configure the R server behind Opal.
 Author: OBiBa <info@obiba.org>
 URL: http://www.obiba.org
 NeedsCompilation: no
-MD5sum: d90c2cd9984ad99201cffca713f6fa83
+MD5sum: 5b9b92ba61e73ad1e7d0d01e686a81b0
 
