@@ -91,19 +91,19 @@ tagline: DataSHIELD Packages Documentation
 
 ## Overview
 
-* [Client Packages](#client)
-* [Server Packages](#server)
+* [Client Packages](#client-packages)
+* [Server Packages](#server-packages)
 
 ', file=indexfile, append=FALSE)
 
 # Client packages
-cat('\n\n<a name="client"> </a>\n## Client Packages', file=indexfile, append=TRUE)
+cat('\n\n## Client Packages', file=indexfile, append=TRUE)
 pkg.cmd <- '\t# Install @pkg@ package (client side)
 \tinstall.packages(\'@pkg@\', repos=c(getOption(\'repos\'), \'http://cran.datashield.org\'), dependencies=TRUE)'
 pkgs2html(list('dsbaseclient','dsmodellingclient','opal','opaladmin'), pkg.cmd, out)
 
 # Server packages
-cat('\n\n<a name="server"> </a>\n## Server Packages', file=indexfile, append=TRUE)
+cat('\n\n## Server Packages', file=indexfile, append=TRUE)
 pkg.cmd <- '\t# Install @pkg@ package (server side)
 \tlibrary(opaladmin)
 \to<-opal.login(...)
