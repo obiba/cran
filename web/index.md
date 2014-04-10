@@ -9,10 +9,6 @@ tagline: DataSHIELD Packages Documentation
 * [Client Packages](#client)
 * [Server Packages](#server)
 
-
-
-<a name="client"> </a>
-
 ## Client Packages
 
 ### dsbaseclient
