@@ -6,8 +6,8 @@ tagline: DataSHIELD Packages Documentation
 
 ## Overview
 
-* [Client Packages](#client)
-* [Server Packages](#server)
+* [Client Packages](#client-packages)
+* [Server Packages](#server-packages)
 
 ## Client Packages
 
@@ -213,8 +213,6 @@ Sources:
 * [DESCRIPTION](https://raw.github.com/datashield/opaladmin/1.17/DESCRIPTION)
 * [opaladmin 1.17](https://github.com/datashield/opaladmin/tree/1.17)
 
-
-<a name="server"> </a>
 
 ## Server Packages
 
