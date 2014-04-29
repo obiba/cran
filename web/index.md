@@ -255,8 +255,8 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsbase/2.4.0/DESCRIPTION)
-* [dsbase 2.4.0](https://github.com/datashield/dsbase/tree/2.4.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsbase/2.4.1/DESCRIPTION)
+* [dsbase 2.4.1](https://github.com/datashield/dsbase/tree/2.4.1)
 
 
 ### dsmodelling
