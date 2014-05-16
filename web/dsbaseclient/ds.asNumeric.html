@@ -72,12 +72,12 @@ myvar &lt;- list("GENDER")
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
 # turn the factor variable 'GENDER' into a character vector
-ds.asCharacter(datasources=opals, xvect=quote(D$GENDER), newobj="gender_ch")
+ds.asCharacter(datasources=opals, xvect='D$GENDER', newobj="gender_ch")
 
 # now turn the newly created vector 'gender_ch' into a numeric
-ds.asNumeric(datasources=opals, xvect=quote(D$GENDER), newobj="gender_nm")
+ds.asNumeric(datasources=opals, xvect='gender_ch', newobj="gender_nm")
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.1 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.2 ]</div>
 </body></html>

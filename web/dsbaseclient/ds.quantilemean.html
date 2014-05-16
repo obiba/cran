@@ -1,21 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><title>R: Plots a histogram</title>
+<html><head><title>R: Compute the quantiles</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="../../assets/R.css">
 </head><body>
 
 <table width="100%" summary="page for ds.quantilemean {dsbaseclient}"><tr><td>ds.quantilemean {dsbaseclient}</td><td align="right">R Documentation</td></tr></table>
 
-<h2>Plots a histogram</h2>
+<h2>Compute the quantiles</h2>
 
 <h3>Description</h3>
 
-<p>This function plots histogram of the given data values. It
-calls a datashield server side function that produces the
-histogram objects to plot. The objects to plot do not
-contain bins with counts &lt; 5. The function allows for the
-user to plot disctinct histograms (one for each study) or a
-combine histogram that merges the single plots.
+<p>This function calculate the mean and quatile values of a
+quantitative variable without the minimum and maximum which
+are revealing.
 </p>
 
 
@@ -38,24 +35,21 @@ datasources.</p>
 </td></tr>
 <tr valign="top"><td><code>xvect</code></td>
 <td>
-<p>vector of values for which the histogram is
-desired.</p>
+<p>a numeric vector.</p>
 </td></tr>
 <tr valign="top"><td><code>type</code></td>
 <td>
 <p>a character which represent the type of graph
-to display. If <code>type</code> is set to 'combine', a
-histogram that merges the single plot is displayed. Each
-histogram is plotted separately if If <code>type</code> is set
-to 'split'.</p>
+to display. If <code>type</code> is set to 'combine' pooled
+values are displayed and sumamries a returned for each
+study if <code>type</code> is set to 'split'</p>
 </td></tr>
 </table>
 
 
 <h3>Value</h3>
 
-<p>one or more histogram plot depending on the argument
-<code>type</code>
+<p>one or more summaries depending the argument <code>type</code>
 </p>
 
 
@@ -86,5 +80,5 @@ ds.quantilemean(datasources=opals, xvect=quote(D$LAB_HDL), type="split")
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.1 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.2 ]</div>
 </body></html>

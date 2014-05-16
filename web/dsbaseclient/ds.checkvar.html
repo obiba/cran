@@ -83,18 +83,8 @@ ds.checkvar(datasources=opals, variables=list(quote(D$LAB_TSC)))
 datashield.assign(opals, 'tsc', quote(D$LAB_TSC))
 ds.checkvar(datasources=opals, variables=list(quote(tsc)))
 
-# Example 3: assign an empty variable and run the checks (uncommment the last line)
-server &lt;- "study1"
-url &lt;- "http://54.242.140.255"
-user &lt;- "administrator"
-password &lt;- "password"
-table &lt;- "Test.CNSIM"
-logindata &lt;- data.frame(cbind(server,url,user,password,table))
-myvar &lt;- list("LAB_TSC")
-opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
-#ds.checkvar(datasources=opals, variables=list(quote(D$LAB_TSC)))
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.1 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.2 ]</div>
 </body></html>

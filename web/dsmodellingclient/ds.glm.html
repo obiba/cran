@@ -10,15 +10,15 @@
 
 <h3>Description</h3>
 
-<p>Runs a combined GLM analysis of non-pooled data
+<p>A function fit generalized linear models
 </p>
 
 
 <h3>Usage</h3>
 
 <pre>
-  ds.glm(datasources = NULL, formula = NULL, family = NULL,
-    maxit = 15)
+ds.glm(datasources = NULL, formula = NULL, family = NULL, maxit = 15,
+  CI = 0.95, viewIter = FALSE)
 </pre>
 
 
@@ -44,20 +44,31 @@ function to use in the model</p>
 </td></tr>
 <tr valign="top"><td><code>maxit</code></td>
 <td>
-<p>the number of iterations of IWLS used</p>
+<p>the number of iterations of IWLS used
+instructions to each computer requesting non-disclosing
+summary statistics. The summaries are then combined to
+estimate the parameters of the model; these parameters
+are the same as those obtained if the data were
+'physically' pooled.</p>
+</td></tr>
+<tr valign="top"><td><code>CI</code></td>
+<td>
+<p>a numeric, the confidence interval.</p>
+</td></tr>
+<tr valign="top"><td><code>viewIter</code></td>
+<td>
+<p>a boolean, tells whether the results of
+the intermediate iterations should be printed on screen
+or not. Default is FALSE (i.e. only final results are
+shown).</p>
 </td></tr>
 </table>
 
 
 <h3>Details</h3>
 
-<p>It enables a parallelized analysis of individual-level
-data sitting on distinct servers by sending instructions
-to each computer requesting non-disclosing summary
-statistics. The summaries are then combined to estimate
-the parameters of the model; these parameters are the
-same as those obtained if the data were 'physically'
-pooled.
+<p>It enables a parallelized analysis of individual-level data
+sitting on distinct servers by sending
 </p>
 
 
@@ -65,8 +76,8 @@ pooled.
 
 <p>coefficients a named vector of coefficients
 </p>
-<p>residuals the 'working' residuals, that is the residuals
-in the final iteration of the IWLS fit.
+<p>residuals the 'working' residuals, that is the residuals in
+the final iteration of the IWLS fit.
 </p>
 <p>fitted.values the fitted mean values, obtained by
 transforming the linear predictors by the inverse of the
@@ -80,6 +91,12 @@ link function.
 </p>
 <p>aic A version of Akaike's An Information Criterion, which
 tells how well the model fits
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Burton,P;Gaye,A;Laflamme,P
 </p>
 
 
@@ -109,5 +126,5 @@ mod &lt;- ds.glm(datasources=opals,formula=D$DIS_DIAB~D$PM_BMI_CONTINUOUS+D$LAB_
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsmodellingclient</em> version 2.2.0 ]</div>
+<hr><div align="center">[Package <em>dsmodellingclient</em> version 2.2.1 ]</div>
 </body></html>

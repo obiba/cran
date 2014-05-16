@@ -33,7 +33,7 @@ datasources.</p>
 </td></tr>
 <tr valign="top"><td><code>x</code></td>
 <td>
-<p>a matrix-like object</p>
+<p>a character, the name of dataframe or matrix</p>
 </td></tr>
 </table>
 
@@ -62,12 +62,12 @@ data(logindata)
 opals &lt;- datashield.login(logins=logindata,assign=TRUE)
 
 # Example 1: Get the column names of the assigned datasets
-ds.colnames(datasources=opals, x=quote(D))
+ds.colnames(datasources=opals, x='D')
 
 # Example 2: Vectors are wrong input to the colnames function
-## Not run:  ds.colnames(datasources=opals, x=quote(D$LAB_TSC))
+## Not run:  ds.colnames(datasources=opals, x='D$LAB_TSC')
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.1 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.2 ]</div>
 </body></html>

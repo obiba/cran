@@ -21,8 +21,8 @@ a vector (factor, numeric or charcater) or a table
 <h3>Usage</h3>
 
 <pre>
-subsetDS(dt = NULL, rs = NULL, cs = NULL, lg = NULL, th = NULL,
-  varname = NULL)
+subsetDS(dt = NULL, complt = NULL, rs = NULL, cs = NULL, lg = NULL,
+  th = NULL, varname = NULL)
 </pre>
 
 
@@ -34,20 +34,26 @@ subsetDS(dt = NULL, rs = NULL, cs = NULL, lg = NULL, th = NULL,
 <p>a string character, the name of the dataframe
 or the factor vector and the range of the subset.</p>
 </td></tr>
+<tr valign="top"><td><code>complt</code></td>
+<td>
+<p>a boolean that tells if the subset to
+subset should include only complete cases</p>
+</td></tr>
 <tr valign="top"><td><code>rs</code></td>
 <td>
-<p>a vector of integers, the indices of the rows
-de extract.</p>
+<p>a vector of two integers that give the range of
+rows de extract.</p>
 </td></tr>
 <tr valign="top"><td><code>cs</code></td>
 <td>
-<p>a vector of integers or characters; the indices
-of the columns to extract or the names of the columns
-(i.e. names of the variables to extract).</p>
+<p>a vector of two integers or one or more
+characters; the indices of the columns to extract or the
+names of the columns (i.e. names of the variables to
+extract).</p>
 </td></tr>
 <tr valign="top"><td><code>lg</code></td>
 <td>
-<p>a charcater, the logical parameter to use if
+<p>a character, the logical parameter to use if
 the user wishes to subset a vector using a logical
 operator. This parameter is ignored if the input data is
 not a vector.</p>
@@ -91,8 +97,8 @@ proceed after informing the user via a message.
 
 <h3>Value</h3>
 
-<p>a no data are return to the user but messages are printed
-out.
+<p>a subset of the vector, matric or dataframe as specified is
+stored on the server side
 </p>
 
 
@@ -101,28 +107,5 @@ out.
 <p>Gaye, A.
 </p>
 
-
-<h3>Examples</h3>
-
-<pre>
-## Not run: 
-# load the login data
-library(opal)
-data(logindata)
-
-# login and assign some variables to R
-myvar &lt;- list("DIS_DIAB","PM_BMI_CONTINUOUS","LAB_HDL", "GENDER")
-opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
-
-# Example 1: get a table with the first 500 observations on the first two columns of table D
-datashield.assign(opals, "subD", quote(subsetDS(dt='D', rs=c(1:500), cs=c(1,2))))
-
-#' # Example 2: subset 'D' on bmi values greater than 25
-datashield.assign(opals, "subD", quote(subsetDS(dt='D', lg=1, th=25, varname='PM_BMI_CONTINUOUS')))
-
-
-## End(Not run)
-</pre>
-
-<hr><div align="center">[Package <em>dsbase</em> version 2.4.1 ]</div>
+<hr><div align="center">[Package <em>dsbase</em> version 2.4.4 ]</div>
 </body></html>

@@ -8,10 +8,16 @@
 
 <h2>Combines objects by columns</h2>
 
+<h3>Description</h3>
+
+<p>this is similar to the R base function 'cbind'
+</p>
+
+
 <h3>Usage</h3>
 
 <pre>
-ds.cbind(datasources = NULL, vector = NULL, newobj = NULL)
+ds.cbind(datasources = NULL, objects = NULL, newobj = NULL)
 </pre>
 
 
@@ -25,17 +31,26 @@ after login in to opal servers; these objects hold also
 the data assign to R, as <code>dataframe</code>, from opal
 datasources.</p>
 </td></tr>
-<tr valign="top"><td><code>vector</code></td>
+<tr valign="top"><td><code>objects</code></td>
 <td>
-<p>a vector that holds the objects to combine</p>
+<p>a list which holds the names of the
+objects to combine</p>
 </td></tr>
 <tr valign="top"><td><code>newobj</code></td>
 <td>
 <p>the name of the output object. If this
 argument is set to <code>NULL</code>, the name of the new
-object is 'cbind_vect'.</p>
+object is 'newObject'.</p>
 </td></tr>
 </table>
+
+
+<h3>Details</h3>
+
+<p>the function combines vectors or vectors and matrices or
+dataframes by columns. But unlike the R base function
+'cbind' the output is a dataframe.
+</p>
 
 
 <h3>Value</h3>
@@ -46,7 +61,7 @@ object is 'cbind_vect'.</p>
 
 <h3>Author(s)</h3>
 
-<p>Gaye, A.; Isaeva, J.
+<p>Gaye, A.
 </p>
 
 
@@ -62,11 +77,14 @@ data(logindata)
 myvar &lt;- list("LAB_TSC","LAB_HDL")
 opals &lt;- datashield.login(logins=logindata,assign=TRUE,variables=myvar)
 
-# combine the 'LAB_TSC' and 'LAB_HDL' variables by columns
-myvect &lt;- quote(cbind(D$LAB_TSC, D$LAB_HDL))
-ds.cbind(datasources=opals, vector=myvect)
+# generate a new dataframe by combining the variables 'LAB_TSC' and 'LAB_HDL', by columns
+ds.assign(opals, 'labtsc', 'D$LAB_TSC')
+ds.assign(opals, 'labhdl', 'D$LAB_HDL')
+myobjects &lt;- list('labtsc', 'labhdl')
+ds.cbind(datasources=opals, objects=myobjects)
+
 }
 </pre>
 
-<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.1 ]</div>
+<hr><div align="center">[Package <em>dsbaseclient</em> version 2.4.2 ]</div>
 </body></html>
