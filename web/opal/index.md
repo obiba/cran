@@ -44,6 +44,7 @@ Functions:
 * [opal.datasource](opal.datasource.html) Get a datasource from a opal.
 * [opal.datasources](opal.datasources.html) Get datasources from a opal.
 * [opal.execute](opal.execute.html) Execute a R script
+* [opal.file](opal.file.html) Get a file
 * [opal.getSessions](opal.getSessions.html) Get R sessions
 * [opal.login](opal.login.html) Opal login
 * [opal.logout](opal.logout.html) Logout from Opal(s)
@@ -66,5 +67,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/opal/2.1.3/DESCRIPTION)
-* [opal 2.1.3](https://github.com/datashield/opal/tree/2.1.3)
+* [DESCRIPTION](https://raw.github.com/datashield/opal/2.1.4/DESCRIPTION)
+* [opal 2.1.4](https://github.com/datashield/opal/tree/2.1.4)
