@@ -76,9 +76,9 @@ deploy-package:
 	cp -n target/src/contrib/$(p)_$(v).tar.gz src/contrib
 
 archive-package:
-	mkdir -p src/contrib/Archive && \
+	mkdir -p src/contrib/Archive/$(p) && \
 	cd src/contrib && \
-	mv -n $(p)_*tar.gz Archive
+	mv -n $(p)_*tar.gz Archive/$(p)
 
 #
 # Build a package in target directory: $1=package_name $2=package_version
