@@ -97,3 +97,9 @@ package = echo "****** Building $1 $2" && \
 
 # Generate packages documentation in web directory
 # TODO
+cran-web:
+	git reset -q HEAD web
+	git checkout -- web
+	git rm -rf web && \
+	./bin/ds2html.r && \
+	git add web
