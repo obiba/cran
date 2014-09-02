@@ -1,6 +1,6 @@
 cran
 ====
 
-The Comprehensive R Archive Network of DataSHIELD
+The Comprehensive R Archive Network of OBiBa
 
-[DataSHIELD CRAN Home Page](http://datashield.github.io/cran)
+[OBiBa CRAN Home Page](http://cran.obiba.org)
