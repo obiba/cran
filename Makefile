@@ -2,46 +2,98 @@
 # Makefile to update CRAN repo and documentation
 #
 
-base_dir=/tmp
-cran_repo=cran.datashield.org
+# Versions of github datashield packages
+DATASHIELDCLIENT_VERSION=2.0
+DATASHIELD_VERSION=2.0
 
-# Update CRAN repo and documentation, will fail if CRAN repo has not changed
-all: clone cran-src cran-web push
+DSBASECLIENT_VERSION=2.4.2
+DSBASE_VERSION=2.4.4
+
+DSMODELLINGCLIENT_VERSION=2.2.1
+DSMODELLING_VERSION=2.1
+
+DSGRAPHICSCLIENT_VERSION=1.0.0
+DSGRAPHICS_VERSION=1.0.0
+
+DSSTATSCLIENT_VERSION=1.0.0
+DSSTATS_VERSION=1.0.0
+
+OPAL_VERSION=2.1.4
+OPALADMIN_VERSION=1.17
+OPALADDONS_VERSION=1.0.0
+
+
+help:
+	@echo "Available targets: clean cran-src all-packages deploy archive-package..."
+
+cran-src: clean all-packages deploy update-index
 
 clean:
-	rm -rf ${base_dir}/${cran_repo}
+	rm -rf target
 
-# Clone DataSHIELD's CRAN
-clone:
-	cd ${base_dir} && \
-	rm -rf ${cran_repo} && \
-	git clone https://github.com/datashield/cran.git ${cran_repo} && \
-	cd ${cran_repo} && \
-	git checkout gh-pages
+all-packages: datashield dsbase dsmodelling opal
 
-# Mirror OBiBa's CRAN, will fail if nothing has changed
-cran-src:
-	cd ${base_dir} && \
-	rm -rf cran.obiba.org && \
-	wget -R *html -np -m http://cran.obiba.org/src/contrib/ && \
-	cd ${cran_repo} && \
-	git rm -rf src && \
-	mv ../cran.obiba.org/src . && \
-	rm -rf ../cran.obiba.org && \
-	git add src && \
-	git status && \
-	git commit -m "mirror from cran.obiba.org"
+datashield:
+	$(call package,datashield,$(DATASHIELD_VERSION))
+	$(call package,datashieldclient,$(DATASHIELDCLIENT_VERSION))
+
+dsbase:
+	$(call package,dsBase,$(DSBASE_VERSION))
+	$(call package,dsBaseClient,$(DSBASECLIENT_VERSION))
+
+dsmodelling:
+	$(call package,dsModelling,$(DSMODELLING_VERSION))
+	$(call package,dsModellingClient,$(DSMODELLINGCLIENT_VERSION))
+
+dsgraphics:
+	$(call package,dsGraphics,$(DSGRAPHICS_VERSION))
+	$(call package,dsGraphicsClient,$(DSGRAPHICSCLIENT_VERSION))
+
+dsstats:
+	$(call package,dsStats,$(DSSTATS_VERSION))
+	$(call package,dsStatsClient,$(DSSTATSCLIENT_VERSION))
+
+opal:
+	$(call package,opal,$(OPAL_VERSION))
+	$(call package,opaladmin,$(OPALADMIN_VERSION))
+	$(call package,opaladdons,$(OPALADDONS_VERSION))
+
+deploy:
+	mkdir -p src/contrib && \
+	cp target/src/contrib/*tar.gz src/contrib
+
+update-index:
+	cd src/contrib && \
+	rm -f PACKAGES* && \
+	echo "library(tools) ; write_PACKAGES('.', fields = c('Title',  'Description', 'Author', 'Date', 'URL', 'Licence', 'AggregateMethods', 'AssignMethods'))" | `which R` --vanilla --no-save
+
+package: build-package deploy-package
+
+build-package:
+	$(call package,$(p),$(v))
+
+deploy-package:
+	cp -n target/src/contrib/$(p)_$(v).tar.gz src/contrib
+
+archive-package:
+	mkdir -p src/contrib/Archive && \
+	cd src/contrib && \
+	mv -n $(p)_*tar.gz Archive
+
+#
+# Build a package in target directory: $1=package_name $2=package_version
+#
+package = echo "****** Building $1 $2" && \
+  mkdir -p target/src/contrib && \
+  cd target && \
+  rm -f $2.zip && \
+  rm -rf $1-$2 && \
+  wget https://github.com/datashield/$1/archive/$2.zip && \
+  unzip $2.zip && \
+  echo "devtools::build('$1-$2','./src/contrib')" | Rscript - && \
+  rm -f $2.zip && \
+  rm -rf $1-$2
+
 
 # Generate packages documentation in web directory
-cran-web:
-	cd ${base_dir}/${cran_repo} && \
-	git rm -rf web && \
-	./bin/ds2html.r && \
-	git add web && \
-	git status && \
-	git commit -m "documentation update"
-
-# Push to GitHub
-push:
-	cd ${base_dir}/${cran_repo} && \
-	git push origin gh-pages
+# TODO
