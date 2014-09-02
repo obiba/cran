@@ -1,7 +1,7 @@
 ---
 layout: page
-title: DataSHIELD CRAN
-tagline: The Comprehensive R Archive Network of DataSHIELD
+title: OBiBa CRAN
+tagline: The Comprehensive R Archive Network of OBiBa
 ---
 {% include JB/setup %}
 
