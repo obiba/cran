@@ -10,12 +10,12 @@ tagline: The Comprehensive R Archive Network of OBiBa
 Client side install:
 
 	# Install all DataSHIELD packages
-	install.packages('datashieldclient', repos=c(getOption('repos'), 'http://cran.datashield.org'), dependencies=TRUE)
+	install.packages('datashieldclient', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
 
 Server side install:
 	
 	# Install opaladmin package
-	install.packages('opaladmin', repos=c(getOption('repos'), 'http://cran.datashield.org'), dependencies=TRUE)
+	install.packages('opaladmin', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
 
 	# Login in Opal
 	library(opaladmin)
@@ -28,7 +28,7 @@ Server side install:
 
 See detailed usage documentation for users, administrators and developers:
 
-<a href="http://datashield.github.io/documentation" class="btn btn-primary">DataSHIELD Usage Documentation</a>
+<a href="http://datashield.org/documentation" class="btn btn-primary">DataSHIELD Usage Documentation</a>
 
 See also packages detailed documentation:
 
@@ -38,5 +38,5 @@ See also packages detailed documentation:
 
 List of the packages available:
 
-<a href="https://github.com/datashield/cran/tree/gh-pages/src/contrib" class="btn btn-inverse">DataSHIELD Packages Listing</a>
+<a href="https://github.com/obiba/cran/tree/gh-pages/src/contrib" class="btn btn-inverse">OBiBa and DataSHIELD Packages Listing</a>
 
