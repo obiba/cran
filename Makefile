@@ -6,14 +6,14 @@
 DATASHIELDCLIENT_VERSION=3.0.0
 DATASHIELD_VERSION=3.0.0
 
-DSBASECLIENT_VERSION=3.0.0
-DSBASE_VERSION=3.0.0
+DSBASECLIENT_VERSION=3.0.1
+DSBASE_VERSION=3.0.1
 
 DSMODELLINGCLIENT_VERSION=3.0.0
 DSMODELLING_VERSION=3.0.0
 
 DSGRAPHICSCLIENT_VERSION=3.0.0
-DSGRAPHICS_VERSION=3.0.0
+DSGRAPHICS_VERSION=3.0.1
 
 DSSTATSCLIENT_VERSION=3.0.0
 DSSTATS_VERSION=3.0.0
@@ -65,7 +65,7 @@ deploy:
 update-index:
 	cd src/contrib && \
 	rm -f PACKAGES* && \
-	echo "library(tools) ; write_PACKAGES('.', fields = c('Title',  'Description', 'Author', 'Date', 'URL', 'Licence', 'AggregateMethods', 'AssignMethods'))" | `which R` --vanilla --no-save
+	echo "library(tools) ; write_PACKAGES('.', fields = c('Title',  'Description', 'Author', 'Date', 'URL', 'Licence', 'AggregateMethods', 'AssignMethods'))" | R --vanilla --no-save
 
 package: build-package deploy-package
 
@@ -94,12 +94,18 @@ package = echo "****** Building $1 $2" && \
   rm -f $2.zip && \
   rm -rf $1-$2
 
-
+#
 # Generate packages documentation in web directory
-# TODO
+# 
 cran-web:
 	git reset -q HEAD web
 	git checkout -- web
 	git rm -rf web && \
 	./bin/ds2html.r && \
 	git add web
+
+#
+# Install required devtools package
+#
+install-devtools:
+	echo 'install.packages("devtools", repos=c("http://cran.rstudio.com"), dependencies=TRUE)' | R --vanilla --no-save
