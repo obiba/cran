@@ -31,7 +31,7 @@ cran-src: clean all-packages deploy update-index
 clean:
 	rm -rf target
 
-all-packages: dsbase dsmodelling dsgraphics dsstats opal
+all-packages: dsbase dsmodelling dsgraphics dsstats opal opaladmin opaladdons
 
 datashield:
 	$(call package,datashield,$(DATASHIELD_VERSION))
@@ -55,7 +55,11 @@ dsstats:
 
 opal:
 	$(call package,opal,$(OPAL_VERSION))
+
+opaladmin:
 	$(call package,opaladmin,$(OPALADMIN_VERSION))
+
+opaladdons:
 	$(call package,opaladdons,$(OPALADDONS_VERSION))
 
 deploy:
