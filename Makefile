@@ -6,17 +6,17 @@
 DATASHIELDCLIENT_VERSION=3.0.0
 DATASHIELD_VERSION=3.0.0
 
-DSBASECLIENT_VERSION=3.0.1
-DSBASE_VERSION=3.0.1
+DSBASECLIENT_VERSION=4.0.0
+DSBASE_VERSION=4.0.0
 
-DSMODELLINGCLIENT_VERSION=3.0.0
-DSMODELLING_VERSION=3.0.0
+DSMODELLINGCLIENT_VERSION=4.0.0
+DSMODELLING_VERSION=4.0.0
 
-DSGRAPHICSCLIENT_VERSION=3.0.0
-DSGRAPHICS_VERSION=3.0.1
+DSGRAPHICSCLIENT_VERSION=4.0.0
+DSGRAPHICS_VERSION=4.0.0
 
-DSSTATSCLIENT_VERSION=3.0.0
-DSSTATS_VERSION=3.0.0
+DSSTATSCLIENT_VERSION=4.0.0
+DSSTATS_VERSION=4.0.0
 
 OPAL_VERSION=2.2.0
 OPALADMIN_VERSION=1.17
@@ -31,7 +31,9 @@ cran-src: clean all-packages deploy update-index
 clean:
 	rm -rf target
 
-all-packages: dsbase dsmodelling dsgraphics dsstats opal opaladmin opaladdons
+all-packages: all-ds-packages opal opaladmin opaladdons
+
+all-ds-packages: dsbase dsmodelling dsgraphics dsstats
 
 datashield:
 	$(call package,datashield,$(DATASHIELD_VERSION))
