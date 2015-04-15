@@ -99,7 +99,7 @@ tagline: DataSHIELD Packages Documentation
 # Client packages
 cat('\n\n## Client Packages', file=indexfile, append=TRUE)
 pkg.cmd <- '\t# Install @pkg@ package (client side)
-\tinstall.packages(\'@pkg@\', repos=c(getOption(\'repos\'), \'http://cran.datashield.org\'), dependencies=TRUE)'
+\tinstall.packages(\'@pkg@\', repos=c(getOption(\'repos\'), \'http://cran.obiba.org\'), dependencies=TRUE)'
 pkgs2html(list('dsBaseClient','dsModellingClient','dsStatsClient','dsGraphicsClient','opal','opaladmin'), pkg.cmd, out)
 
 # Server packages
