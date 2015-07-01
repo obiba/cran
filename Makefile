@@ -18,6 +18,9 @@ DSGRAPHICS_VERSION=4.0.0
 DSSTATSCLIENT_VERSION=4.1.0
 DSSTATS_VERSION=4.0.0
 
+DSBETATESTCLIENT_VERSION=0.0.1
+DSBETATEST_VERSION=0.0.1
+
 OPAL_VERSION=2.2.7
 OPALADMIN_VERSION=1.17
 OPALADDONS_VERSION=1.0.0
@@ -54,6 +57,10 @@ dsgraphics:
 dsstats:
 	$(call package,dsStats,$(DSSTATS_VERSION))
 	$(call package,dsStatsClient,$(DSSTATSCLIENT_VERSION))
+
+dsbetatest:
+	$(call package,dsBetaTest,$(DSBETATEST_VERSION))
+	$(call package,dsBetaTestClient,$(DSBETATESTCLIENT_VERSION))
 
 opal:
 	$(call package,opal,$(OPAL_VERSION))
