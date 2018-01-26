@@ -21,7 +21,7 @@ DSSTATS_VERSION=4.0.0
 DSBETATESTCLIENT_VERSION=0.0.5
 DSBETATEST_VERSION=0.0.5
 
-OPAL_VERSION=2.5.1
+OPAL_VERSION=2.6.0
 OPALADMIN_VERSION=1.18
 OPALADDONS_VERSION=1.0.0
 
@@ -109,7 +109,7 @@ package = echo "****** Building $1 $2" && \
 
 #
 # Generate packages documentation in web directory
-# 
+#
 cran-web:
 	git reset -q HEAD web
 	git checkout -- web
