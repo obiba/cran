@@ -1,10 +1,3 @@
----
-layout: page
-title: opal
-tagline: opal Package Documentation
----
-
-
 ### opal
 
 Installation command:

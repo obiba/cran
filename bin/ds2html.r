@@ -4,7 +4,7 @@
 if (is.na(commandArgs(TRUE)[1])) {
   out = 'web'
 } else {
-  out = commandArgs(TRUE)[1] 
+  out = commandArgs(TRUE)[1]
 }
 dir.create(out, recursive=TRUE)
 
@@ -18,14 +18,9 @@ pkg2html <- function(pkg, outdir=tempdir(), pkg.section='\n\n### @pkg@\nPackage 
   pkg.outdir <- file.path(outdir, pkg)
   unlink(pkg.outdir, recursive=TRUE, force=TRUE)
   dir.create(pkg.outdir, recursive=TRUE)
-    
+
   # markdown index
-  pkg.header <- '---
-layout: page
-title: @pkg@
-tagline: @pkg@ Package Documentation
----
-'
+  pkg.header <- ""
   # generate html file for each topic
   pkg.func <- ""
   pkgs.func <- ""
@@ -38,10 +33,10 @@ tagline: @pkg@ Package Documentation
     pkg.func <- paste0(pkg.func,'\n* [', p, '](', p,'.html) ', title)
     pkgs.func <- paste0(pkgs.func,'\n* [', p, '](@pkg@/', p,'.html) ', title)
   }
-  
+
   # version
   pkg.version <- utils::packageDescription(pkg,fields="Version")
-  
+
   pkg.indexfile <- file.path(pkg.outdir, 'index.md')
   message('** index of ', pkg, ' in ', pkg.indexfile)
   section <- gsub('@pkg.func@', pkg.func, pkg.section)
@@ -49,7 +44,7 @@ tagline: @pkg@ Package Documentation
   section <- gsub('@pkg.version@', pkg.version, section)
   cat(gsub('@pkg@', pkg, pkg.header), file=pkg.indexfile, append=FALSE)
   cat(section, file=pkg.indexfile, append=TRUE)
-  
+
   indexfile <- file.path(outdir, 'index.md')
   section <- gsub('@pkg.func@', pkgs.func, pkg.section)
   section <- gsub('@pkg@', pkg, section)
@@ -73,7 +68,7 @@ Sources:
 * [DESCRIPTION](https://raw.github.com/datashield/@pkg@/@pkg.version@/DESCRIPTION)
 * [@pkg@ @pkg.version@](https://github.com/datashield/@pkg@/tree/@pkg.version@)
 '
-  
+
   lapply(pkgs,function(pkg) {
     install.packages(pkg, repos=repos)
     pkg2html(pkg, outdir=out, gsub('@pkg.cmd@', pkg.cmd, pkg.section))

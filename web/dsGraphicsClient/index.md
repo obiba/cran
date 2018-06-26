@@ -1,10 +1,3 @@
----
-layout: page
-title: dsGraphicsClient
-tagline: dsGraphicsClient Package Documentation
----
-
-
 ### dsGraphicsClient
 
 Installation command:

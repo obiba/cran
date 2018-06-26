@@ -1,10 +1,3 @@
----
-layout: page
-title: opaladmin
-tagline: opaladmin Package Documentation
----
-
-
 ### opaladmin
 
 Installation command:

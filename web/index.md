@@ -1,9 +1,3 @@
----
-layout: page
-title: Packages Documentation
-tagline: DataSHIELD Packages Documentation
----
-
 ## Overview
 
 * [Client Packages](#client-packages)

@@ -1,10 +1,3 @@
----
-layout: page
-title: dsModelling
-tagline: dsModelling Package Documentation
----
-
-
 ### dsModelling
 
 Installation command:

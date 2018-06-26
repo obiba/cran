@@ -1,10 +1,3 @@
----
-layout: page
-title: dsStatsClient
-tagline: dsStatsClient Package Documentation
----
-
-
 ### dsStatsClient
 
 Installation command:

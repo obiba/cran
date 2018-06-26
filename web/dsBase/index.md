@@ -1,10 +1,3 @@
----
-layout: page
-title: dsBase
-tagline: dsBase Package Documentation
----
-
-
 ### dsBase
 
 Installation command:

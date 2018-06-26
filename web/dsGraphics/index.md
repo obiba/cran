@@ -1,10 +1,3 @@
----
-layout: page
-title: dsGraphics
-tagline: dsGraphics Package Documentation
----
-
-
 ### dsGraphics
 
 Installation command:

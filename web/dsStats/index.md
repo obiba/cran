@@ -1,10 +1,3 @@
----
-layout: page
-title: dsStats
-tagline: dsStats Package Documentation
----
-
-
 ### dsStats
 
 Installation command:

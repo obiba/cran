@@ -1,10 +1,3 @@
----
-layout: page
-title: dsModellingClient
-tagline: dsModellingClient Package Documentation
----
-
-
 ### dsModellingClient
 
 Installation command:
