@@ -1,6 +1,6 @@
 # CRAN
 
-[OBiBa](https://obiba.org) and [DataSHIELD](https://www.datashield.ac.uk/) R packages repository.
+[OBiBa](https://www.obiba.org) and [DataSHIELD](https://www.datashield.ac.uk/) R packages repository.
 
 ### Quick Start
 
