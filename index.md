@@ -13,7 +13,7 @@ Client side install:
 	install.packages('datashieldclient', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
 
 Server side install:
-	
+
 	# Install opaladmin package
 	install.packages('opaladmin', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
 
@@ -26,17 +26,10 @@ Server side install:
 
 ## Documentation
 
-See detailed usage documentation for users, administrators and developers:
-
-<a href="http://datashield.org/documentation" class="btn btn-primary">DataSHIELD Usage Documentation</a>
-
-See also packages detailed documentation:
-
-<a href="web" class="btn btn-primary">DataSHIELD Packages Documentation</a>
+<a href="web" class="btn btn-primary">Packages Documentation</a>
 
 ## Packages
 
 List of the packages available:
 
 <a href="https://github.com/obiba/cran/tree/gh-pages/src/contrib" class="btn btn-inverse">OBiBa and DataSHIELD Packages Listing</a>
-
