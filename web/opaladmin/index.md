@@ -35,5 +35,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/opaladmin/1.18/DESCRIPTION)
-* [opaladmin 1.18](https://github.com/datashield/opaladmin/tree/1.18)
+* [DESCRIPTION](https://raw.github.com/datashield/opaladmin/1.19/DESCRIPTION)
+* [opaladmin 1.19](https://github.com/datashield/opaladmin/tree/1.19)
