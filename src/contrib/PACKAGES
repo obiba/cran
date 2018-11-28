@@ -57,32 +57,34 @@ Description: DataSHIELD base functions for the client site
 Author: <datashield@obiba.org>
 
 Package: dsBetaTest
-Version: 0.1.3
+Version: 0.2.0
 Depends: dsBase, dsStats, dsGraphics, dsModelling
 License: GPL-3
-MD5sum: 02dbc0132e1b53a6d4382716892e4450
+MD5sum: 4ca6fe61b9568064feb74243afc26f90
 NeedsCompilation: no
 Title: New DataSHIELD Server Functions
 Description: Beta versions of new DataSHIELD server functions.
         Collected in this temporary package, prior to inclusion in the
         main DataSHIELD packages.
+Author: DataSHIELD Developers <datashield@newcastle.ac.uk>
 AggregateMethods: meanSdGpDS, tTestFDS2, lexisDS1.o, glmDS1.o,
         glmDS2.o, covDS.o, asFactorDS1.o, meanDS.o, recodeValuesDS1.o,
-        rilmDS.b, testObjExistsDS.o
+        rilmDS.b, testObjExistsDS.o, listDisclosureSettingsDS.o
 AssignMethods: lexisDS2.o, lexisDS3.o, asFactorDS2.o, BooleDS.o,
         recodeValuesDS2.o
 
 Package: dsBetaTestClient
-Version: 0.1.3
+Version: 0.2.0
 Depends: dsBaseClient, dsStatsClient, dsGraphicsClient,
         dsModellingClient, opal
 License: GPL-3
-MD5sum: de6a353c238c7aca2fe2c67129eaeb5a
+MD5sum: 0b5b03fb92661870c2b2ee7b2933bdf5
 NeedsCompilation: no
 Title: New DataSHIELD Client Functions
 Description: Beta versions of new DataSHIELD client functions.
         Collected in this temporary package, prior to inclusion in the
         main DataSHIELD packages.
+Author: DataSHIELD Developers <datashield@newcastle.ac.uk>
 
 Package: dsGraphics
 Version: 4.0.0
