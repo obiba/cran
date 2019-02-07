@@ -57,10 +57,10 @@ Description: DataSHIELD base functions for the client site
 Author: <datashield@obiba.org>
 
 Package: dsBetaTest
-Version: 0.2.0
+Version: 0.3.0
 Depends: dsBase, dsStats, dsGraphics, dsModelling
 License: GPL-3
-MD5sum: 4ca6fe61b9568064feb74243afc26f90
+MD5sum: 90c47764c9c421a167a161de0660ee5c
 NeedsCompilation: no
 Title: New DataSHIELD Server Functions
 Description: Beta versions of new DataSHIELD server functions.
@@ -69,16 +69,19 @@ Description: Beta versions of new DataSHIELD server functions.
 Author: DataSHIELD Developers <datashield@newcastle.ac.uk>
 AggregateMethods: meanSdGpDS, tTestFDS2, lexisDS1.o, glmDS1.o,
         glmDS2.o, covDS.o, asFactorDS1.o, meanDS.o, recodeValuesDS1.o,
-        rilmDS.b, testObjExistsDS.o, listDisclosureSettingsDS.o
+        rilmDS.b, testObjExistsDS.o, listDisclosureSettingsDS.o,
+        dataFrameSubsetDS1.o, glmDSSLMA2.o, messageDS.o, setSeedDS.o,
+        tapplyDS.o
 AssignMethods: lexisDS2.o, lexisDS3.o, asFactorDS2.o, BooleDS.o,
-        recodeValuesDS2.o
+        recodeValuesDS2.o, dataFrameDS.o, dataFrameSortDS.o,
+        dataFrameSubsetDS2.o, tapplyDS.assign.o, seqDS.o, reShapeDS.o
 
 Package: dsBetaTestClient
-Version: 0.2.0
+Version: 0.3.0
 Depends: dsBaseClient, dsStatsClient, dsGraphicsClient,
         dsModellingClient, opal
 License: GPL-3
-MD5sum: 0b5b03fb92661870c2b2ee7b2933bdf5
+MD5sum: caf0453477027207c12a3b1d12ca26df
 NeedsCompilation: no
 Title: New DataSHIELD Client Functions
 Description: Beta versions of new DataSHIELD client functions.
