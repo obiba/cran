@@ -60,7 +60,7 @@ Package: dsBetaTest
 Version: 0.3.0
 Depends: dsBase, dsStats, dsGraphics, dsModelling
 License: GPL-3
-MD5sum: 90c47764c9c421a167a161de0660ee5c
+MD5sum: 07d07f68970e3b45533f647a471115ed
 NeedsCompilation: no
 Title: New DataSHIELD Server Functions
 Description: Beta versions of new DataSHIELD server functions.
@@ -81,7 +81,7 @@ Version: 0.3.0
 Depends: dsBaseClient, dsStatsClient, dsGraphicsClient,
         dsModellingClient, opal
 License: GPL-3
-MD5sum: caf0453477027207c12a3b1d12ca26df
+MD5sum: 1ef301970730f7fb34c0bdb703e5be5f
 NeedsCompilation: no
 Title: New DataSHIELD Client Functions
 Description: Beta versions of new DataSHIELD client functions.
