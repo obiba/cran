@@ -3,20 +3,11 @@
 #
 
 # Versions of github datashield packages
-DATASHIELDCLIENT_VERSION=3.0.0
-DATASHIELD_VERSION=3.0.0
+DATASHIELDCLIENT_VERSION=5.0.0
+DATASHIELD_VERSION=5.0.0
 
-DSBASECLIENT_VERSION=4.1.0
-DSBASE_VERSION=4.0.0
-
-DSMODELLINGCLIENT_VERSION=4.1.0
-DSMODELLING_VERSION=4.1.0
-
-DSGRAPHICSCLIENT_VERSION=4.0.0
-DSGRAPHICS_VERSION=4.0.0
-
-DSSTATSCLIENT_VERSION=4.1.0
-DSSTATS_VERSION=4.0.0
+DSBASECLIENT_VERSION=5.0.0
+DSBASE_VERSION=5.0.0
 
 DSBETATESTCLIENT_VERSION=0.3.0
 DSBETATEST_VERSION=0.3.0
@@ -36,7 +27,7 @@ clean:
 
 all-packages: all-ds-packages opal opaladmin opaladdons
 
-all-ds-packages: dsbase dsmodelling dsgraphics dsstats
+all-ds-packages: dsbase
 
 datashield:
 	$(call package,datashield,$(DATASHIELD_VERSION))
@@ -45,18 +36,6 @@ datashield:
 dsbase:
 	$(call package,dsBase,$(DSBASE_VERSION))
 	$(call package,dsBaseClient,$(DSBASECLIENT_VERSION))
-
-dsmodelling:
-	$(call package,dsModelling,$(DSMODELLING_VERSION))
-	$(call package,dsModellingClient,$(DSMODELLINGCLIENT_VERSION))
-
-dsgraphics:
-	$(call package,dsGraphics,$(DSGRAPHICS_VERSION))
-	$(call package,dsGraphicsClient,$(DSGRAPHICSCLIENT_VERSION))
-
-dsstats:
-	$(call package,dsStats,$(DSSTATS_VERSION))
-	$(call package,dsStatsClient,$(DSSTATSCLIENT_VERSION))
 
 dsbetatest:
 	$(call package,dsBetaTest,$(DSBETATEST_VERSION))
