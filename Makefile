@@ -3,16 +3,11 @@
 #
 
 # Versions of github datashield packages
-DATASHIELDCLIENT_VERSION=5.0.0
-DATASHIELD_VERSION=5.0.0
+DATASHIELDCLIENT_VERSION=6.0.0
+DATASHIELD_VERSION=6.0.0
 
-DSBASECLIENT_VERSION=5.1.0
-DSBASE_VERSION=5.1.0
-
-OPAL_VERSION=2.6.1
-OPALADMIN_VERSION=1.20.0
-OPALADDONS_VERSION=1.0.0
-
+DSBASECLIENT_VERSION=6.0.0
+DSBASE_VERSION=6.0.0
 
 help:
 	@echo "Available targets: clean cran-src all-packages deploy archive-package..."
@@ -22,7 +17,7 @@ cran-src: clean all-packages deploy update-index
 clean:
 	rm -rf target
 
-all-packages: all-ds-packages opal opaladmin opaladdons
+all-packages: all-ds-packages 
 
 all-ds-packages: dsbase
 
@@ -33,15 +28,6 @@ datashield:
 dsbase:
 	$(call package,dsBase,$(DSBASE_VERSION))
 	$(call package,dsBaseClient,$(DSBASECLIENT_VERSION))
-
-opal:
-	$(call package,opal,$(OPAL_VERSION))
-
-opaladmin:
-	$(call package,opaladmin,$(OPALADMIN_VERSION))
-
-opaladdons:
-	$(call package,opaladdons,$(OPALADDONS_VERSION))
 
 deploy:
 	mkdir -p src/contrib && \
