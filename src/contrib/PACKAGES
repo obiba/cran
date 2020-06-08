@@ -1,8 +1,8 @@
 Package: datashield
-Version: 5.0.0
-Depends: dsBase
+Version: 6.0.0
+Depends: dsBase, resourcer
 License: GPL-3
-MD5sum: 426cc9299cdd9438e78bf18d60030656
+MD5sum: 70cc43353d6a01ae310683c1993690f1
 NeedsCompilation: no
 Title: Datashield meta-package (server side)
 Description: This package installs as dependencies all other DataSHIELD
@@ -10,10 +10,11 @@ Description: This package installs as dependencies all other DataSHIELD
 Author: <datashield@obiba.org>
 
 Package: datashieldclient
-Version: 5.0.0
-Depends: dsBaseClient
+Version: 6.0.0
+Depends: DSI, DSOpal, dsBaseClient
+Suggests: DSLite
 License: GPL-3
-MD5sum: ab041cc3032779e6f3fa06b9f7f3a127
+MD5sum: a547410325fdb72d569f25847f7d3805
 NeedsCompilation: no
 Title: Datashield meta-package (client side)
 Description: This package installs as dependencies all other DataSHIELD
