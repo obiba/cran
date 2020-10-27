@@ -6,8 +6,8 @@
 DATASHIELDCLIENT_VERSION=6.0.0
 DATASHIELD_VERSION=6.0.0
 
-DSBASECLIENT_VERSION=6.0.1
-DSBASE_VERSION=6.0.1
+DSBASECLIENT_VERSION=6.1.0
+DSBASE_VERSION=6.1.0
 
 help:
 	@echo "Available targets: clean cran-src all-packages deploy archive-package..."
@@ -17,7 +17,7 @@ cran-src: clean all-packages deploy update-index
 clean:
 	rm -rf target
 
-all-packages: all-ds-packages 
+all-packages: all-ds-packages
 
 all-ds-packages: dsbase
 
