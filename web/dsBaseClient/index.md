@@ -13,6 +13,7 @@ Functions:
 * [checkClass](checkClass.html) Checks that an object has the same class in all studies
 * [colPercent](colPercent.html) Produces column percentages
 * [ds.Boole](ds.Boole.html) Converts a server-side R object into Boolean indicators
+* [ds.abs](ds.abs.html) Computes the absolute values of a variable
 * [ds.asCharacter](ds.asCharacter.html) Converts a server-side R object into a character class
 * [ds.asDataMatrix](ds.asDataMatrix.html) Converts a server-side R object into a matrix
 * [ds.asFactor](ds.asFactor.html) Converts a server-side numeric vector into a factor
@@ -22,6 +23,12 @@ Functions:
 * [ds.asMatrix](ds.asMatrix.html) Converts a server-side R object into a matrix
 * [ds.asNumeric](ds.asNumeric.html) Converts a server-side R object into a numeric class
 * [ds.assign](ds.assign.html) Assigns an R object to a name in the server-side
+* [ds.boxPlot](ds.boxPlot.html) Draw boxplot
+* [ds.boxPlotGG](ds.boxPlotGG.html) Renders boxplot
+* [ds.boxPlotGG_data_Treatment](ds.boxPlotGG_data_Treatment.html) Take a data frame on the server side an arrange it to pass it to the boxplot function
+* [ds.boxPlotGG_data_Treatment_numeric](ds.boxPlotGG_data_Treatment_numeric.html) Take a vector on the server side an arrange it to pass it to the boxplot function
+* [ds.boxPlotGG_numeric](ds.boxPlotGG_numeric.html) Draw boxplot with information from a numeric vector
+* [ds.boxPlotGG_table](ds.boxPlotGG_table.html) Draw boxplot with information from a data frame
 * [ds.c](ds.c.html) Combines values into a vector or list in the server-side
 * [ds.cbind](ds.cbind.html) Combines R objects by columns in the server-side
 * [ds.changeRefGroup](ds.changeRefGroup.html) Changes the reference level of a factor in the server-side
@@ -40,13 +47,17 @@ Functions:
 * [ds.dim](ds.dim.html) Retrieves the dimension of a server-side R object
 * [ds.exists](ds.exists.html) Checks if an object is defined on the server-side
 * [ds.exp](ds.exp.html) Computes the exponentials in the server-side
+* [ds.getWGSR](ds.getWGSR.html) Computes the WHO Growth Reference z-scores of anthropometric data
 * [ds.glm](ds.glm.html) Fits Generalized Linear Model
-* [ds.glmSLMA](ds.glmSLMA.html) Fits Generalized Linear Model via Study-Level Meta-Analysis
+* [ds.glmPredict](ds.glmPredict.html) Applies predict.glm() to a serverside glm object
+* [ds.glmSLMA](ds.glmSLMA.html) Fit a Generalized Linear Model (GLM) with pooling via Study Level Meta-Analysis (SLMA)
+* [ds.glmSummary](ds.glmSummary.html) summarize a glm object on the serverside
 * [ds.glmerSLMA](ds.glmerSLMA.html) Fitting Generalized Linear Mixed-Effect Models via Study-Level Meta-Analysis
 * [ds.heatmapPlot](ds.heatmapPlot.html) Generates a Heat Map plot
 * [ds.histogram](ds.histogram.html) Generates a histogram plot
 * [ds.isNA](ds.isNA.html) Checks if a server-side vector is empty
 * [ds.isValid](ds.isValid.html) Checks if a server-side object is valid
+* [ds.kurtosis](ds.kurtosis.html) Calculates the kurtosis of a numeric variable
 * [ds.length](ds.length.html) Gets the length of an object in the server-side
 * [ds.levels](ds.levels.html) Levels attributes of a server-side factor
 * [ds.lexis](ds.lexis.html) Represents follow-up in multiple states on multiple time scales
@@ -93,6 +104,8 @@ Functions:
 * [ds.seq](ds.seq.html) Generates a sequence in the server-side
 * [ds.setDefaultOpals](ds.setDefaultOpals.html) ds.setDefaultOpals creates a default set of Opal objects called 'default.opals'
 * [ds.setSeed](ds.setSeed.html) Server-side random number generation
+* [ds.skewness](ds.skewness.html) Calculates the skewness of a server-side numeric variable
+* [ds.sqrt](ds.sqrt.html) Computes the square root values of a variable
 * [ds.subset](ds.subset.html) Generates a valid subset of a table or a vector
 * [ds.subsetByClass](ds.subsetByClass.html) Generates valid subset(s) of a data frame or a factor
 * [ds.summary](ds.summary.html) Generates the summary of a server-side object
@@ -123,5 +136,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsBaseClient/6.0.1/DESCRIPTION)
-* [dsBaseClient 6.0.1](https://github.com/datashield/dsBaseClient/tree/6.0.1)
+* [DESCRIPTION](https://raw.github.com/datashield/dsBaseClient/6.1.0/DESCRIPTION)
+* [dsBaseClient 6.1.0](https://github.com/datashield/dsBaseClient/tree/6.1.0)

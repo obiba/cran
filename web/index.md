@@ -26,6 +26,7 @@ Functions:
 * [checkClass](dsBaseClient/checkClass.html) Checks that an object has the same class in all studies
 * [colPercent](dsBaseClient/colPercent.html) Produces column percentages
 * [ds.Boole](dsBaseClient/ds.Boole.html) Converts a server-side R object into Boolean indicators
+* [ds.abs](dsBaseClient/ds.abs.html) Computes the absolute values of a variable
 * [ds.asCharacter](dsBaseClient/ds.asCharacter.html) Converts a server-side R object into a character class
 * [ds.asDataMatrix](dsBaseClient/ds.asDataMatrix.html) Converts a server-side R object into a matrix
 * [ds.asFactor](dsBaseClient/ds.asFactor.html) Converts a server-side numeric vector into a factor
@@ -35,6 +36,12 @@ Functions:
 * [ds.asMatrix](dsBaseClient/ds.asMatrix.html) Converts a server-side R object into a matrix
 * [ds.asNumeric](dsBaseClient/ds.asNumeric.html) Converts a server-side R object into a numeric class
 * [ds.assign](dsBaseClient/ds.assign.html) Assigns an R object to a name in the server-side
+* [ds.boxPlot](dsBaseClient/ds.boxPlot.html) Draw boxplot
+* [ds.boxPlotGG](dsBaseClient/ds.boxPlotGG.html) Renders boxplot
+* [ds.boxPlotGG_data_Treatment](dsBaseClient/ds.boxPlotGG_data_Treatment.html) Take a data frame on the server side an arrange it to pass it to the boxplot function
+* [ds.boxPlotGG_data_Treatment_numeric](dsBaseClient/ds.boxPlotGG_data_Treatment_numeric.html) Take a vector on the server side an arrange it to pass it to the boxplot function
+* [ds.boxPlotGG_numeric](dsBaseClient/ds.boxPlotGG_numeric.html) Draw boxplot with information from a numeric vector
+* [ds.boxPlotGG_table](dsBaseClient/ds.boxPlotGG_table.html) Draw boxplot with information from a data frame
 * [ds.c](dsBaseClient/ds.c.html) Combines values into a vector or list in the server-side
 * [ds.cbind](dsBaseClient/ds.cbind.html) Combines R objects by columns in the server-side
 * [ds.changeRefGroup](dsBaseClient/ds.changeRefGroup.html) Changes the reference level of a factor in the server-side
@@ -53,13 +60,17 @@ Functions:
 * [ds.dim](dsBaseClient/ds.dim.html) Retrieves the dimension of a server-side R object
 * [ds.exists](dsBaseClient/ds.exists.html) Checks if an object is defined on the server-side
 * [ds.exp](dsBaseClient/ds.exp.html) Computes the exponentials in the server-side
+* [ds.getWGSR](dsBaseClient/ds.getWGSR.html) Computes the WHO Growth Reference z-scores of anthropometric data
 * [ds.glm](dsBaseClient/ds.glm.html) Fits Generalized Linear Model
-* [ds.glmSLMA](dsBaseClient/ds.glmSLMA.html) Fits Generalized Linear Model via Study-Level Meta-Analysis
+* [ds.glmPredict](dsBaseClient/ds.glmPredict.html) Applies predict.glm() to a serverside glm object
+* [ds.glmSLMA](dsBaseClient/ds.glmSLMA.html) Fit a Generalized Linear Model (GLM) with pooling via Study Level Meta-Analysis (SLMA)
+* [ds.glmSummary](dsBaseClient/ds.glmSummary.html) summarize a glm object on the serverside
 * [ds.glmerSLMA](dsBaseClient/ds.glmerSLMA.html) Fitting Generalized Linear Mixed-Effect Models via Study-Level Meta-Analysis
 * [ds.heatmapPlot](dsBaseClient/ds.heatmapPlot.html) Generates a Heat Map plot
 * [ds.histogram](dsBaseClient/ds.histogram.html) Generates a histogram plot
 * [ds.isNA](dsBaseClient/ds.isNA.html) Checks if a server-side vector is empty
 * [ds.isValid](dsBaseClient/ds.isValid.html) Checks if a server-side object is valid
+* [ds.kurtosis](dsBaseClient/ds.kurtosis.html) Calculates the kurtosis of a numeric variable
 * [ds.length](dsBaseClient/ds.length.html) Gets the length of an object in the server-side
 * [ds.levels](dsBaseClient/ds.levels.html) Levels attributes of a server-side factor
 * [ds.lexis](dsBaseClient/ds.lexis.html) Represents follow-up in multiple states on multiple time scales
@@ -106,6 +117,8 @@ Functions:
 * [ds.seq](dsBaseClient/ds.seq.html) Generates a sequence in the server-side
 * [ds.setDefaultOpals](dsBaseClient/ds.setDefaultOpals.html) ds.setDefaultOpals creates a default set of Opal objects called 'default.opals'
 * [ds.setSeed](dsBaseClient/ds.setSeed.html) Server-side random number generation
+* [ds.skewness](dsBaseClient/ds.skewness.html) Calculates the skewness of a server-side numeric variable
+* [ds.sqrt](dsBaseClient/ds.sqrt.html) Computes the square root values of a variable
 * [ds.subset](dsBaseClient/ds.subset.html) Generates a valid subset of a table or a vector
 * [ds.subsetByClass](dsBaseClient/ds.subsetByClass.html) Generates valid subset(s) of a data frame or a factor
 * [ds.summary](dsBaseClient/ds.summary.html) Generates the summary of a server-side object
@@ -136,8 +149,8 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsBaseClient/6.0.1/DESCRIPTION)
-* [dsBaseClient 6.0.1](https://github.com/datashield/dsBaseClient/tree/6.0.1)
+* [DESCRIPTION](https://raw.github.com/datashield/dsBaseClient/6.1.0/DESCRIPTION)
+* [dsBaseClient 6.1.0](https://github.com/datashield/dsBaseClient/tree/6.1.0)
 
 
 ## Server Packages
@@ -155,6 +168,7 @@ Functions:
 
 
 * [BooleDS](dsBase/BooleDS.html) BooleDS
+* [absDS](dsBase/absDS.html) Computes the absolute values of the input variable
 * [asCharacterDS](dsBase/asCharacterDS.html) Coerces an R object into class character
 * [asDataMatrixDS](dsBase/asDataMatrixDS.html) asDataMatrixDS a serverside assign function called by ds.asDataMatrix
 * [asFactorDS1](dsBase/asFactorDS1.html) Determines the levels of the input variable in each single study
@@ -164,6 +178,9 @@ Functions:
 * [asLogicalDS](dsBase/asLogicalDS.html) Coerces an R object into class numeric
 * [asMatrixDS](dsBase/asMatrixDS.html) Coerces an R object into a matrix
 * [asNumericDS](dsBase/asNumericDS.html) Coerces an R object into class numeric
+* [boxPlotGGDS](dsBase/boxPlotGGDS.html) Create the identity stats and necessary data to draw a plot on the client
+* [boxPlotGG_data_TreatmentDS](dsBase/boxPlotGG_data_TreatmentDS.html) Arrange data frame to pass it to the boxplot function
+* [boxPlotGG_data_Treatment_numericDS](dsBase/boxPlotGG_data_Treatment_numericDS.html) Arrange vector to pass it to the boxplot function
 * [cDS](dsBase/cDS.html) Concatenates objects into a vector or list
 * [cbindDS](dsBase/cbindDS.html) cbindDS called by ds.cbind
 * [changeRefGroupDS](dsBase/changeRefGroupDS.html) Changes a reference level of a factor
@@ -182,16 +199,24 @@ Functions:
 * [densityGridDS](dsBase/densityGridDS.html) Generates a density grid with or without a priori defined limits
 * [dimDS](dsBase/dimDS.html) Returns the dimension of a data frame or matrix
 * [extract](dsBase/extract.html) Splits character by '$' and returns the single characters
+* [getWGSRDS](dsBase/getWGSRDS.html) Computes the WHO Growth Reference z-scores of anthropometric data
 * [glmDS1](dsBase/glmDS1.html) glmDS1 called by ds.glm
 * [glmDS2](dsBase/glmDS2.html) glmDS2 called by ds.glm
-* [glmSLMADS1](dsBase/glmSLMADS1.html) glmSLMADS1 called by ds.glmSLMA
-* [glmSLMADS2](dsBase/glmSLMADS2.html) glmSLMADS2 called by ds.glmSLMA
+* [glmPredictDS.ag](dsBase/glmPredictDS.ag.html) predict regression responses from a glm object
+* [glmPredictDS.as](dsBase/glmPredictDS.as.html) predict regression responses from a glm object
+* [glmSLMADS.assign](dsBase/glmSLMADS.assign.html) Fit a Generalized Linear Model (GLM) with pooling via Study Level Meta-Analysis (SLMA)
+* [glmSLMADS1](dsBase/glmSLMADS1.html) Fit a Generalized Linear Model (GLM) with pooling via Study Level Meta-Analysis (SLMA)
+* [glmSLMADS2](dsBase/glmSLMADS2.html) Fit a Generalized Linear Model (GLM) with pooling via Study Level Meta-Analysis (SLMA)
+* [glmSummaryDS.ag](dsBase/glmSummaryDS.ag.html) summarize a glm object on the serverside
+* [glmSummaryDS.as](dsBase/glmSummaryDS.as.html) summarize a glm object on the serverside
 * [glmerSLMADS2](dsBase/glmerSLMADS2.html) Fitting generalized linear mixed effect models - serverside function
 * [heatmapPlotDS](dsBase/heatmapPlotDS.html) Calculates the coordinates of the centroid of each n nearest neighbours
 * [histogramDS1](dsBase/histogramDS1.html) returns the minimum and the maximum of the input numeric vector
 * [histogramDS2](dsBase/histogramDS2.html) Computes a histogram of the input variable without plotting.
 * [isNaDS](dsBase/isNaDS.html) Checks if a vector is empty
 * [isValidDS](dsBase/isValidDS.html) Checks if an input is valid
+* [kurtosisDS1](dsBase/kurtosisDS1.html) Calculates the kurtosis of a numeric variable
+* [kurtosisDS2](dsBase/kurtosisDS2.html) Calculates the kurtosis of a numeric variable
 * [lengthDS](dsBase/lengthDS.html) Returns the length of a vector or list
 * [levelsDS](dsBase/levelsDS.html) Returns the levels of a factor vector
 * [lexisDS1](dsBase/lexisDS1.html) lexisDS1
@@ -235,6 +260,9 @@ Functions:
 * [seqDS](dsBase/seqDS.html) seqDS a serverside assign function called by ds.seq
 * [setFilterDS](dsBase/setFilterDS.html) Sets the privacy level
 * [setSeedDS](dsBase/setSeedDS.html) setSeedDs called by ds.setSeed, ds.rNorm, ds.rUnif, ds.rPois and ds.rBinom
+* [skewnessDS1](dsBase/skewnessDS1.html) Calculates the skewness of a numeric variable
+* [skewnessDS2](dsBase/skewnessDS2.html) Calculates the skewness of a numeric variable
+* [sqrtDS](dsBase/sqrtDS.html) Computes the square root values of the input variable
 * [subsetByClassDS](dsBase/subsetByClassDS.html) Breaks down a dataframe or a factor into its sub-classes
 * [subsetByClassHelper1](dsBase/subsetByClassHelper1.html) generates subsets vectors from a factor vector
 * [subsetByClassHelper2](dsBase/subsetByClassHelper2.html) generates subset tables from a data frame
@@ -253,5 +281,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsBase/6.0.1/DESCRIPTION)
-* [dsBase 6.0.1](https://github.com/datashield/dsBase/tree/6.0.1)
+* [DESCRIPTION](https://raw.github.com/datashield/dsBase/6.1.0/DESCRIPTION)
+* [dsBase 6.1.0](https://github.com/datashield/dsBase/tree/6.1.0)
