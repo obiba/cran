@@ -451,7 +451,7 @@ out the glm object on the serverside
          datasources = connections)
   
   ds.glmSLMA(formula = EVENT ~ 1 + TID + female * age.60,
-         data = "D",
+         dataName = "D",
          family = "poisson", 
          offset = "log.surv",
          weights = NULL,
@@ -486,7 +486,7 @@ out the glm object on the serverside
   # Fit the logistic regression model
 
   mod &lt;- ds.glmSLMA(formula = "DIS_DIAB~GENDER+PM_BMI_CONTINUOUS+LAB_HDL",
-                data = "D",
+                dataName = "D",
                 family = "binomial",
                 datasources = connections)
                 
@@ -497,7 +497,7 @@ out the glm object on the serverside
 # connect again to the server 
 
 mod &lt;- ds.glmSLMA(formula = "PM_BMI_CONTINUOUS~DIS_DIAB*GENDER+LAB_HDL",
-              data = "D",
+              dataName = "D",
               family = "gaussian",
               datasources = connections)
 mod
@@ -509,5 +509,5 @@ datashield.logout(connections)
 
 </pre>
 
-<hr /><div style="text-align: center;">[Package <em>dsBaseClient</em> version 6.1.0 ]</div>
+<hr /><div style="text-align: center;">[Package <em>dsBaseClient</em> version 6.1.1 ]</div>
 </body></html>

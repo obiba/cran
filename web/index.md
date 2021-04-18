@@ -46,7 +46,7 @@ Functions:
 * [ds.cbind](dsBaseClient/ds.cbind.html) Combines R objects by columns in the server-side
 * [ds.changeRefGroup](dsBaseClient/ds.changeRefGroup.html) Changes the reference level of a factor in the server-side
 * [ds.class](dsBaseClient/ds.class.html) Class of the R object in the server-side
-* [ds.colnames](dsBaseClient/ds.colnames.html) Column names of the R object in the server-side
+* [ds.colnames](dsBaseClient/ds.colnames.html) Produces column names of the R object in the server-side
 * [ds.completeCases](dsBaseClient/ds.completeCases.html) Identifies complete cases in server-side R objects
 * [ds.contourPlot](dsBaseClient/ds.contourPlot.html) Generates a contour plot
 * [ds.cor](dsBaseClient/ds.cor.html) Calculates the correlation of R objects in the server-side
@@ -54,8 +54,8 @@ Functions:
 * [ds.cov](dsBaseClient/ds.cov.html) Calculates the covariance of R objects in the server-side
 * [ds.dataFrame](dsBaseClient/ds.dataFrame.html) Generates a data frame object in the server-side
 * [ds.dataFrameFill](dsBaseClient/ds.dataFrameFill.html) Creates missing values columns in the server-side
-* [ds.dataFrameSort](dsBaseClient/ds.dataFrameSort.html) Sorting data frames in the server-side
-* [ds.dataFrameSubset](dsBaseClient/ds.dataFrameSubset.html) Subsetting data frames in the server-side
+* [ds.dataFrameSort](dsBaseClient/ds.dataFrameSort.html) Sorts data frames in the server-side
+* [ds.dataFrameSubset](dsBaseClient/ds.dataFrameSubset.html) Sub-sets data frames in the server-side
 * [ds.densityGrid](dsBaseClient/ds.densityGrid.html) Generates a density grid in the client-side
 * [ds.dim](dsBaseClient/ds.dim.html) Retrieves the dimension of a server-side R object
 * [ds.exists](dsBaseClient/ds.exists.html) Checks if an object is defined on the server-side
@@ -65,23 +65,23 @@ Functions:
 * [ds.glmPredict](dsBaseClient/ds.glmPredict.html) Applies predict.glm() to a serverside glm object
 * [ds.glmSLMA](dsBaseClient/ds.glmSLMA.html) Fit a Generalized Linear Model (GLM) with pooling via Study Level Meta-Analysis (SLMA)
 * [ds.glmSummary](dsBaseClient/ds.glmSummary.html) summarize a glm object on the serverside
-* [ds.glmerSLMA](dsBaseClient/ds.glmerSLMA.html) Fitting Generalized Linear Mixed-Effect Models via Study-Level Meta-Analysis
+* [ds.glmerSLMA](dsBaseClient/ds.glmerSLMA.html) Fits Generalized Linear Mixed-Effect Models via Study-Level Meta-Analysis
 * [ds.heatmapPlot](dsBaseClient/ds.heatmapPlot.html) Generates a Heat Map plot
 * [ds.histogram](dsBaseClient/ds.histogram.html) Generates a histogram plot
 * [ds.isNA](dsBaseClient/ds.isNA.html) Checks if a server-side vector is empty
 * [ds.isValid](dsBaseClient/ds.isValid.html) Checks if a server-side object is valid
 * [ds.kurtosis](dsBaseClient/ds.kurtosis.html) Calculates the kurtosis of a numeric variable
 * [ds.length](dsBaseClient/ds.length.html) Gets the length of an object in the server-side
-* [ds.levels](dsBaseClient/ds.levels.html) Levels attributes of a server-side factor
+* [ds.levels](dsBaseClient/ds.levels.html) Produces levels attributes of a server-side factor
 * [ds.lexis](dsBaseClient/ds.lexis.html) Represents follow-up in multiple states on multiple time scales
 * [ds.list](dsBaseClient/ds.list.html) Constructs a list of objects in the server-side
-* [ds.listClientsideFunctions](dsBaseClient/ds.listClientsideFunctions.html) Client-side functions
-* [ds.listDisclosureSettings](dsBaseClient/ds.listDisclosureSettings.html) Disclosure Settings
-* [ds.listOpals](dsBaseClient/ds.listOpals.html) ds.listOpals list all Opal objects in the analytic environment
-* [ds.listServersideFunctions](dsBaseClient/ds.listServersideFunctions.html) Server-side functions
-* [ds.lmerSLMA](dsBaseClient/ds.lmerSLMA.html) Fitting Linear Mixed-Effect Model via Study-Level Meta-Analysis
+* [ds.listClientsideFunctions](dsBaseClient/ds.listClientsideFunctions.html) Lists client-side functions
+* [ds.listDisclosureSettings](dsBaseClient/ds.listDisclosureSettings.html) Lists disclosure settings
+* [ds.listOpals](dsBaseClient/ds.listOpals.html) Lists all Opal objects in the analytic environment
+* [ds.listServersideFunctions](dsBaseClient/ds.listServersideFunctions.html) Lists server-side functions
+* [ds.lmerSLMA](dsBaseClient/ds.lmerSLMA.html) Fits Linear Mixed-Effect model via Study-Level Meta-Analysis
 * [ds.log](dsBaseClient/ds.log.html) Computes logarithms in the server-side
-* [ds.look](dsBaseClient/ds.look.html) Direct call to a server-side aggregate function
+* [ds.look](dsBaseClient/ds.look.html) Performs direct call to a server-side aggregate function
 * [ds.ls](dsBaseClient/ds.ls.html) lists all objects on a server-side environment
 * [ds.make](dsBaseClient/ds.make.html) Calculates a new object in the server-side
 * [ds.matrix](dsBaseClient/ds.matrix.html) Creates a matrix on the server-side
@@ -105,30 +105,30 @@ Functions:
 * [ds.rPois](dsBaseClient/ds.rPois.html) Generates Poisson distribution in the server-side
 * [ds.rUnif](dsBaseClient/ds.rUnif.html) Generates Uniform distribution in the server-side
 * [ds.rbind](dsBaseClient/ds.rbind.html) Combines R objects by rows in the server-side
-* [ds.reShape](dsBaseClient/ds.reShape.html) Reshape server-side grouped data
+* [ds.reShape](dsBaseClient/ds.reShape.html) Reshapes server-side grouped data
 * [ds.recodeLevels](dsBaseClient/ds.recodeLevels.html) Recodes the levels of a server-side factor vector
 * [ds.recodeValues](dsBaseClient/ds.recodeValues.html) Recodes server-side variable values
 * [ds.rep](dsBaseClient/ds.rep.html) Creates a repetitive sequence in the server-side
 * [ds.replaceNA](dsBaseClient/ds.replaceNA.html) Replaces the missing values in a server-side vector
-* [ds.rm](dsBaseClient/ds.rm.html) Deletes server-side R object
+* [ds.rm](dsBaseClient/ds.rm.html) Deletes server-side R objects
 * [ds.rowColCalc](dsBaseClient/ds.rowColCalc.html) Computes rows and columns sums and means in the server-side
-* [ds.sample](dsBaseClient/ds.sample.html) random sampling and permuting of vectors, dataframes and matrices
+* [ds.sample](dsBaseClient/ds.sample.html) Performs random sampling and permuting of vectors, dataframes and matrices
 * [ds.scatterPlot](dsBaseClient/ds.scatterPlot.html) Generates non-disclosive scatter plots
 * [ds.seq](dsBaseClient/ds.seq.html) Generates a sequence in the server-side
-* [ds.setDefaultOpals](dsBaseClient/ds.setDefaultOpals.html) ds.setDefaultOpals creates a default set of Opal objects called 'default.opals'
+* [ds.setDefaultOpals](dsBaseClient/ds.setDefaultOpals.html) Creates a default set of Opal objects called 'default.opals'
 * [ds.setSeed](dsBaseClient/ds.setSeed.html) Server-side random number generation
 * [ds.skewness](dsBaseClient/ds.skewness.html) Calculates the skewness of a server-side numeric variable
 * [ds.sqrt](dsBaseClient/ds.sqrt.html) Computes the square root values of a variable
 * [ds.subset](dsBaseClient/ds.subset.html) Generates a valid subset of a table or a vector
 * [ds.subsetByClass](dsBaseClient/ds.subsetByClass.html) Generates valid subset(s) of a data frame or a factor
 * [ds.summary](dsBaseClient/ds.summary.html) Generates the summary of a server-side object
-* [ds.table](dsBaseClient/ds.table.html) ds.table calling aggregate functions tableDS and tableDS2 and assign function tableDS.assign
+* [ds.table](dsBaseClient/ds.table.html) Generates 1-, 2-, and 3-dimensional contingency tables with option of assigning to serverside only and producing chi-squared statistics
 * [ds.table1D](dsBaseClient/ds.table1D.html) Generates 1-dimensional contingency tables
 * [ds.table2D](dsBaseClient/ds.table2D.html) Generates 2-dimensional contingency tables
 * [ds.tapply](dsBaseClient/ds.tapply.html) Applies a Function Over a Server-Side Ragged Array
 * [ds.tapply.assign](dsBaseClient/ds.tapply.assign.html) Applies a Function Over a Ragged Array on the server-side
 * [ds.testObjExists](dsBaseClient/ds.testObjExists.html) Checks if an R object exists on the server-side
-* [ds.unList](dsBaseClient/ds.unList.html) Flatten Server-Side Lists
+* [ds.unList](dsBaseClient/ds.unList.html) Flattens Server-Side Lists
 * [ds.var](dsBaseClient/ds.var.html) Computes server-side vector variance
 * [ds.vectorCalc](dsBaseClient/ds.vectorCalc.html) Performs a mathematical operation on two or more vectors
 * [extract](dsBaseClient/extract.html) Splits character by '$' and returns the single characters
@@ -137,7 +137,7 @@ Functions:
 * [glmChecks](dsBaseClient/glmChecks.html) Checks if the elements in the glm model have the right characteristics
 * [isAssigned](dsBaseClient/isAssigned.html) Checks an object has been generated on the server side
 * [isDefined](dsBaseClient/isDefined.html) Checks if the objecs are defined in studies
-* [logical2int](dsBaseClient/logical2int.html) turns a logical operator into an integer
+* [logical2int](dsBaseClient/logical2int.html) Turns a logical operator into an integer
 * [meanByClassHelper0a](dsBaseClient/meanByClassHelper0a.html) Computes the mean values of a numeric vector across a factor vector
 * [meanByClassHelper0b](dsBaseClient/meanByClassHelper0b.html) Runs the computation if variables are within a table structure
 * [meanByClassHelper1](dsBaseClient/meanByClassHelper1.html) Generates subset tables
@@ -145,12 +145,12 @@ Functions:
 * [meanByClassHelper3](dsBaseClient/meanByClassHelper3.html) Generates results tables for each study separately
 * [meanByClassHelper4](dsBaseClient/meanByClassHelper4.html) Gets the subset tables out of the list (i.e. unlist)
 * [rowPercent](dsBaseClient/rowPercent.html) Produces row percentages
-* [subsetHelper](dsBaseClient/subsetHelper.html) Ensure that the requested subset is not larger than the original object
+* [subsetHelper](dsBaseClient/subsetHelper.html) Ensures that the requested subset is not larger than the original object
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsBaseClient/6.1.0/DESCRIPTION)
-* [dsBaseClient 6.1.0](https://github.com/datashield/dsBaseClient/tree/6.1.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsBaseClient/6.1.1/DESCRIPTION)
+* [dsBaseClient 6.1.1](https://github.com/datashield/dsBaseClient/tree/6.1.1)
 
 
 ## Server Packages
@@ -209,6 +209,7 @@ Functions:
 * [glmSLMADS2](dsBase/glmSLMADS2.html) Fit a Generalized Linear Model (GLM) with pooling via Study Level Meta-Analysis (SLMA)
 * [glmSummaryDS.ag](dsBase/glmSummaryDS.ag.html) summarize a glm object on the serverside
 * [glmSummaryDS.as](dsBase/glmSummaryDS.as.html) summarize a glm object on the serverside
+* [glmerSLMADS.assing](dsBase/glmerSLMADS.assing.html) Fitting generalized linear mixed effect models - serverside function
 * [glmerSLMADS2](dsBase/glmerSLMADS2.html) Fitting generalized linear mixed effect models - serverside function
 * [heatmapPlotDS](dsBase/heatmapPlotDS.html) Calculates the coordinates of the centroid of each n nearest neighbours
 * [histogramDS1](dsBase/histogramDS1.html) returns the minimum and the maximum of the input numeric vector
@@ -224,6 +225,7 @@ Functions:
 * [lexisDS3](dsBase/lexisDS3.html) @title lexisDS3
 * [listDS](dsBase/listDS.html) Coerce objects into a list
 * [listDisclosureSettingsDS](dsBase/listDisclosureSettingsDS.html) listDisclosureSettingsDS
+* [lmerSLMADS.assign](dsBase/lmerSLMADS.assign.html) Fitting linear mixed effect models - serverside function
 * [lmerSLMADS2](dsBase/lmerSLMADS2.html) Fitting linear mixed effect models - serverside function
 * [lsDS](dsBase/lsDS.html) lists all objects on a serverside environment
 * [matrixDS](dsBase/matrixDS.html) matrixDS assign function called by ds.matrix
@@ -249,8 +251,7 @@ Functions:
 * [rbindDS](dsBase/rbindDS.html) rbindDS called by ds.rbind
 * [reShapeDS](dsBase/reShapeDS.html) reShapeDS (assign function) called by ds.reShape
 * [recodeLevelsDS](dsBase/recodeLevelsDS.html) Recodes the levels of a categorical variables
-* [recodeValuesDS1](dsBase/recodeValuesDS1.html) recodeValuesDS1 an aggregate function called by ds.recodeValues
-* [recodeValuesDS2](dsBase/recodeValuesDS2.html) recodeValuesDS2 an assign function called by ds.recodeValues
+* [recodeValuesDS](dsBase/recodeValuesDS.html) recodeValuesDS an assign function called by ds.recodeValues
 * [repDS](dsBase/repDS.html) repDS called by ds.rep
 * [replaceNaDS](dsBase/replaceNaDS.html) Replaces the missing values in a vector
 * [rmDS](dsBase/rmDS.html) rmDS an aggregate function called by ds.rm
@@ -281,5 +282,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsBase/6.1.0/DESCRIPTION)
-* [dsBase 6.1.0](https://github.com/datashield/dsBase/tree/6.1.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsBase/6.1.1/DESCRIPTION)
+* [dsBase 6.1.1](https://github.com/datashield/dsBase/tree/6.1.1)

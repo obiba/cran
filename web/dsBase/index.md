@@ -54,6 +54,7 @@ Functions:
 * [glmSLMADS2](glmSLMADS2.html) Fit a Generalized Linear Model (GLM) with pooling via Study Level Meta-Analysis (SLMA)
 * [glmSummaryDS.ag](glmSummaryDS.ag.html) summarize a glm object on the serverside
 * [glmSummaryDS.as](glmSummaryDS.as.html) summarize a glm object on the serverside
+* [glmerSLMADS.assing](glmerSLMADS.assing.html) Fitting generalized linear mixed effect models - serverside function
 * [glmerSLMADS2](glmerSLMADS2.html) Fitting generalized linear mixed effect models - serverside function
 * [heatmapPlotDS](heatmapPlotDS.html) Calculates the coordinates of the centroid of each n nearest neighbours
 * [histogramDS1](histogramDS1.html) returns the minimum and the maximum of the input numeric vector
@@ -69,6 +70,7 @@ Functions:
 * [lexisDS3](lexisDS3.html) @title lexisDS3
 * [listDS](listDS.html) Coerce objects into a list
 * [listDisclosureSettingsDS](listDisclosureSettingsDS.html) listDisclosureSettingsDS
+* [lmerSLMADS.assign](lmerSLMADS.assign.html) Fitting linear mixed effect models - serverside function
 * [lmerSLMADS2](lmerSLMADS2.html) Fitting linear mixed effect models - serverside function
 * [lsDS](lsDS.html) lists all objects on a serverside environment
 * [matrixDS](matrixDS.html) matrixDS assign function called by ds.matrix
@@ -94,8 +96,7 @@ Functions:
 * [rbindDS](rbindDS.html) rbindDS called by ds.rbind
 * [reShapeDS](reShapeDS.html) reShapeDS (assign function) called by ds.reShape
 * [recodeLevelsDS](recodeLevelsDS.html) Recodes the levels of a categorical variables
-* [recodeValuesDS1](recodeValuesDS1.html) recodeValuesDS1 an aggregate function called by ds.recodeValues
-* [recodeValuesDS2](recodeValuesDS2.html) recodeValuesDS2 an assign function called by ds.recodeValues
+* [recodeValuesDS](recodeValuesDS.html) recodeValuesDS an assign function called by ds.recodeValues
 * [repDS](repDS.html) repDS called by ds.rep
 * [replaceNaDS](replaceNaDS.html) Replaces the missing values in a vector
 * [rmDS](rmDS.html) rmDS an aggregate function called by ds.rm
@@ -126,5 +127,5 @@ Functions:
 
 Sources:
 
-* [DESCRIPTION](https://raw.github.com/datashield/dsBase/6.1.0/DESCRIPTION)
-* [dsBase 6.1.0](https://github.com/datashield/dsBase/tree/6.1.0)
+* [DESCRIPTION](https://raw.github.com/datashield/dsBase/6.1.1/DESCRIPTION)
+* [dsBase 6.1.1](https://github.com/datashield/dsBase/tree/6.1.1)
